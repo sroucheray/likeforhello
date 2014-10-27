@@ -38,7 +38,7 @@ WebServer.prototype.setupAdminApp = function() {
     //this.publicApp.disable("x-powered-by");
     // set .handlebars as the default extension
     //this.publicApp.set("view engine", "hbs");
-    //this.publicApp.set("views", path.join(__dirname, "../admin/public/scripts/views"));
+    this.publicApp.set("views", path.join(__dirname, "../admin/public/scripts/views"));
     /*this.publicApp.use(function(req, res, next) {
         debugReq("%s %s", req.method, req.url);
         next();
