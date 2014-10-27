@@ -80,6 +80,7 @@ WebServer.prototype.setupAdminApp = function() {
         res.render("main");
     });
 };
+
 WebServer.prototype.setupPublicApp = function() {
     this.publicApp.use(compression());
     // assign the handlebars engine to .handlebars files
