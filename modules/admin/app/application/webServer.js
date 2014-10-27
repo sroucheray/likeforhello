@@ -86,8 +86,8 @@ WebServer.prototype.setupPublicApp = function() {
     // assign the handlebars engine to .handlebars files
     this.publicApp.engine("hbs", hbs.create().express3({
         partialsDir: [
-            path.join(__dirname, "../public/views/partials"),
-            path.join(__dirname, "../admin/public/scripts/views/partials")
+            path.join(__dirname, "../public/views/public/partials"),
+            path.join(__dirname, "../public/views/admin/partials")
         ]
     }));
     this.publicApp.disable("x-powered-by");
