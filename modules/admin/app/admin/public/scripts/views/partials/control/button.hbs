@@ -1,0 +1,65 @@
+<div class="panel {{#if is_connected}}panel-success{{else}}panel-danger{{/if}}">
+    <div class="panel-heading">{{id}}
+        <fieldset class="pull-right" {{#unless is_connected}}disabled{{/unless}}>
+            <div class="form-group">
+                <div class="btn-group">
+                    <a href="#" role="button" class="btn {{#if is_connected}}btn-primary{{else}}btn-default{{/if}} btn-xs module-enable {{#if enabled}}disabled{{/if}}">Activer</a>
+                    <a href="#" role="button" class="btn {{#if is_connected}}btn-primary{{else}}btn-default{{/if}} btn-xs module-disable {{#unless enabled}}disabled{{/unless}}">Désactiver</a>
+                </div>
+            </div>
+        </fieldset>
+        <div class="clearfix"></div>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-12">
+                {{#if is_connected}}
+                Connecté <u title="{{formatDate connected_at}}">{{fromNow connected_at}}</u>
+                {{else}}
+                {{#if disconnected_at}}
+                Déconnecté <u title="{{formatDate disconnected_at}}">{{fromNow disconnected_at}}</u>
+                {{else}}
+                Jamais connecté
+                {{/if}}
+                {{/if}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                {{#if last_alive_time}}
+                Dernière réponse <u title="{{formatDate last_alive_time}}">{{fromNow last_alive_time}}</u>
+                {{else}}
+                &nbsp;
+                {{/if}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                {{#if last_pushed_time}}
+                Dernier appui <u title="{{formatDate last_pushed_time}}">{{fromNow last_pushed_time}}</u>
+                <br>sur le bouton {{last_pushed_button_id}}
+                {{else}}
+                Boutons jamais déclenchés
+                {{/if}}
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer"><small>
+        <fieldset {{#unless is_connected}}disabled{{/unless}} class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-sm-3">mac :</div>
+                <div class="col-sm-6">{{#if mac}}{{mac}}{{else}}N/A{{/if}}</div>
+            </div>
+            <div class="row no-gutter">
+                <div class="col-sm-3">ip :</div>
+                <div class="col-sm-9">{{#if is_connected}}{{ip}}{{else}}N/A{{/if}}</div>
+            </div>
+            <div class="row no-gutter">
+                <div class="col-sm-3">broker :</div>
+                <div class="col-sm-6">{{#if is_connected}}{{broker}}{{else}}N/A{{/if}}</div>
+                <div class="col-sm-3"><a href="#" role="button" class="btn btn-warning btn-xs module-reconnect">Reconnecter</a></div>
+            </div>
+        </fieldset>
+        </small>
+    </div>
+</div>

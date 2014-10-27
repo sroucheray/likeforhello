@@ -1,0 +1,92 @@
+<nav role="navigation" class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">Paramètres généraux</a>
+        </div>
+    </div>
+</nav>
+<form class="form-horizontal" role="form">
+    <div class="form-group" data-day="{{day_of_week}}">
+        <label class="col-sm-2 control-label">Dates de l'opération</label>
+        <div class="col-sm-4">
+            <div class="input-group date">
+                <div class="input-group-addon">début</div>
+                <input type="datetime" id="startDate" class="form-control time-control ouverture" data-date-defaultdate="{{formatDate startDate format='[le] dddd DD MMMM YYYY [à] HH:mm'}}" data-date-format="[le] dddd DD MMMM YYYY [à] HH:mm" />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+            </div>
+            <small class="help-block">La durée est de l'opération est de <output id="duration"></output></small>
+        </div>
+        <div class="col-sm-4">
+            <div class="input-group date">
+                <div class="input-group-addon">fin</div>
+                <input type="datetime" id="endDate" class="form-control time-control fermeture" data-date-defaultdate="{{formatDate endDate format='[le] dddd DD MMMM YYYY [à] HH:mm'}}" data-date-format="[le] dddd DD MMMM YYYY [à] HH:mm" />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-8 col-sm-offset-2 bg-danger">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="isPaused" {{#if isPaused}}checked{{/if}}> Arrêt temporaire du jeu
+                </label>
+            </div>
+            <small>Si cette case est cochée le jeu est inactif chez VVF</small>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Temporisation</label>
+        <div class="col-sm-4">
+            <div class="input-group date">
+                <input type="datetime" class="form-control delay-control" data-date-defaultdate="{{formatTime minRealertDelay format='m [minutes] s [secondes]'}}" id="minRealertDelay" data-date-format="m [minutes] s [secondes]">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+            </div>
+            <small class="help-block">Délai minimum entre deux alertes successives <output></output></small>
+        </div>
+        <div class="col-sm-4">
+            <div class="input-group date">
+                <input type="datetime" class="form-control delay-control" data-date-defaultdate="{{formatTime maxRealertDelay format='m [minutes] s [secondes]'}}" id="maxRealertDelay" data-date-format="m [minutes] s [secondes]">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+            </div>
+            <small class="help-block">Délai maximum entre deux alertes successives <output></output></small>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Bonjours simultanés</label>
+        <div class="col-sm-4">
+            <div class="input-group">
+                <input type="number" class="form-control" id="minVisitorQueueLength" value="{{minVisitorQueueLength}}" step="1" min="1" max="{{maxVisitorQueueLength}}">
+                <span class="input-group-addon">personnes</span>
+            </div>
+            <small class="help-block">Nombre minimum de personnes recevant un bonjour simultanément</small>
+            {{#if queue}}
+            <small class="help-block">La liste contient actuellement {{plural queue "visiteur"}}</small>
+            {{/if}}
+        </div>
+        <div class="col-sm-4">
+            <div class="input-group">
+                <input type="number" class="form-control" id="maxVisitorQueueLength" value="{{maxVisitorQueueLength}}" step="1" min="{{minVisitorQueueLength}}">
+                <span class="input-group-addon">personnes</span>
+            </div>
+            <small class="help-block">Nombre maximum de personnes recevant un bonjour simultanément</small>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Simuler une alerte</label>
+        <div class="col-sm-8">
+            <div class="input-group">
+                <button id="alertSimulation" type="button" class="btn btn-primary">Alerte !</button>&nbsp;
+                <button id="stopAlertSimulation" type="button" class="btn btn-primary">Stop alerte !</button>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Vérification du statut</label>
+        <div class="col-sm-8">
+            <div class="input-group">
+                <button id="checkStatus" type="button" class="btn btn-primary">Vérification manuelle du statut</button>&nbsp;
+            </div>
+        </div>
+    </div>
+
+</form>

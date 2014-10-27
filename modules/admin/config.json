@@ -1,0 +1,187 @@
+{
+    "server": {
+        "http": {
+            "public": {
+                "hostname": "hello.fb.byperiscope.com",
+                "port": 80
+            }
+        },
+        "https": {
+            "keys": {
+                "key": "keys/server.key",
+                "cert": "keys/server.crt"
+            },
+            "public": {
+                "hostname": "fb.byperiscope.com",
+                "port": 443
+            },
+            "admin": {
+                "hostname": "fb.byperiscope.com",
+                "port": 444
+            },
+            "broker": {
+                "hostname": "fb.byperiscope.com",
+                "port": 444
+            }
+        }
+    },
+    "tmp": "tmp/photos",
+    "redis": {
+        "host": "192.168.0.50",
+        "port": 6379
+    },
+    "mysql": {
+        "host": "localhost",
+        "port": 3306,
+        "database": "like_for_hello",
+        "username": "vvf",
+        "password": "likeforhello"
+    },
+    "camera": {
+        "defaults": {
+            "mode": "photo",
+            "width": 640,
+            "height": 480,
+            "quality": 75,
+            "timeout": 500,
+            "sharpness": 0,
+            "contrast": 0,
+            "brightness": 50,
+            "saturation": 0,
+            "exposure": "auto",
+            "awb": "auto",
+            "imxfx": "none",
+            "rotation": 0,
+            "hflip": false,
+            "vflip": false
+        }
+    },
+    "modules": {
+        "alert": {
+            "alert_ground_cam": {
+                "mqttServerIp": ["192", "168", "12", "104"],
+                "mac": ["90", "A2", "DA", "0F", "98", "27"]
+            },
+            "alert_1stfloor_cam": {
+                "mqttServerIp": ["192", "168", "12", "104"],
+                "mac": ["90", "A2", "DA", "0F", "98", "19"]
+            },
+            "alert_1stfloor_a": {
+                "mqttServerIp": ["192", "168", "12", "104"],
+                "mac": ["90", "A2", "DA", "0F", "96", "C9"]
+            },
+            "alert_1stfloor_b": {
+                "mqttServerIp": ["192", "168", "12", "104"],
+                "mac": ["90", "A2", "DA", "0F", "97", "66"]
+            },
+            "alert_1stfloor_c": {
+                "mqttServerIp": ["192", "168", "12", "104"],
+                "mac": ["90", "A2", "DA", "0F", "97", "03"]
+            },
+            "alert_1stfloor_d": {
+                "mqttServerIp": ["192", "168", "12", "104"],
+                "mac": ["90", "A2", "DA", "0F", "96", "FE"]
+            },
+            "alert_2ndfloor_cam": {
+                "mqttServerIp": ["192", "168", "12", "104"],
+                "mac": ["90", "A2", "DA", "0F", "97", "C7"]
+            },
+            "alert_2ndfloor_a": {
+                "mqttServerIp": ["192", "168", "12", "104"],
+                "mac": ["90", "A2", "DA", "0F", "97", "0B"]
+            },
+            "alert_2ndfloor_b": {
+                "mqttServerIp": ["192", "168", "12", "104"],
+                "mac": ["90", "A2", "DA", "0F", "97", "13"]
+            },
+            "alert_2ndfloor_c": {
+                "mqttServerIp": ["192", "168", "12", "104"],
+                "mac": ["90", "A2", "DA", "0F", "96", "CD"]
+            },
+            "alert_2ndfloor_d": {
+                "mqttServerIp": ["192", "168", "12", "104"],
+                "mac": ["90", "A2", "DA", "0F", "97", "C2"]
+            }
+        },
+        "button": {
+            "button_ground": {
+                "mqttServerIp": ["192", "168", "12", "104"],
+                "mac": ["90", "A2", "DA", "0F", "97", "85"]
+            },
+            "button_1stfloor": {
+                "mqttServerIp": ["192", "168", "12", "104"],
+                "mac": ["90", "A2", "DA", "0F", "97", "81"]
+            },
+            "button_2ndfloor": {
+                "mqttServerIp": ["192", "168", "12", "104"],
+                "mac": ["90", "A2", "DA", "0F", "97", "44"]
+            }
+        },
+        "cam": {
+            "cam_ground": {},
+            "cam_1stfloor": {},
+            "cam_2ndfloor": {}
+        }
+    },
+    "settings": {
+        "defaults": {
+            "startDate": 0,
+            "endDate": 0,
+            "isPaused": false,
+            "minVisitorQueueLength": 1,
+            "maxVisitorQueueLength": 10,
+            "minRealertDelay": 7200,
+            "maxRealertDelay": 18000
+        },
+        "timetable": [{
+            "day_of_week": 0,
+            "open_hour": 9,
+            "open_minute": 0,
+            "close_hour": 17,
+            "close_minute": 0,
+            "enabled": false
+        }, {
+            "day_of_week": 1,
+            "open_hour": 9,
+            "open_minute": 0,
+            "close_hour": 17,
+            "close_minute": 0,
+            "enabled": true
+        }, {
+            "day_of_week": 2,
+            "open_hour": 9,
+            "open_minute": 0,
+            "close_hour": 17,
+            "close_minute": 0,
+            "enabled": true
+        }, {
+            "day_of_week": 3,
+            "open_hour": 9,
+            "open_minute": 0,
+            "close_hour": 17,
+            "close_minute": 0,
+            "enabled": true
+        }, {
+            "day_of_week": 4,
+            "open_hour": 9,
+            "open_minute": 0,
+            "close_hour": 17,
+            "close_minute": 0,
+            "enabled": true
+        }, {
+            "day_of_week": 5,
+            "open_hour": 9,
+            "open_minute": 0,
+            "close_hour": 17,
+            "close_minute": 0,
+            "enabled": true
+        }, {
+            "day_of_week": 6,
+            "open_hour": 9,
+            "open_minute": 0,
+            "close_hour": 17,
+            "close_minute": 0,
+            "enabled": false
+        }]
+    }
+}

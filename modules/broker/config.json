@@ -1,0 +1,26 @@
+{
+    "server": "https://fb.byperiscope.com:446/",
+    "topics": {
+        "alert": {
+            "turn_on": "/alert/turn_on",
+            "turn_off": "/alert/turn_off",
+            "disable": "/alert/disable",
+            "enable": "/alert/enable"
+        },
+        "button": {
+            "pushed": "/button/pushed"
+        },
+        "connection": {
+            "connected": "/connection/connected",
+            "disconnected": "/connection/disconnected"
+        },
+        "status": {
+            "ip": "/status/ip",
+            "enabled": "/status/enabled",
+            "turned_on": "/status/turned_on"
+        },
+        "command": {
+            "reconnect": "/command/reconnect"
+        }
+    }
+}

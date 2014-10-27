@@ -1,0 +1,35 @@
+{
+    "id": "",
+    "server": "https://fb.byperiscope.com:446/shooting",
+    "raspicam": {
+        "opts": {
+            "mode": "photo",
+            "output": {
+                    "path" : "./tmp/photo",
+                    "filename" : "photo_%d.jpg"
+                }
+        }
+    },
+    "topics": {
+        "connection": {
+            "connected": "/connection/connected",
+            "disconnected": "/connection/disconnected",
+            "svnup": "/connection/svnup"
+        },
+        "camera": {
+            "shoot": "/camera/shoot",
+            "shooting": "/camera/shooting",
+            "shooted" : "/camera/shooted",
+            "disable": "/camera/disable",
+            "enable": "/camera/enable",
+            "settings": "/camera/settings",
+            "turn_alert_off": "/camera/turn_alert_off",
+            "turn_alert_on": "/camera/turn_alert_on"
+        },
+        "status": {
+            "ip": "/status/ip",
+            "enabled": "/status/enabled",
+            "settings": "/status/settings"
+        }
+    }
+}

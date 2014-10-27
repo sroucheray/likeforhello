@@ -1,0 +1,37 @@
+<nav role="navigation" class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">Photos</a>
+        </div>
+    </div>
+</nav>
+{{#each this}}
+<div class="row">
+    {{#each this}}
+    <div class="col-sm-{{../../cols}}">
+        <div class="thumbnail">
+            <div class="{{#unless facebook_id}}bg-warning{{/unless}}">
+                <a href="{{filename}}" target="_blank" style="width:100%;" title="Photo prise {{formatDate shootedAt}}">
+                <img class="media-object img-responsive" src="{{filename}}?dim=392x313" alt="Photo prise {{formatDate shootedAt}}">
+                </a>
+                <div class="caption small">
+                    <p>{{formatDate shootedAt}} <br>
+                    {{#if facebook_id}}{{else}}Pas sur Facebook{{/if}} <br>
+                    {{#unless HellosId}}Hors jeu{{/unless}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{/each}}
+<div class="row">
+    <div class="col-sm-3 col-sm-offset-3 text-center">
+        <ul class="pagination">
+            <li><a href="#" class="older">&laquo; Plus anciennes</a></li>
+            <li><span>1</span></li>
+            <li><a href="#" class="newer">&raquo; Plus récentes</a></li>
+        </ul>
+    </div>
+</div>

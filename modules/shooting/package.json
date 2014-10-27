@@ -1,0 +1,31 @@
+{
+  "name": "LikeForHelloShooting",
+  "version": "0.0.1",
+  "description": "Like for Hello shooting app for RaspberryPI+Cam",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sroucheray/likeforhello.git"
+  },
+  "author": "@sroucheray",
+  "license": "Private",
+  "bugs": {
+    "url": "https://github.com/sroucheray/likeforhello/issues"
+  },
+  "homepage": "https://github.com/sroucheray/likeforhello",
+  "dependencies": {
+    "debug": "^2.0.0",
+    "eightbyeight": "https://github.com/sroucheray/eightbyeight/tarball/master",
+    "i2c": "^0.1.4",
+    "ip": "^0.3.1",
+    "pm2": "^0.10.7",
+    "raspicam": "^0.2.13",
+    "socket.io-client": "^1.1.0",
+    "svn-spawn": "^0.1.4",
+    "tween.js": "^0.14.0",
+    "underscore": "^1.7.0"
+  }
+}
