@@ -15,6 +15,7 @@ var debugReq = require("debug")("admin:request");
 function WebServer(settings) {
     this.config = settings || require("../../config.json");
 }
+
 WebServer.prototype.setupAdminApp = function() {
     function ensureAuthenticated(req, res, next) {
         if (req.isAuthenticated()) {
