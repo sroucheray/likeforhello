@@ -1,0 +1,94 @@
+<div class="panel {{#if is_connected}}{{#if shooting}}panel-warning{{else}}panel-success{{/if}}{{else}}panel-danger{{/if}}">
+    <div class="panel-heading">{{id}}
+        <fieldset class="pull-right" {{#unless is_connected}}disabled{{/unless}}>
+            <div class="form-group">
+                <div class="btn-group">
+                    <a href="#" role="button" class="btn {{#if is_connected}}btn-primary{{else}}btn-default{{/if}} btn-xs module-enable {{#if enabled}}disabled{{/if}}">Activer</a>
+                    <a href="#" role="button" class="btn {{#if is_connected}}btn-primary{{else}}btn-default{{/if}} btn-xs module-disable {{#unless enabled}}disabled{{/unless}}">Désactiver</a>
+                </div>
+            </div>
+        </fieldset>
+        <div class="clearfix"></div>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-12">
+                {{#if is_connected}}
+                Connecté <u title="{{formatDate connected_at}}">{{fromNow connected_at}}</u>
+                {{else}}
+                {{#if disconnected_at}}
+                Déconnecté <u title="{{formatDate disconnected_at}}">{{fromNow disconnected_at}}</u>
+                {{else}}
+                Jamais connecté
+                {{/if}}
+                {{/if}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                {{#if last_alive_time}}
+                Dernière réponse <u title="{{formatDate last_alive_time}}">{{fromNow last_alive_time}}</u>
+                {{else}}
+                &nbsp;
+                {{/if}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                {{#if last_shoot_image}}
+                Dernière photo prise <u title="{{formatDate last_shoot_time}}">{{fromNow last_shoot_time}}</u>
+                {{else}}
+                Aucune photo prise avec cette appareil
+                {{/if}}
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <fieldset {{#unless is_connected}}disabled{{/unless}}>
+                    <div class="form-group">
+                        <div class="btn-group">
+                            <a href="#" role="button" class="btn btn-primary btn-sm module-turn-on">Alert On</a>
+                            <a href="#" role="button" class="btn btn-primary btn-sm module-turn-off">Alert Off</a>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <fieldset {{#unless is_connected}}disabled{{/unless}}>
+                    <div class="form-group">
+                        <div class="btn-group">
+                            <a href="#" role="button" data-loading-text="Photo en cours..." class="btn btn-primary btn-sm module-shoot">Prendre une photo</a>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        {{#if last_shoot_image}}
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="media">
+                    <a class="pull-left" href="{{last_shoot_image}}" target="_blank" style="width:100%;" title="Photo prise {{formatDate last_shoot_time}}">
+                    <img class="media-object img-responsive" src="{{last_shoot_image}}?dim=392x313" alt="Photo prise {{formatDate last_shoot_time}}">
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{/if}}
+        {{#if is_connected}}
+        {{>control/camera_controls}}
+        {{/if}}
+    </div>
+    <div class="panel-footer">
+        <small>
+        <fieldset {{#unless is_connected}}disabled{{/unless}} class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-sm-3">ip :</div>
+                <div class="col-sm-9">{{#if is_connected}}{{ip}}{{else}}N/A{{/if}}</div>
+            </div>
+        </fieldset>
+        </small>
+    </div>
+</div>

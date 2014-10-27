@@ -1,0 +1,143 @@
+<div class="row">
+    <div class="col-sm-12"><h3>Paramètres de la caméra</h3></div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <form role="form" class="settings">
+            <fieldset {{#unless enabled}}disabled{{/unless}}>
+                <div class="form-group">
+                    <label for="width-{{id}}">Largeur d'image (width)</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-sm" id="width-{{id}}" min="100">
+                        <div class="input-group-addon">px</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="height-{{id}}">Hauteur d'image (height)</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-sm" id="height-{{id}}" min="100">
+                        <div class="input-group-addon">px</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sharpness-{{id}}">Netteté</label>
+                    <input type="range" class="form-control input-sm" id="sharpness-{{id}}" min="-100" max="100" step="1" value="0">
+                    <span class="help-block">Valeur comprise entre -100 et 100. Valeur actuelle <output></output></span>
+                </div>
+                <div class="form-group">
+                    <label for="contrast-{{id}}">Contraste</label>
+                    <input type="range" class="form-control input-sm" id="contrast-{{id}}" min="-100" max="100" step="1" value="0">
+                    <span class="help-block">Valeur comprise entre -100 et 100. Valeur actuelle <output></output></span>
+                </div>
+                <div class="form-group">
+                    <label for="brightness-{{id}}">Luminosité</label>
+                    <input type="range" class="form-control input-sm" id="brightness-{{id}}" min="0" max="100" step="1" value="0">
+                    <span class="help-block">Valeur comprise entre 0 et 100. Valeur actuelle <output></output></span>
+                </div>
+                <div class="form-group">
+                    <label for="saturation-{{id}}">Saturation</label>
+                    <input type="range" class="form-control input-sm" id="saturation-{{id}}" min="-100" max="100" step="1" value="0">
+                    <span class="help-block">Valeur comprise entre -100 et 100. Valeur actuelle <output></output></span>
+                </div>
+                <div class="form-group">
+                    <label for="exposure-{{id}}">Type d'exposition</label>
+                    <select class="form-control input-sm" id="exposure-{{id}}" >
+                        <option value="off">off</option>
+                        <option value="auto">auto</option>
+                        <option value="night">night</option>
+                        <option value="nightpreview">nightpreview</option>
+                        <option value="backlight">backlight</option>
+                        <option value="spotlight">spotlight</option>
+                        <option value="sports">sports</option>
+                        <option value="snow">snow</option>
+                        <option value="beach">beach</option>
+                        <option value="verylong">verylong</option>
+                        <option value="fixedfps">fixedfps</option>
+                        <option value="antishake">antishake</option>
+                        <option value="fireworks">fireworks</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="awb-{{id}}">Balance des blancs automatique</label>
+                    <select class="form-control input-sm" id="awb-{{id}}">
+                        <option value="auto">auto</option>
+                        <option value="off">off</option>
+                        <option value="sun">sun</option>
+                        <option value="cloud">cloud</option>
+                        <option value="shade">shade</option>
+                        <option value="tungsten">tungsten</option>
+                        <option value="fluorescent">fluorescent</option>
+                        <option value="incandescent">incandescent</option>
+                        <option value="flash">flash</option>
+                        <option value="horizon">horizon</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="imxfx-{{id}}">Effets spéciaux</label>
+                    <select class="form-control input-sm" id="imxfx-{{id}}">
+                        <option value="none">none</option>
+                        <option value="negative">negative</option>
+                        <option value="solarise">solarise</option>
+                        <option value="sketch">sketch</option>
+                        <option value="denoise">denoise</option>
+                        <option value="emboss">emboss</option>
+                        <option value="oilpaint">oilpaint</option>
+                        <option value="hatch">hatch</option>
+                        <option value="gpen">gpen</option>
+                        <option value="pastel">pastel</option>
+                        <option value="watercolour">watercolour</option>
+                        <option value="film">film</option>
+                        <option value="blur">blur</option>
+                        <option value="saturation">saturation</option>
+                        <option value="colourswap">colourswap</option>
+                        <option value="washedout">washedout</option>
+                        <option value="posterise">posterise</option>
+                        <option value="colourpoint">colourpoint</option>
+                        <option value="colourbalance">colourbalance</option>
+                        <option value="cartoon">cartoon</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="rotation-{{id}}">Rotation</label>
+                    <select id="rotation-{{id}}" class="form-control input-sm">
+                        <option value="0">0 deg</option>
+                        <option value="90">90 deg</option>
+                        <option value="180">180 deg</option>
+                        <option value="270">270 deg</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="timeout">Temps d'attente avant le cliché (timeout)</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control input-sm" id="timeout" min="100">
+                        <div class="input-group-addon">ms</div>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" id="hflip-{{id}}"> Inversion horizontale</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" id="vflip-{{id}}"> Inversion verticale</label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12"><h3>System update</h3></div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <form class="form-inline sysup" role="form">
+            <fieldset>
+                <div class="form-group">
+                    <input type="text" class="form-control input-sm username" placeholder="User">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control input-sm pwd" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-default btn-sm">SVN UP</button>
+            </fieldset>
+        </form>
+    </div>
+</div>

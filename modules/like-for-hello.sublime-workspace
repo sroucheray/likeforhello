@@ -1,0 +1,1956 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"shootingS",
+				"shootingServer"
+			],
+			[
+				"pa",
+				"pagedColl"
+			],
+			[
+				"co",
+				"collName"
+			],
+			[
+				"get",
+				"getFiltered"
+			],
+			[
+				"coll",
+				"collection"
+			],
+			[
+				"re",
+				"returnedData"
+			],
+			[
+				"return",
+				"returnedData"
+			],
+			[
+				"visitors",
+				"getVisitors"
+			],
+			[
+				"data",
+				"databaseClient"
+			],
+			[
+				"visi",
+				"visitors"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"que",
+				"queues"
+			],
+			[
+				"cameraI",
+				"cameraId"
+			],
+			[
+				"but",
+				"buttonId"
+			],
+			[
+				"client",
+				"clientId"
+			],
+			[
+				"alert",
+				"alertState"
+			],
+			[
+				"to",
+				"toState"
+			],
+			[
+				"stat",
+				"stateServer"
+			],
+			[
+				"mes",
+				"messages"
+			],
+			[
+				"on",
+				"onReadPhotos"
+			],
+			[
+				"bro",
+				"brokerApp"
+			],
+			[
+				"host",
+				"hostname"
+			],
+			[
+				"page",
+				"pageToken"
+			],
+			[
+				"exp",
+				"expandToken"
+			],
+			[
+				"pos",
+				"postPageStory"
+			],
+			[
+				"app",
+				"appUrl"
+			],
+			[
+				"acc",
+				"acces_token"
+			],
+			[
+				"geta",
+				"getAppToken"
+			],
+			[
+				"no",
+				"no_story"
+			],
+			[
+				"phot",
+				"photoId"
+			],
+			[
+				"ad",
+				"addTagsToPhoto"
+			],
+			[
+				"ex",
+				"expandToken"
+			],
+			[
+				"log",
+				"logout"
+			],
+			[
+				"Faceb",
+				"FacebookClient"
+			],
+			[
+				"access",
+				"accessToken"
+			],
+			[
+				"acces",
+				"accessToken"
+			],
+			[
+				"Face",
+				"FacebookClient"
+			],
+			[
+				"ac",
+				"acces_token"
+			],
+			[
+				"red",
+				"redirect_uri"
+			],
+			[
+				"ace",
+				"accessToken"
+			],
+			[
+				"redirect",
+				"redirectUri"
+			],
+			[
+				"acce",
+				"access_token"
+			],
+			[
+				"a",
+				"aDay"
+			],
+			[
+				"de",
+				"debugToken"
+			],
+			[
+				"ap",
+				"api"
+			],
+			[
+				"prot",
+				"proto	Prototype"
+			],
+			[
+				"ren",
+				"renewAccessToken"
+			],
+			[
+				"q",
+				"qapi"
+			],
+			[
+				"fac",
+				"FacebookClient"
+			],
+			[
+				"Q",
+				"qFB"
+			],
+			[
+				"album",
+				"albumId"
+			],
+			[
+				"from",
+				"fromDate"
+			],
+			[
+				"creat",
+				"createdAt"
+			],
+			[
+				"bo",
+				"bodyView"
+			],
+			[
+				"m",
+				"modulesView"
+			],
+			[
+				"new",
+				"newBackend"
+			],
+			[
+				"bac",
+				"backend"
+			],
+			[
+				"ba",
+				"backendData"
+			],
+			[
+				"Dta",
+				"DataBaseClient"
+			],
+			[
+				"he",
+				"helloId"
+			],
+			[
+				"the",
+				"theHello"
+			],
+			[
+				"update",
+				"updateAttributes"
+			],
+			[
+				"and",
+				"answered"
+			],
+			[
+				"an",
+				"answered"
+			],
+			[
+				"se",
+				"settings"
+			],
+			[
+				"inv",
+				"invalidateState"
+			],
+			[
+				"loo",
+				"loopInterval"
+			],
+			[
+				"in",
+				"stateInvalidation"
+			],
+			[
+				"add",
+				"addRemoveNone"
+			],
+			[
+				"pro",
+				"promise"
+			],
+			[
+				"proto",
+				"proto	Prototype"
+			],
+			[
+				"vis",
+				"visitorsToAdd"
+			],
+			[
+				"find",
+				"findAll"
+			],
+			[
+				"dat",
+				"databaseClient"
+			],
+			[
+				"min",
+				"minRealertDelay"
+			],
+			[
+				"last",
+				"lastdate"
+			],
+			[
+				"use",
+				"userData"
+			],
+			[
+				"isL",
+				"isLoggedIn"
+			],
+			[
+				"boo",
+				"bootstrap-datetimepicker"
+			],
+			[
+				"e",
+				"eonasdan-bootstrap-datetimepicker"
+			],
+			[
+				"d",
+				"dist"
+			],
+			[
+				"adm",
+				"adminApp"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"piu",
+				"publicServerSecured"
+			],
+			[
+				"set",
+				"setupPublicApp"
+			],
+			[
+				"curren",
+				"currentMinute"
+			],
+			[
+				"cu",
+				"currentMinute"
+			],
+			[
+				"sta",
+				"stackMessage"
+			],
+			[
+				"is",
+				"isPaused"
+			],
+			[
+				"cur",
+				"currentMinute"
+			],
+			[
+				"state",
+				"stateServer"
+			],
+			[
+				"acti",
+				"activate"
+			],
+			[
+				"da",
+				"dayOfWeek"
+			],
+			[
+				"max",
+				"maxVal"
+			],
+			[
+				"Week",
+				"weekView"
+			],
+			[
+				"retr",
+				"returnedValue"
+			],
+			[
+				"parse",
+				"parsedValue"
+			],
+			[
+				"rer",
+				"returnedValue"
+			],
+			[
+				"db",
+				"dbPropertiesWithId"
+			],
+			[
+				"time",
+				"timetable"
+			],
+			[
+				"brokerS",
+				"brokerServer"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"pwd",
+				"pwdHash"
+			],
+			[
+				"create",
+				"createUser"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"upda",
+				"updateTimeoutId"
+			],
+			[
+				"shoo",
+				"shooting"
+			],
+			[
+				"eye",
+				"eye2"
+			],
+			[
+				"ey",
+				"eye"
+			],
+			[
+				"led",
+				"ledMatrix"
+			],
+			[
+				"Led",
+				"LedUtils"
+			],
+			[
+				"end",
+				"endCallback"
+			],
+			[
+				"frame",
+				"frameRows"
+			],
+			[
+				"dif",
+				"diff"
+			],
+			[
+				"start",
+				"startOffset"
+			],
+			[
+				"spl",
+				"spliceIndex"
+			],
+			[
+				"upd",
+				"updateCallbacks"
+			],
+			[
+				"fra",
+				"frameRate"
+			],
+			[
+				"ca",
+				"cancel"
+			],
+			[
+				"tw",
+				"tweenUpdateLaunched"
+			],
+			[
+				"L",
+				"LedMatrix"
+			],
+			[
+				"ne",
+				"newOffset"
+			],
+			[
+				"n",
+				"newOffset"
+			],
+			[
+				"fr",
+				"frame"
+			],
+			[
+				"fram",
+				"frameRows"
+			],
+			[
+				"x",
+				"xOffset"
+			],
+			[
+				"row",
+				"rowIndex"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "admin/Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 5939,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 172.0,
+		"selected_items":
+		[
+			[
+				"forma",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"tagw",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"for",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"form",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"fomr",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"fom",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"forla",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"foema",
+				"CodeFormatter: Format as CSS Syntax"
+			],
+			[
+				"forlma",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"up",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"formla",
+				"Snippet: for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"html",
+				"Snippet: html5"
+			],
+			[
+				"foram",
+				"Format Code"
+			],
+			[
+				"f",
+				"Format Code"
+			],
+			[
+				"fd",
+				"Format Code"
+			],
+			[
+				"foir",
+				"Snippet: for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"forme",
+				"Format Code"
+			],
+			[
+				"fo",
+				"Format Code"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"fomra",
+				"Format Code"
+			],
+			[
+				"fora",
+				"Format Code"
+			],
+			[
+				"load",
+				"SublimeLinter: Enable Debug Mode"
+			],
+			[
+				"lin",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"format",
+				"Format Code"
+			],
+			[
+				"fro",
+				"Format Code"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"FORMA",
+				"Format Code"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"reme",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"foem",
+				"Format Code"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"wra",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"wrap",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"redin",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"beauti",
+				"HTMLBeautify"
+			],
+			[
+				"camel",
+				"Convert Case: camelCase"
+			],
+			[
+				"case",
+				"Convert Case: camelCase"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"insl",
+				"Package Control: Install Package"
+			],
+			[
+				"gut",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"mark",
+				"SublimeLinter: Choose Mark Style"
+			],
+			[
+				"confi",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"sni html5",
+				"Snippet: html5"
+			],
+			[
+				"hint",
+				"JSHint: Clear Annotations"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"snippe",
+				"Snippet: html5"
+			],
+			[
+				"sn",
+				"Snippet: html5"
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"formr",
+				"Format: Javascript"
+			],
+			[
+				"upgrade",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upg",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"from",
+				"Format: Javascript"
+			],
+			[
+				"js",
+				"Format: Javascript"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"snippet",
+				"Snippet: html"
+			],
+			[
+				"html5",
+				"Snippet: HTML - HTML5 shiv"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"t",
+				"Tidy HTML"
+			],
+			[
+				"prerixs",
+				"Preferences: Prefixr Key Bindings – Default"
+			],
+			[
+				"tag",
+				"Emmet: Rename Tag"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"lor",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"jav",
+				"Format: Javascript"
+			],
+			[
+				"relo",
+				"Emmet: Reload Extensions"
+			],
+			[
+				"process",
+				"Set Syntax: Processing"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"screen",
+				"NaturalDocs: Decorate line comment"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"trail",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"pre",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"prett",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"ann",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"subli",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"list",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"setshtml",
+				"Set Syntax: HTML5"
+			],
+			[
+				"jquer",
+				"Snippet: jQuery.ajax"
+			],
+			[
+				"",
+				"Bookmarks: Toggle"
+			],
+			[
+				"sni",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"emme",
+				"Emmet: Reflect CSS Value"
+			],
+			[
+				"maer",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"mae",
+				"Markdown Preview: preview in Sublime Text"
+			],
+			[
+				"package",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"synj",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"synt ",
+				"Set Syntax: JSON"
+			],
+			[
+				"synt js",
+				"Set Syntax: JSON"
+			],
+			[
+				"mini",
+				"Minify Javascript"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"tr",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"z",
+				"Set Syntax: ZenCoding"
+			],
+			[
+				"package control: intall package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: pa",
+				"Package Control: Install Package"
+			],
+			[
+				"dele",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"SublimeLinter",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"set s jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"conso",
+				"Set Syntax: R Console"
+			],
+			[
+				"Snippet: lo",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"set syntax: ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ab",
+				"About"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 249.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/_work/GitHub/likeforhello/modules",
+		"/C/_work/GitHub/likeforhello/modules/admin"
+	],
+	"file_history":
+	[
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/webServer.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/facebookClient.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/brokerServer.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/config.json",
+		"/C/_work/_svn_projects/vvf/test/shooting/index.js",
+		"/C/Documents and Settings/sroucheray.SUBSEND/Local Settings/Temp/scp21562/home/periscope/sroucheray_vvf_tmp/modules/admin/app/application/webServer.js",
+		"/C/Documents and Settings/sroucheray.SUBSEND/Local Settings/Temp/scp41031/home/periscope/sroucheray_vvf_tmp/modules/admin/app/application/facebookClient.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/views/helpers/fromNow.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/models/visitor.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/router.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/views/partials/nav.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/data/photos.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/settings/settings.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/collections/settings.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/body.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/views/main.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/less/styles.less",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/views/partials/settings/settings.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/grunt-contrib-less/node_modules/chalk/node_modules/ansi-styles/readme.md",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/bower_components/webshim/js-webshim/dev/shims/styles/scss/_api-shim.scss",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/express-hbs/example/public/css/style.css",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/bower_components/webshim/demos/css/styles.css",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/mosca/node_modules/mongodb/lib/mongodb/connection/repl_set/strategies/statistics_strategy.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/bower_components/jquery/src/selector-sizzle.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/broker/node_modules/mosca/node_modules/shortid/.idea/codeStyleSettings.xml",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/express-hbs/test/cacheSpecs.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/app/cam.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/redisClient.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/webClient.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/script.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/databaseClient.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/index.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/stateServer.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/init/initStateServer.js",
+		"/C/Documents and Settings/sroucheray.SUBSEND/Local Settings/Temp/fz3temp-1/htaccess.bak",
+		"/C/Documents and Settings/sroucheray.SUBSEND/Local Settings/Temp/fz3temp-1/index.php",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/control/modules.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/control/photos.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/db/sqlClient.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/utils.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/dashboards/modules.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/collections/modules.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/control/alert.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/control/button.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/models.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/main.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/control/module.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/views/partials/control/modules.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/models/module.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/settings/week.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/views/login.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/lib/backbone.io/backbone.io.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/views/partials/data/photos.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/models/photo.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/collections/photos.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/views/partials/photo.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/shootingServer.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/init/initShootingServer.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/init/initWebClient.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/db/models/photo.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/index.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/broker/config.json",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/Gruntfile.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/db/models/hello.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/bower_components/bootstrap/less/forms.less",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/bower/node_modules/mout/object/forOwn.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/moment/f.coffee",
+		"/C/Documents and Settings/sroucheray.SUBSEND/Application Data/Sublime Text 3/Packages/CodeFormatter/CodeFormatter.sublime-settings",
+		"/C/Documents and Settings/sroucheray.SUBSEND/Application Data/Sublime Text 3/Packages/CodeFormatter/Default (Windows).sublime-keymap",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/bower/node_modules/cardinal/test/fixtures/foo-with-errors.js",
+		"/C/Documents and Settings/sroucheray.SUBSEND/Application Data/Sublime Text 3/Packages/User/CodeFormatter.sublime-settings",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/test/test.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/db/models/visitor.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/styles/styles.min.css",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app.min.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/collections/states.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/init/initPublicWebServer.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/package.json",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/views/main.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/engine.io.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/views/index.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/helpers/formatTime.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/partials/settings/settings.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/models/state.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/collections/states.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/views/settings/settings.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/views/body.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/main.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/partials/alert.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/views/settings/week.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/models.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/backbone.io/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/backbone.io/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Base64.as",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/bower/node_modules/mout/date/weekOfTheYear.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/collections/week.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/partials/parameters.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/partials/nav.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/router.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/models/day.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/models/setting.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/collections/settings.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/partials/settings/week.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/helpers/dayOfWeek.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/partials/parameters/timetable.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/db/models/user.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/db/models/timetable.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/collections/modules.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/init/initBrokerServer.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/db/models/setting.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/db/password.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/db/models/pool.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/partials/control/camera_controls.hbs",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/app/ledController.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/config.json",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/app/led/ledPatterns.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/models/module.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/views/control/module.js",
+		"/C/Documents and Settings/sroucheray.SUBSEND/Local Settings/Temp/scp42406/home/pi/vvf/shooting/index.js",
+		"/C/Documents and Settings/sroucheray.SUBSEND/Local Settings/Temp/scp40171/home/pi/vvf/shooting/app/ledController.js",
+		"/C/Documents and Settings/sroucheray.SUBSEND/Local Settings/Temp/scp40468/home/pi/vvf/shooting/app/led/ledMatrix.js",
+		"/C/Documents and Settings/sroucheray.SUBSEND/Local Settings/Temp/scp36875/home/pi/vvf/shooting/app/ledMatrix.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/app/led/ledMatrix.js",
+		"/C/Documents and Settings/sroucheray.SUBSEND/Local Settings/Temp/scp35000/home/pi/vvf/shooting/app/cam.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/app/ledMatrix.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/node_modules/eightbyeight/index.js",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/package.json",
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/node_modules/eightbyeight/led_backpack.js"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\init",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\admin\\public\\scripts\\app",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\admin\\public\\scripts\\views",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\admin\\public\\scripts\\app",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\init",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\application",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\admin\\public\\scripts\\app",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\init",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\application",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\admin\\public\\scripts\\app",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\node_modules\\socket.io",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\init",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\shooting\\node_modules\\svn-spawn\\lib",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\shooting\\node_modules\\svn-spawn\\node_modules\\easy-spawn",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\shooting\\node_modules\\svn-spawn\\node_modules",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\shooting\\app",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\public\\scripts\\app\\views",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\node_modules\\socket.io",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\public\\scripts",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\views",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\public",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\views",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\application",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\public\\scripts",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\application",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\app\\public\\scripts",
+			"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\admin\\bower_components\\socket.io-client",
+			"C:\\_work\\test\\wordpress\\wp-content\\plugins\\advanced-custom-fields-pro",
+			"C:\\_work\\_svn_projects\\aftparite\\site\\www\\wp-content\\plugins\\contact-form-7",
+			"C:\\_work\\_svn_projects\\aftparite\\site\\www\\wp-content\\themes\\aft",
+			"C:\\_work\\_svn_projects\\aftparite\\site\\www\\wp-content\\themes\\aft\\sass",
+			"C:\\_work\\_svn_projects\\aftparite\\site\\www\\wp-content\\themes\\aft",
+			"C:\\_work\\_svn_projects\\aftparite\\site\\www\\wp-content\\plugins\\contact-form-7",
+			"C:\\_work\\_svn_projects\\aftparite\\site\\www\\wp-content\\themes\\aft\\sass",
+			"C:\\_work\\_svn_projects\\aftparite\\site\\www\\wp-content\\themes\\aft,*.php",
+			"C:\\_work\\_svn_projects\\aftparite\\site\\www\\wp-content\\themes\\aft",
+			"C:\\_work\\_svn_projects\\aftparite\\site\\www\\wp-content\\themes\\twentyfourteen",
+			"C:\\_work\\_svn_projects\\aftparite\\site\\www\\wp-content\\themes\\aft\\sass",
+			"<open files>",
+			"C:\\_work\\_svn_projects\\vvf\\vvfhappydays\\site\\mobile\\html",
+			"C:\\_work\\_svn_projects\\vvf\\vvfreservation\\www",
+			"C:\\_work\\_svn_projects\\vvf\\valvvf-refonte-v2-site\\application\\Vvf\\views",
+			"C:\\_work\\_svn_projects\\vvf\\vvfhappydays",
+			"C:\\_work\\_svn_projects\\vvf\\valvvf-refonte-v2-site\\application\\Vvf\\views",
+			"C:\\_work\\_svn_projects\\vvf\\vvfreservation\\www",
+			"C:\\_work\\_svn_projects\\vvf\\valvvf-refonte-v2-site\\application\\Vvf\\views",
+			"C:\\_work\\_svn_projects\\arde2011\\trunk\\site\\Drupal\\sites\\all\\libraries\\superfish",
+			"C:\\_work\\_svn_projects\\arde2011\\trunk\\site\\Drupal\\sites\\all\\libraries",
+			"C:\\_work\\_svn_projects\\arde2011\\trunk\\site\\Drupal\\sites\\default",
+			"C:\\_work\\_svn_projects\\arde2011\\trunk\\site\\Drupal\\sites",
+			"C:\\_work\\_svn_projects\\arde2011\\trunk\\site\\Drupal\\sites\\default",
+			"C:\\_work\\_svn_projects\\arde2011\\trunk\\site\\Drupal\\sites\\default\\themes",
+			"C:\\_work\\_svn_projects\\euromaster\\euromastereshop\\trunk\\issues\\12219\\desktop",
+			"C:\\_work\\_svn_projects\\euromaster\\euromastereshop\\trunk\\issues\\12129\\",
+			"C:\\_work\\_svn_projects\\euromaster\\euromastereshop\\trunk\\issues\\12129\\desktop",
+			"C:\\_work\\_svn_projects\\euromaster\\euromastereshop\\trunk\\issues\\12237",
+			"C:\\_work\\_svn_projects\\euromaster\\euromastereshop\\trunk\\issues\\12235",
+			"C:\\_work\\_svn_projects\\euromaster\\euromastereshop\\trunk\\issues\\12234",
+			"C:\\_work\\_svn_projects\\euromaster\\euromastereshop\\trunk\\issues\\12233",
+			"C:\\_work\\_svn_projects\\vvf\\valvvf-refonte-v2-site\\application\\Vvf\\views",
+			"C:\\_work\\_svn_projects\\euromaster\\euromastereshop\\trunk\\issues\\12054\\node_modules\\grunt-contrib-imagemin",
+			"C:\\_work\\_svn_projects\\vvf\\valvvf-refonte-v2-site\\deploy\\public\\js",
+			"C:\\_work\\_svn_projects\\vvf\\valvvf-refonte-v2-site\\application\\Vvf\\views",
+			"C:\\_work\\_svn_projects\\vvf\\valvvf-refonte-v2-site\\deploy\\ez\\design",
+			"C:\\_work\\_svn_projects\\vvf\\valvvf-refonte-v2-site\\application\\Vvf",
+			"C:\\_work\\_svn_projects\\cjd\\cjd2011-chat\\branches\\v3_1_chat\\extension\\",
+			"C:\\_work\\_svn_projects\\cjd\\cjd2011-chat\\branches\\v3_1_chat\\extension\\chat\\design",
+			"C:\\_work\\_svn_projects\\cjd\\cjd2011-chat\\branches\\v3_1_chat\\extension\\cjd_frontend\\design\\cjd_frontend\\js",
+			"-C:\\_work\\_svn_projects\\periscope\\audit\\trunk\\sailor\\node_modules\\*",
+			"C:\\_work\\_svn_projects\\periscope\\audit\\trunk\\captain",
+			"C:\\_work\\_svn_projects\\periscope\\audit\\trunk\\captain\\captain",
+			"C:\\_work\\_svn_projects\\periscope\\audit\\trunk\\captain\\database",
+			"C:\\_work\\_svn_projects\\periscope\\audit\\trunk\\captain\\models",
+			"C:\\_work\\_svn_projects\\periscope\\audit\\trunk\\captain\\controllers",
+			"C:\\_work\\_svn_projects\\periscope\\audit\\trunk\\captain",
+			"C:\\_work\\_svn_projects\\periscope\\audit\\trunk\\captain\\node_modules\\pg\\lib",
+			"C:\\_work\\_svn_projects\\periscope\\audit\\trunk\\captain",
+			"C:\\_work\\_svn_projects\\periscope\\audit\\trunk\\captain\\node_modules\\pg\\lib",
+			"",
+			"C:\\_work\\_svn_projects\\pacei\\source-drupal\\sites\\pacei.com\\themes\\pacei",
+			"C:\\_work\\_svn_projects\\pacei\\source-drupal\\sites\\pacei.com\\modules",
+			"C:\\_work\\_svn_projects\\pacei-themes\\pacei",
+			"C:\\_work\\_svn_projects\\periscope\\experiments\\geoscope\\js",
+			"C:\\_work\\_svn_projects\\babymoov2010\\trunk\\site\\application\\Baby\\views\\chunks",
+			"",
+			"C:\\_work\\_svn_projects\\vvf\\valvvf-refonte-v2-site\\application\\Vvf\\views",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\n",
+			"views",
+			"ensureAuthenticated",
+			"login",
+			"this.publicApp.disable(\"x-powered-by\");",
+			"this.publicApp.engine",
+			"adminApp",
+			"broker_ip",
+			"broker",
+			"\"12\", \"10\"",
+			"mqttClient",
+			"mqttServerIP",
+			"id ",
+			"id",
+			"connect",
+			"ip",
+			"statusUpdated",
+			"data.ip",
+			"data",
+			"from",
+			"'",
+			"\"192\", \"168\", \"0\", \"154\"",
+			"prevenDefault",
+			"currentPage",
+			"collection",
+			"this.collection",
+			"limit",
+			"resp[self.collName]",
+			"fail",
+			"resp[self.collName]",
+			"from",
+			"visitors",
+			"Visitors",
+			"Modules",
+			"span",
+			">\n",
+			"'",
+			"resp",
+			"'",
+			": ",
+			":",
+			"visi",
+			"options",
+			"flavor",
+			"model",
+			"'",
+			"SettingsView",
+			"queueView",
+			"QueueView",
+			"queue",
+			"renewAccessToken",
+			"Error actve token",
+			"visitor",
+			"Setting",
+			"setting",
+			"Setting",
+			"PhotosView",
+			"photosView",
+			"req.model",
+			"queue has been updated",
+			"stateServer",
+			"queue",
+			"sayhello",
+			"updatin",
+			"shoot(",
+			"shoot",
+			"shootingServer.shoot(",
+			"sayHello",
+			"provi",
+			"provisionHello",
+			"orphan",
+			");",
+			"brokerServer",
+			"if",
+			"stateserver",
+			"webclient",
+			"styles",
+			"activeState",
+			"state",
+			"test",
+			"redirectUri",
+			"stateServer.getStateMessage()",
+			"databaseClient",
+			"state",
+			"settingsUpdate",
+			"updateDuration",
+			"datetimepicker",
+			"self",
+			"connect",
+			"redis",
+			"update",
+			"ip",
+			"onReconnect",
+			"debug",
+			"97\", \"85",
+			"alert_",
+			"this",
+			"socket",
+			"resolve",
+			"broker_ip.address",
+			"broker",
+			"relayPin",
+			"last_shoot_image",
+			"hello.",
+			"this.config.server.https.public",
+			"this.config.server.https.admin",
+			"this.config.server.http.admin",
+			"host",
+			"accessToken",
+			"AccessToken",
+			"accessToken",
+			"AccessToken",
+			"accessToken",
+			"AccessToken",
+			"accessToken",
+			"postStory",
+			"CAAKD86OlhTIBAOmttSd1rtBEvwQ0dENJUQpUeD9ZBKhj1HxwmMXWSe3SxZBzf8Y3EvZAWhZBEIQ5bi2ZBm6Mij2dZCCy1uiYTdCVYhWuJkBqZBe6RTyeQmZAgevpz8C493rj8txKEZBdzDbxOYmeb0KsmATfdcQSwFZCTZBGIrZArW31BnlVyZBAkzyJben8nLpBMp5UZD",
+			"getPhoto",
+			"CAAKD86OlhTIBAMmQ6dHuI05veZA8IOAQ7cRTMxGZC1ZBkRU3815OEUuAMQbLvPaUjRHQMv9vpioAe1FTCrVZBvJrQW8mkkF6IJ0K8D6PlY1xSRp9QkfpvvB47etXmty7p50EcrClbHW13MBqFYplphCa6X6BrlNeSi50naEenD96akZA1Ltup",
+			"getPhoto",
+			"privacy",
+			"'",
+			"res1",
+			"oken: \"CAAKD86OlhTIBAMmQ6dHuI05veZA8IOAQ7cRTMxGZC1ZBkRU3815OEUuAMQbLvPaUjRHQMv9vpioAe1FTCrVZBvJrQW8mkkF6IJ0K8D6PlY1xSRp9QkfpvvB47etXmty7p50EcrClbHW13MBqFYplphCa6X6BrlNeSi50naEenD96akZA1Ltup\",",
+			" à @[10203709714678221]",
+			"'",
+			"CAAKD86OlhTIBABxZBfEddDQvrDqK8cRe0vSG8UO0m0Kt85aQgqsblHBDIYRRZCIlfUSMb3BikpylY05OlZANCA5ZCpGabUEdIliwBtMipHkUKolwTOTXfOg1eN4YP5kDc7GXN4iZAbKF5KEkk50sEZCqSB4KhzvJJ5PZAtIEgvgEa7NYeWwzlZCHIvdQZBJlIzl87mDZCLzROcLJbm6AHn0gKv4ZBGoUTdknWIZD",
+			"\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"<?php echo get_site_url(); ?>\"",
+			"get_stylesheet_directory_uri",
+			"style.css",
+			"<link media=\"screen\" href=\"//client.linkeo.com/vvf-villages.fr/prod/btn-pop/css/lnkWcb.css\" type=\"text/css\" rel=\"stylesheet\"/>\n<script src=\"//client.linkeo.com/vvf-villages.fr/prod/btn-pop/js/lx.js\"></script>\n<link media=\"screen\" href=\"//client.linkeo.com/vvf-villages.fr/prod/btn-pop/css/lx.css\" type=\"text/css\" rel=\"stylesheet\" />\n</head>",
+			"<!-- Linkeo script -->\n<script type=\"text/javascript\" src=\"//wcb.linkeo.com/2.5.0/dist/js/wcb/bouton-core-min.js\"></script>\n<script type=\"text/javascript\">\n     var LnkWcb = LnkWcb || {};\n     LnkWcb.jQuery = jQuery;\n</script>\n<script type=\"text/javascript\" src=\"//client.linkeo.com/vvf-villages.fr/prod/btn-pop/js/LnkWcbBouton.js\"></script>\n<!-- End Linkeo script -->\n</body>",
+			"<a target=\"_blank\" href=\"//client.linkeo.com/vvf-villages.fr/prod/btn-pop/popup-responsive.htm \" rel=\"lf\" title=\"Je me fais rappeler\" class=\"LnkWcbForm-trigger btn btn-phone btn-block\" rev=\"width:250px; height:400px; \"><i></i>Je me fais rappeler</a>",
+			"                    <a target=\"_blank\" href=\"//client.linkeo.com/vvf-villages.fr/prod/btn-pop/popup-responsive.htm \" rel=\"lf\" title=\"Je me fais rappeler\" class=\"LnkWcbForm-trigger btn btn-phone btn-block\" rev=\"width:250px; height:400px; \"><i></i>Je me fais rappeler</a>\n<a target=\"_blank\" href=\"//client.linkeo.com/vvf-villages.fr/prod/btn-pop/popup-responsive.htm \" rel=\"lf\" title=\"Je me fais rappeler\" class=\"LnkWcbForm-trigger btn btn-phone btn-block\" rev=\"width:250px; height:400px; \"><i></i>Je me fais rappeler</a>",
+			"title=\"Je me fais rappeler\" rev=\"width:450px; height:550px; scrolling:no;\" rel=\"lf\" class=\"LnkWcbForm-trigger ",
+			"title=\"Je me fais rappeler\" rev=\"width:450px; height:550px; scrolling:no;\" class=\"LnkWcbForm-trigger ",
+			"\\n",
+			">\\n<",
+			".",
+			"./",
+			".",
+			"./",
+			"\\n",
+			"{\"lat\":\"$1\", \"lng\":\"$2\"},",
+			" lng=",
+			"lat=\"$2\" lat=\"$3\"",
+			"",
+			"selectGui",
+			"Periscope Creations",
+			"c.y+unity",
+			"c.y-unity",
+			"c.x+unitx",
+			"c.x-unitx",
+			"text",
+			"y + offh",
+			"y - offh",
+			"x + offv",
+			"x - offv",
+			"if (",
+			"\\t",
+			" leurs familles",
+			"",
+			"span class=\"label publish\" title=\"Première",
+			"span class=\"label update\" title=\"Mis à jour ",
+			"Première mise en ligne",
+			",",
+			" : ",
+			",\\n",
+			",",
+			"",
+			"context",
+			"}\n",
+			"]);\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "admin/Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5939,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								545,
+								545
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 106.0
+	},
+	"output.find_results":
+	{
+		"height": 334.0
+	},
+	"output.gjslint_result_view":
+	{
+		"height": 95.0
+	},
+	"project": "like-for-hello.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"webclient",
+				"admin\\app\\application\\webClient.js"
+			],
+			[
+				"weekhbs",
+				"admin\\app\\views\\partials\\settings\\week.hbs"
+			],
+			[
+				"viewsmodule",
+				"admin\\app\\public\\scripts\\app\\views\\control\\module.js"
+			],
+			[
+				"cam",
+				"shooting\\app\\cam.js"
+			],
+			[
+				"from",
+				"admin\\app\\views\\helpers\\fromNow.js"
+			],
+			[
+				"footer",
+				"aft\\footer.php"
+			],
+			[
+				"full",
+				"src\\desktop\\en_GB\\homecss\\full.css"
+			],
+			[
+				"full.css",
+				"src\\desktop\\nl_NL\\homecss\\full.css"
+			],
+			[
+				"searchby.css",
+				"src\\desktop\\de_DE\\homecss\\searchby.css"
+			],
+			[
+				"boot",
+				"js\\bootstrap.js"
+			],
+			[
+				"product",
+				"trunk\\issues\\12237\\mobile\\nl_NL\\themes\\mobile\\eshop-mobile-nl-R14.2-1.0.6\\js\\product.js"
+			],
+			[
+				"fittin",
+				"trunk\\issues\\12237\\mobile\\nl_NL\\themes\\mobile\\eshop-mobile-nl-R14.2-1.0.6\\js\\fittingPopup.js"
+			],
+			[
+				"205-55-16-v-91-1-220x0s.html",
+				"trunk\\issues\\12237\\mobile\\nl_NL\\205-55-16-V-91-1-220X0S.html"
+			],
+			[
+				"board",
+				"hardware\\board.js"
+			],
+			[
+				"cluster",
+				"bower_components\\openlayers\\lib\\OpenLayers\\Strategy\\Cluster.js"
+			],
+			[
+				"openlayercontrol",
+				"bower_components\\openlayers\\lib\\OpenLayers\\Control.js"
+			],
+			[
+				"modi",
+				"bower_components\\openlayers\\lib\\OpenLayers\\Control\\ModifyFeature.js"
+			],
+			[
+				"sos",
+				"bower_components\\openlayers\\lib\\OpenLayers\\Format\\SOSGetObservation.js"
+			],
+			[
+				"cluster.html",
+				"bower_components\\openlayers\\examples\\strategy-cluster-threshold.html"
+			],
+			[
+				"dispophtml",
+				"application\\Vvf\\views\\chunks\\villageDisponibilitiesItems.phtml"
+			],
+			[
+				"boots",
+				"deploy\\public\\js\\bootstrap.js"
+			],
+			[
+				"globald",
+				"deploy\\public\\js\\globalDispo.js"
+			],
+			[
+				"search3",
+				"deploy\\public\\js\\search3.js"
+			],
+			[
+				"dispo.js",
+				"deploy\\public\\js\\dispo.js"
+			],
+			[
+				"chart",
+				"deploy\\public\\css\\charte2011.css"
+			],
+			[
+				"villagesea",
+				"deploy\\public\\js\\villageSearch.js"
+			],
+			[
+				"villagedisponibilitesitem",
+				"application\\Vvf\\views\\chunks\\villageDisponibilitiesItems.phtml"
+			],
+			[
+				"villagedisponibilit",
+				"application\\Vvf\\views\\grand-public-uk\\chunks\\villageDisponibilities.phtml"
+			],
+			[
+				"modifyfea",
+				"bower_components\\openlayers\\lib\\OpenLayers\\Control\\ModifyFeature.js"
+			],
+			[
+				"open",
+				"bower_components\\openlayers\\lib\\OpenLayers.js"
+			],
+			[
+				"js-ta",
+				"2014 - Clermontech\\css\\js-talk.css"
+			],
+			[
+				"index",
+				"2014 - Clermontech\\index.html"
+			],
+			[
+				"ajaxim",
+				"modules\\chat\\ajaxim.php"
+			],
+			[
+				"modules/chat/ajaxim.php",
+				"v3_1_chat\\extension\\chat\\modules\\chat\\ajaxim.php"
+			],
+			[
+				"sys",
+				"v3_1_chat\\extension\\chat\\design\\chat\\js\\system.js"
+			],
+			[
+				"ajaxi",
+				"v3_1_chat\\extension\\chat\\modules\\chat\\ajaxim.php"
+			],
+			[
+				"chat.js",
+				"v3_1_chat\\extension\\chat\\design\\chat\\js\\chat.js"
+			],
+			[
+				"config",
+				"v3_1_chat\\extension\\chat\\design\\chat\\js\\config.js"
+			],
+			[
+				"bu",
+				"v3_1_chat\\extension\\chat\\design\\chat\\js\\buddylist.js"
+			],
+			[
+				"system",
+				"v3_1_chat\\extension\\chat\\design\\chat\\js\\system.js"
+			],
+			[
+				"system.js",
+				"v3_1_chat\\extension\\chat\\design\\chat\\js\\system.js"
+			],
+			[
+				"aj",
+				"v3_1_chat\\extension\\chat\\modules\\chat\\ajaxim.php"
+			],
+			[
+				"aja",
+				"v3_1_chat\\extension\\chat\\modules\\chat\\ajaxim.php"
+			],
+			[
+				"syst",
+				"v3_1_chat\\extension\\chat\\design\\chat\\js\\system.js"
+			],
+			[
+				"ajaxim.php",
+				"v3_1_chat\\extension\\chat\\modules\\chat\\ajaxim.php"
+			],
+			[
+				"syste",
+				"v3_1_chat\\extension\\chat\\design\\chat\\js\\system.js"
+			],
+			[
+				"dialo",
+				"v3_1_chat\\extension\\chat\\design\\chat\\js\\dialogs.js"
+			],
+			[
+				"budd",
+				"v3_1_chat\\extension\\chat\\design\\chat\\js\\buddylist.js"
+			],
+			[
+				"css",
+				"v3_1_chat\\extension\\chat\\design\\chat\\themes\\cjd\\style.css"
+			],
+			[
+				"impto",
+				"v3_1_chat\\extension\\chat\\modules\\importchat\\importchat.php"
+			],
+			[
+				"tp",
+				"v3_1_chat\\extension\\chat\\design\\chat\\templates\\content\\chat.tpl"
+			],
+			[
+				"cron",
+				"v3_1_chat\\extension\\chat\\cronjobs\\garbageCollector.php"
+			],
+			[
+				".js",
+				"v3_1_chat\\extension\\chat\\design\\chat\\js\\buddylist.js"
+			],
+			[
+				"dialog",
+				"v3_1_chat\\extension\\chat\\design\\chat\\js\\dialogs.js"
+			],
+			[
+				"tpl",
+				"v3_1_chat\\extension\\chat\\design\\chat\\templates\\content\\chat.tpl"
+			],
+			[
+				"styc",
+				"chat\\design\\chat\\themes\\cjd\\style.css"
+			],
+			[
+				"ajaixm",
+				"branches\\v3_1_chat\\extension\\chat\\modules\\chat\\ajaxim.php"
+			],
+			[
+				"php",
+				"branches\\v3_1_chat\\extension\\chat\\modules\\chat\\ajaxim.php"
+			],
+			[
+				"associ",
+				"captain\\models\\associations.js"
+			],
+			[
+				"models",
+				"captain\\models\\models.js"
+			],
+			[
+				"audit.",
+				"captain\\public\\css\\audit.css"
+			],
+			[
+				"data",
+				"captain\\database\\database.js"
+			],
+			[
+				"home",
+				"sanmarina/home.css"
+			],
+			[
+				"object3d",
+				"src/core/Object3D.js"
+			],
+			[
+				"geome",
+				"src/core/Geometry.js"
+			],
+			[
+				"scene",
+				"src/scenes/Scene.js"
+			],
+			[
+				"obje",
+				"src/core/Object3D.js"
+			],
+			[
+				"blu",
+				"glsl/demos/blur.phtml"
+			],
+			[
+				"phtml",
+				"glsl/demos/scanline.phtml"
+			],
+			[
+				"de",
+				"glsl/demo.js"
+			],
+			[
+				"sea",
+				"js/search2.js"
+			],
+			[
+				"search2",
+				"js/search2.js"
+			],
+			[
+				"",
+				"minifier/grunt.js"
+			],
+			[
+				"mini",
+				"minifier/minify.sh"
+			],
+			[
+				"en.js",
+				"js/translate/vvf/en.js"
+			],
+			[
+				"searc",
+				"js/search2.js"
+			],
+			[
+				"resa",
+				"views/grand-public/resa1.phtml"
+			],
+			[
+				"swfa",
+				"swfaddress.uncompressed.js"
+			],
+			[
+				"ba",
+				"js/libs/backbone/backbone.js"
+			],
+			[
+				"al",
+				"albums.json"
+			],
+			[
+				"ht",
+				".htaccess"
+			],
+			[
+				"bootc",
+				"js/modules/bootconfig.js"
+			],
+			[
+				".jso",
+				"albums.json"
+			],
+			[
+				"cu",
+				"js/custom.js"
+			],
+			[
+				"boo",
+				"css/bootstrap.css"
+			],
+			[
+				"villagec",
+				"javascript/modules/search/villageCards.js"
+			],
+			[
+				"sear",
+				"searchKeywords.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\_work\\_svn_projects\\vvf\\vvflikeforhello\\trunk\\modules\\likeforhello.sublime-project"
+			],
+			[
+				"di",
+				"/C/_work/_sublime_projects/diapos.sublime-project"
+			],
+			[
+				"diapos",
+				"/C/_work/_sublime_projects/diapos.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 387.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
