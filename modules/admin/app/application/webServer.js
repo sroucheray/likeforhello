@@ -67,7 +67,7 @@ WebServer.prototype.setupAdminApp = function() {
         res.redirect("/super/login");
     });
     this.publicApp.get("/super/login", function(req, res) {
-        res.render("login");
+        res.render("admin/login");
     });
 
     this.publicApp.post("/super/login", function(req, res, next) {
