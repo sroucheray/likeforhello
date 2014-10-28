@@ -77,7 +77,7 @@ WebServer.prototype.setupAdminApp = function() {
         })(req, res, next);
     });
     this.publicApp.get("/super", ensureAuthenticated, function(req, res) {
-        res.render("main");
+        res.render("admin/main");
     });
 };
 
