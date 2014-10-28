@@ -98,9 +98,9 @@ WebServer.prototype.setupPublicApp = function() {
         debugReq("%s %s", req.method, req.url);
         next();
     });
-    this.publicApp.use(express.static("bower_components"));
     //this.publicApp.use(express.static("app/admin/public/"));
     //this.publicApp.use("/scripts", express.static("app/public/views/admin/helpers/"));
+    this.publicApp.use("/lib", express.static("bower_components"));
     this.publicApp.use("/views",   express.static("app/public/views"));
     this.publicApp.use("/scripts", express.static("app/public/scripts"));
     this.publicApp.use("/styles",  express.static("app/public/styles"));
