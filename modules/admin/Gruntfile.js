@@ -36,12 +36,12 @@ module.exports = function(grunt) {
         },
         concat_css: {
             options: {
-                assetBaseUrl: "/",
+                assetBaseUrl: "/lib",
                 baseDir: "bower_components"
             },
             all: {
                 src: ["bower_components/bootstrap/dist/css/bootstrap.min.css", "bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css", "app/admin/public/styles/styles.css"],
-                dest: "app/admin/public/styles/styles.min.css"
+                dest: "app/public/styles/admin/styles.min.css"
             }
         },
         copy: {},

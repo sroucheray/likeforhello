@@ -50,7 +50,7 @@
             "underscore": "/lib/underscore/underscore",
             "backbone": "/lib/backbone/backbone",
             "socket.io": "/socket.io/socket.io",
-            "backbone.io": "admin/lib/backbone.io/backbone.io",
+            "backbone.io": "lib/backbone.io/backbone.io",
             "text": "/lib/requirejs-plugins/lib/text",
             "async": "/lib/requirejs-plugins/src/async",
             "font": "/lib/requirejs-plugins/src/font",
@@ -63,9 +63,9 @@
             helpers: true,
             i18n: false,
             templateExtension: "hbs",
-            partialsUrl: "views/admin/partials",
+            partialsUrl: "../../views/admin/partials",
             helperPathCallback: function(name) {
-                return  name;
+                return  "helpers/" + name;
             }
         },
         packages: [
