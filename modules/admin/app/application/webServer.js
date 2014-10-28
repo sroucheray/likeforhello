@@ -107,13 +107,13 @@ WebServer.prototype.setupPublicApp = function() {
     }));
     this.publicApp.use(bodyParser.json());
     this.publicApp.get("/", function(req, res) {
-        res.render("index");
+        res.render("public/index");
     });
     this.publicApp.post("/", function(req, res) {
         console.log("params", req.params);
         console.log("body", req.body);
         console.log("query", req.query);
-        res.render("index");
+        res.render("public/index");
     });
 };
 WebServer.prototype.setupBrokerApp = function() {

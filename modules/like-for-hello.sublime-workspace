@@ -517,21 +517,10 @@
 			]
 		]
 	},
-	"buffers":
-	[
-		{
-			"file": "admin/Gruntfile.js",
-			"settings":
-			{
-				"buffer_size": 5939,
-				"line_ending": "Unix"
-			}
-		}
-	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 172.0,
+		"height": 112.0,
 		"selected_items":
 		[
 			[
@@ -1041,13 +1030,9 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/C/_work/GitHub/likeforhello/modules",
-		"/C/_work/GitHub/likeforhello/modules/admin"
-	],
 	"file_history":
 	[
+		"/C/_work/GitHub/likeforhello/modules/admin/Gruntfile.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/webServer.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/facebookClient.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/brokerServer.js",
@@ -1174,12 +1159,11 @@
 		"/C/Documents and Settings/sroucheray.SUBSEND/Local Settings/Temp/scp35000/home/pi/vvf/shooting/app/cam.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/app/ledMatrix.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/node_modules/eightbyeight/index.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/package.json",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/node_modules/eightbyeight/led_backpack.js"
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/package.json"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -1280,6 +1264,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"bower_components",
+			"app/public/views",
 			"\n",
 			"views",
 			"ensureAuthenticated",
@@ -1405,9 +1391,7 @@
 			"res1",
 			"oken: \"CAAKD86OlhTIBAMmQ6dHuI05veZA8IOAQ7cRTMxGZC1ZBkRU3815OEUuAMQbLvPaUjRHQMv9vpioAe1FTCrVZBvJrQW8mkkF6IJ0K8D6PlY1xSRp9QkfpvvB47etXmty7p50EcrClbHW13MBqFYplphCa6X6BrlNeSi50naEenD96akZA1Ltup\",",
 			" à @[10203709714678221]",
-			"'",
-			"CAAKD86OlhTIBABxZBfEddDQvrDqK8cRe0vSG8UO0m0Kt85aQgqsblHBDIYRRZCIlfUSMb3BikpylY05OlZANCA5ZCpGabUEdIliwBtMipHkUKolwTOTXfOg1eN4YP5kDc7GXN4iZAbKF5KEkk50sEZCqSB4KhzvJJ5PZAtIEgvgEa7NYeWwzlZCHIvdQZBJlIzl87mDZCLzROcLJbm6AHn0gKv4ZBGoUTdknWIZD",
-			"\n"
+			"'"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1468,45 +1452,6 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"groups":
-	[
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"file": "admin/Gruntfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5939,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								545,
-								545
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		}
-	],
 	"incremental_find":
 	{
 		"height": 24.0
@@ -1550,7 +1495,6 @@
 	{
 		"height": 95.0
 	},
-	"project": "like-for-hello.sublime-project",
 	"replace":
 	{
 		"height": 44.0
@@ -1940,7 +1884,6 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
 	"settings":
 	{
 	},
