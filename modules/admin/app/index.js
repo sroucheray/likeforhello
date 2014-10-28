@@ -7,7 +7,7 @@ var socketio = require("socket.io");
 
 var webserver = require("./application/webServer")().start();
 var socketServerSecured = socketio.listen(webserver.getBrokerHTTPSServer());
-var webclient = require("./application/webClient")(webserver.getAdminHTTPSServer());
+var webclient = require("./application/webClient")(webserver.getPublicHTTPSServer());
 var brokerServer = require("./application/brokerServer")(socketServerSecured);
 var shootingServer = require("./application/shootingServer")(socketServerSecured);
 var databaseClient = require("./application/databaseClient");

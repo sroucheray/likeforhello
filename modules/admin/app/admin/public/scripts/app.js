@@ -65,7 +65,7 @@
             templateExtension: "hbs",
             partialsUrl: "/views/admin/partials",
             helperPathCallback: function(name) {
-                return "/views/helpers/" + name;
+                return "/views/admin/helpers/" + name;
             }
         },
         packages: [
