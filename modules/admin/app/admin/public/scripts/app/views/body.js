@@ -1,6 +1,6 @@
 /*eslint-env amd*/
 /*eslint camelcase:0*/
-define(["underscore", "backbone", "jquery", "app/models", "hbs!views/admin/partials/alert"], function(_, Backbone, $, models, alertTemplate) {
+define(["underscore", "backbone", "jquery", "app/models", "hbs!/views/admin/partials/alert"], function(_, Backbone, $, models, alertTemplate) {
     "use strict";
     var BodyView = Backbone.View.extend({
         el: "body",

@@ -1,6 +1,6 @@
 /*eslint-env amd*/
 /*eslint camelcase:0*/
-define(["hbs!views/admin/partials/control/button", "app/models/module", "underscore", "backbone", "app/views/utils"], function(buttonTemplate, moduleModel, _, Backbone, utils) {
+define(["hbs!/views/admin/partials/control/button", "app/models/module", "underscore", "backbone", "app/views/utils"], function(buttonTemplate, moduleModel, _, Backbone, utils) {
     "use strict";
     var ModuleView = utils.ParentView.extend({
         tagName: "div",

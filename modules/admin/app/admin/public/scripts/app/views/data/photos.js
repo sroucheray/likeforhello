@@ -1,6 +1,6 @@
 /*eslint-env amd*/
 /*eslint camelcase:0*/
-define(["hbs!views/admin/partials/data/photos", "underscore", "backbone", "app/views/utils"], function(template, _, Backbone, utils) {
+define(["hbs!/views/admin/partials/data/photos", "underscore", "backbone", "app/views/utils"], function(template, _, Backbone, utils) {
     "use strict";
     var SettingsView = utils.ParentView.extend({
         tagName: "div",

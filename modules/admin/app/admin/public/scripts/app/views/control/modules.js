@@ -1,6 +1,6 @@
 /*eslint-env amd*/
 /*eslint camelcase:0*/
-define(["hbs!views/admin/partials/control/modules",
+define(["hbs!/views/admin/partials/control/modules",
     "app/views/control/photos",
     "app/views/control/alert",
     "app/views/control/button",
