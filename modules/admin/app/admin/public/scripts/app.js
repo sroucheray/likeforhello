@@ -4,6 +4,7 @@
     "use strict";
 
     requirejs.config({
+        baseUrl: "/",
         shim: {
             "bootstrap": {
                 deps: ["jquery"]
@@ -63,7 +64,7 @@
             helpers: true,
             i18n: false,
             templateExtension: "hbs",
-            partialsUrl: "/views/admin/partials",
+            partialsUrl: "views/admin/partials",
             helperPathCallback: function(name) {
                 return "views/admin/helpers/" + name;
             }
