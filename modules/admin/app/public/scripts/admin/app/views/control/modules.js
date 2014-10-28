@@ -24,7 +24,7 @@ define(["hbs!/views/admin/partials/control/modules",
         render: function() {
             var self = this;
             var filtered = this.collection.filter(function(model) {
-                return model.get("type") === self.type;
+                return model.get("type") === self.type && !model.get("spared");
             });
 
             var counts = _.countBy(filtered, function(model) {

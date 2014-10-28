@@ -1,4 +1,4 @@
-// Date de publication : 27th October 2014  11:17:47
+// Date de publication : 28th October 2014  14:39:31
 #include <SPI.h>
 #include <Dhcp.h>
 #include <Dns.h>
@@ -11,7 +11,7 @@
 
 // Update these with values suitable for your network.
 byte mac[]                = {  0x90, 0xA2, 0xDA, 0x0F, 0x96, 0xCD }; // { 0x90, 0xA2, 0xDA, 0x0F, 0x98, 0x27 }
-byte mqttServerIP[]       = { 192, 168, 12, 104 }; // { 192, 168, 0, 154 }
+byte mqttServerIP[]       = { 192, 168, 12, 12 }; // { 192, 168, 0, 154 }
 byte relayPin[4] = {2, 7, 8};
 char id[]                      = "alert_2ndfloor_c";
 char topic_status_ip[]         = "/status/ip";

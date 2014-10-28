@@ -50,7 +50,8 @@ RedisClient.prototype.start = function() {
                     specificData.pwd = "";
                 } else {
                     specificData = {
-                        "mac": that.settings.modules[type][module].mac ? that.settings.modules[type][module].mac.join("-") : "N/A"
+                        "mac": that.settings.modules[type][module].mac ? that.settings.modules[type][module].mac.join("-") : "N/A",
+                        "spared": !!that.settings.modules[type][module].spared
                     };
                 }
                 var resultData = _.extend({}, specificData, result, commonData);
