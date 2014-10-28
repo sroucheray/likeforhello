@@ -63,9 +63,9 @@
             helpers: true,
             i18n: false,
             templateExtension: "hbs",
-            partialsUrl: "views/partials",
+            partialsUrl: "/views/partials",
             helperPathCallback: function(name) {
-                return "views/helpers/" + name;
+                return "/views/helpers/" + name;
             }
         },
         packages: [
