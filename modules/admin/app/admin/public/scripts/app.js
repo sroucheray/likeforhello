@@ -72,6 +72,5 @@
 
         ]
     });
-
     requirejs(["app/main"]);
 })();
