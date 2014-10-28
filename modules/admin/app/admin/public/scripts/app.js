@@ -4,7 +4,6 @@
     "use strict";
 
     requirejs.config({
-        baseUrl: "/",
         shim: {
             "bootstrap": {
                 deps: ["jquery"]
