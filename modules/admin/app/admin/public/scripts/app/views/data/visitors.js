@@ -1,6 +1,6 @@
 /*eslint-env amd*/
 /*eslint camelcase:0*/
-define(["hbs!views/partials/data/visitors", "underscore", "backbone", "app/views/utils", "moment", "moment-duration-format"], function(template, _, Backbone, utils, moment) {
+define(["hbs!views/admin/partials/data/visitors", "underscore", "backbone", "app/views/utils", "moment", "moment-duration-format"], function(template, _, Backbone, utils, moment) {
     "use strict";
     var VisitorsView = utils.ParentView.extend({
         tagName: "div",
