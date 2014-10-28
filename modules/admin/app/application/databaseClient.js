@@ -21,8 +21,8 @@ function omitDatabaseProperty(values, keepIndex) {
 }
 
 function DataBaseClient() {
+    debug("Setup authentication method")
     passport.use("local-login", new LocalStrategy(
-
         function(username, pwd, done) {
             sqlClient.User.find({
                 where: {
@@ -47,6 +47,7 @@ function DataBaseClient() {
 
                 return done(null, user);
             }).error(function(error) {
+                debug("Authentication error", error);
                 return done(error);
             });
 
