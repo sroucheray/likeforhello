@@ -15,7 +15,7 @@ define(["hbs!/views/admin/partials/control/alert", "app/models/module", "undersc
         render: function() {
             var model = this.model.toJSON();
 
-            this.$el.addClass("col-sm-3").html(this.template(model));
+            this.$el.addClass("col-sm-4").html(this.template(model));
 
             return this;
         },
