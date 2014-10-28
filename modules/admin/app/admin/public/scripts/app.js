@@ -63,7 +63,7 @@
             helpers: true,
             i18n: false,
             templateExtension: "hbs",
-            partialsUrl: "/views/partials",
+            partialsUrl: "/views/admin/partials",
             helperPathCallback: function(name) {
                 return "/views/helpers/" + name;
             }
