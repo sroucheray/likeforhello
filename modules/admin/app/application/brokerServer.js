@@ -14,6 +14,7 @@ BrokerServer.prototype.start = function() {
     this.io = this.socketServer.of("/broker");
 
     this.io.on("connection", function(socket) {
+        var broker_ip;
         debug("New broker connected : %s", socket.handshake.address);
 
         that.statusUpdated("broker_connected", {
