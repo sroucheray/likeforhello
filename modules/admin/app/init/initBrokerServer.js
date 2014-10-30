@@ -20,7 +20,12 @@ module.exports = function(apps) {
 
             if (result.broker === data.broker_ip) {
                 result.is_connected = false;
-                redisClient.setModuleInfos(result.id, result, function(savedResult) {
+                redisClient.setModuleInfos(result.id, result, function(err, savedResult) {
+                    if (err) {
+                        debug(err);
+                        return;
+                    }
+
                     webclient.updateModule(savedResult);
                     debug("Signal disconnection of %s module", result.id);
                 })
