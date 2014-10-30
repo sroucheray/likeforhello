@@ -25,11 +25,14 @@ define(["hbs!/views/admin/partials/dashboards", "underscore", "backbone", "app/v
             _.each(modulesGroupedByType, function(modules, type) {
                 var modulesConnectedStats = [];
                 var modulesDisconnectedStats = [];
+                var numModules = 0;
                 _.each(modules, function(module) {
 
                     if(module.get("spared")){
                         return;
                     }
+
+                    numModules++;
 
                     if(module.get("is_connected")){
                         modulesConnectedStats.push({
@@ -54,7 +57,7 @@ define(["hbs!/views/admin/partials/dashboards", "underscore", "backbone", "app/v
                 stats[type] = {
                     name: type === "cam" ? "Appareils photo" : type === "alert" ? "Gyrophare" : type === "button" ? "Barre de boutons" : type,
                     type: type,
-                    num: _.size(modules),
+                    num: numModules,
                     modules: {
                         connected : modulesConnectedStats,
                         disconnected : modulesDisconnectedStats
