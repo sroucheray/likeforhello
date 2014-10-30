@@ -10,8 +10,6 @@ module.exports = function(apps) {
 
 
     brokerServer.onDisconnected(function(data) {
-        var
-
         redisClient.getAllModulesInfos(function(err, result) {
             if (err) {
                 debug(err);
@@ -19,9 +17,9 @@ module.exports = function(apps) {
             }
             debug("Should disconnect")
 
-            if(result.broker === data.broker_ip){
+            if (result.broker === data.broker_ip) {
                 result.is_connected = false;
-                redisClient.setModuleInfos(data.id, result, function(){
+                redisClient.setModuleInfos(data.id, result, function() {
                     debug("Signal disconnection of %s module", data.id);
                 })
             }
