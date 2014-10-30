@@ -8,6 +8,18 @@ module.exports = function(apps) {
     var stateServer = apps.stateServer;
     var debug = apps.debug;
 
+
+    brokerServer.onDisconnected(function() {
+        redisClient.getAllModulesInfos(function(err, result) {
+            if (err) {
+                debug(err);
+                return;
+            }
+            debug("Should disconnect")
+            debug(result);
+        });
+    });
+
     brokerServer.onClientConnected(function(data) {
         debug("MQTT client connected %s", data.clientId);
         var lastAliveTime = new Date().getTime();
@@ -67,21 +79,21 @@ module.exports = function(apps) {
             webclient.updateModule(result);
         });
 
-        if(stateServer.state === "alert"){
+        if (stateServer.state === "alert") {
             debug("Button pushed while alert state, this is a win for team %s", data.buttonId);
             var cameraId;
-            if(data.clientId === "button_ground"){
-                    cameraId = "cam_ground";
-                }else if(data.clientId === "button_1stfloor"){
-                    cameraId = "cam_1stfloor";
+            if (data.clientId === "button_ground") {
+                cameraId = "cam_ground";
+            } else if (data.clientId === "button_1stfloor") {
+                cameraId = "cam_1stfloor";
 
-                }else if(data.clientId === "button_2ndfloor"){
-                    cameraId = "cam_2ndfloor";
-                }
+            } else if (data.clientId === "button_2ndfloor") {
+                cameraId = "cam_2ndfloor";
+            }
 
             data.camera = cameraId;
 
-            databaseClient.sayHello(data).then(function(hello){
+            databaseClient.sayHello(data).then(function(hello) {
                 stateServer.transition("active");
                 stateServer.checkState();
                 debug("Hello created");

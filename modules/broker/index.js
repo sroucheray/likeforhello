@@ -70,27 +70,3 @@ socketClient.onAlertEnable(function(data) {
 socketClient.onReconnect(function(data) {
     mqttServer.reconnect(data.clientId);
 });
-
-/*function testMQTT(){
-    mqttServer.turnAlertOn();
-    mqttServer.turnAlertOff();
-    mqttServer.disableAlert();
-    mqttServer.enableAlert();
-    mqttServer.reconnectAlert("anotherClient");
-    mqttServer.reconnectAlert("arduinoClient");
-    setTimeout(testMQTT,10000);
-}
-
-testMQTT();*/
-
-
-/*publish();
-
-function publish(){
-    server.publish(message, function() {
-        console.log("done!", arguments);
-    });
-    setTimeout(function(){
-        publish();
-    }, 4000);
-}*/
