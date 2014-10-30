@@ -14,13 +14,12 @@ BrokerServer.prototype.start = function() {
     this.io = this.socketServer.of("/broker");
 
     this.io.on("connection", function(socket) {
-        var broker_ip;
         debug("New broker connected : %s", socket.handshake.address);
 
         that.statusUpdated("broker_connected", {
-                broker_ip: broker_ip,
-                clientId : "broker"
-            });
+            broker_ip: broker_ip,
+            clientId: "broker"
+        });
         // There seem no to be an easy way to listen (.on) to all sockets
         // at the same time
         // Listen to all topics on all connected client
@@ -50,7 +49,7 @@ BrokerServer.prototype.start = function() {
             debug("Broker disconnected %s", broker_ip);
             that.statusUpdated("broker_disconnected", {
                 broker_ip: broker_ip,
-                clientId : "broker"
+                clientId: "broker"
             });
         });
 

@@ -9,14 +9,22 @@ module.exports = function(apps) {
     var debug = apps.debug;
 
 
-    brokerServer.onDisconnected(function() {
+    brokerServer.onDisconnected(function(data) {
+        var
+
         redisClient.getAllModulesInfos(function(err, result) {
             if (err) {
                 debug(err);
                 return;
             }
             debug("Should disconnect")
-            debug(result);
+
+            if(result.broker === data.broker_ip){
+                result.is_connected = false;
+                redisClient.setModuleInfos(data.id, result, function(){
+                    debug("Signal disconnection of %s module", data.id);
+                })
+            }
         });
     });
 
