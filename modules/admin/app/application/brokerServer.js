@@ -17,10 +17,6 @@ BrokerServer.prototype.start = function() {
         var broker_ip;
         debug("New broker connected : %s", socket.handshake.address);
 
-        that.statusUpdated("broker_connected", {
-            broker_ip: broker_ip,
-            clientId: "broker"
-        });
         // There seem no to be an easy way to listen (.on) to all sockets
         // at the same time
         // Listen to all topics on all connected client
@@ -54,9 +50,10 @@ BrokerServer.prototype.start = function() {
             });
         });
 
-        // When a broker reconnect, we force all its attached MQTT
-        // client to reconnect to it
-        that.reconnect();
+        that.statusUpdated("broker_connected", {
+            broker_ip: broker_ip,
+            clientId: "broker"
+        });
     });
 };
 

@@ -15,8 +15,7 @@ module.exports = function(apps) {
                 debug(err);
                 return;
             }
-            debug("Should disconnect")
-
+            debug("Should disconnect");
 
             if (result.broker === data.broker_ip) {
                 result.is_connected = false;
@@ -31,6 +30,10 @@ module.exports = function(apps) {
                 })
             }
         });
+    });
+
+    brokerServer.onConnected(function(data) {
+        brokerServer.reconnect();
     });
 
     brokerServer.onClientConnected(function(data) {
@@ -81,7 +84,8 @@ module.exports = function(apps) {
         redisClient.setModuleInfos(data.clientId, {
             "last_pushed_time": lastAliveTime,
             "last_pushed_button_id": data.buttonId,
-            "last_alive_time": lastAliveTime
+            "last_alive_time": lastAliveTime,
+            "is_connected": true
         }, function(err, result) {
             if (err) {
                 debug(err);
@@ -124,7 +128,8 @@ module.exports = function(apps) {
 
         redisClient.setModuleInfos(data.clientId, {
             "ip": data.ip,
-            "last_alive_time": lastAliveTime
+            "last_alive_time": lastAliveTime,
+            "is_connected": true
         }, function(err, result) {
             if (err) {
                 debug(err);
@@ -141,7 +146,8 @@ module.exports = function(apps) {
         var lastAliveTime = new Date().getTime();
         redisClient.setModuleInfos(data.clientId, {
             "enabled": data.enabled,
-            "last_alive_time": lastAliveTime
+            "last_alive_time": lastAliveTime,
+            "is_connected": true
         }, function(err, result) {
             if (err) {
                 debug(err);
@@ -158,7 +164,8 @@ module.exports = function(apps) {
         var lastAliveTime = new Date().getTime();
         redisClient.setModuleInfos(data.clientId, {
             "last_alive_time": lastAliveTime,
-            "on": data.on
+            "on": data.on,
+            "is_connected": true
         }, function(err, result) {
             if (err) {
                 debug(err);

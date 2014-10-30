@@ -1,4 +1,4 @@
-// Date de publication : 30th October 2014  13:45:50
+// Date de publication : 30th October 2014  14:20:37
 #include <SPI.h>
 #include <Dhcp.h>
 #include <Dns.h>
@@ -22,9 +22,6 @@ char topic_turn_off[]          = "/alert/turn_off";
 char topic_disable[]           = "/alert/disable";
 char topic_enable[]            = "/alert/enable";
 char topic_reconnect[]         = "/command/reconnect";
-
-unsigned long time;
-unsigned long reconnectDelaySec = 60 * 60;
 
 // State vars
 boolean state_enabled = true;
@@ -83,8 +80,6 @@ void connect() {
         mqttClient.subscribe(topic_reconnect);
 
         publishState();
-    }else{
-        Serial.print("MQTT connection failed");
     }
 }
 
@@ -184,13 +179,6 @@ void setup() {
 }
 
 void loop() {
-    if ((millis() > (time + reconnectDelaySec * 1000)) && (state_turned_on == false)) {
-        Serial.println("Periodic reconnection");
-        time = millis();
-        reconnect();
-    }
-
-
     if(!mqttClient.connected()) {
         Serial.println("MQTT not connected, trying to reconnect...");
         connect();
