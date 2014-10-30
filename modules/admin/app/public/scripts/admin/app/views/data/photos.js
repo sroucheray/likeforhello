@@ -16,9 +16,9 @@ define(["hbs!/views/admin/partials/data/photos", "underscore", "backbone", "app/
             /*
             this.listenTo(this.collection, "update", this.render);*/
 
-            this.listenTo(this.collection, "all", function() {
+            /*this.listenTo(this.collection, "all", function() {
                 console.log(arguments);
-            });
+            });*/
             this.render();
         },
         template: template,

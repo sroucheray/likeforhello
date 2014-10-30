@@ -80,6 +80,8 @@ void connect() {
         mqttClient.subscribe(topic_reconnect);
 
         publishState();
+    }else{
+        Serial.print("MQTT connection failed");
     }
 }
 
@@ -182,9 +184,13 @@ void loop() {
     if(!mqttClient.connected()) {
         Serial.println("MQTT not connected, trying to reconnect...");
         connect();
+    }else{
+        Serial.println("MQTT connected");
     }
 
     mqttClient.loop();
+
+    delay(1000);
 }
 
 void serialEvent() {

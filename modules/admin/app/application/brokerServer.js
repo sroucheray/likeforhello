@@ -20,19 +20,19 @@ BrokerServer.prototype.start = function() {
         // Listen to all topics on all connected client
         _.each(config.topics.status, function(topic){
             socket.on(topic, function(data){
-                data.broker_ip = socket.handshake.address;
+                //data.broker_ip = socket.handshake.address;
                 that.statusUpdated(topic, data);
             });
         });
 
         socket.on(config.topics.button.pushed, function(data){
-            data.broker_ip = socket.handshake.address;
+            //data.broker_ip = socket.handshake.address;
             that.statusUpdated(config.topics.button.pushed, data);
         });
 
         _.each(config.topics.connection, function(topic){
             socket.on(topic, function(data){
-                data.broker_ip = socket.handshake.address;
+                //data.broker_ip = socket.handshake.address;
                 that.statusUpdated(topic, data);
             });
         });

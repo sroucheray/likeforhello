@@ -1,8 +1,10 @@
 define(["hbs/handlebars", "moment"], function(Handlebars, moment) {
     "use strict";
     function fromNow(context, options) {
-        if(!options){
-            return moment(parseInt(context, 10)).fromNow();
+        var date = parseInt(context, 10);
+
+        if(context === ("" + date)){
+            return moment(date).fromNow();
         }
 
         return moment(context).fromNow();

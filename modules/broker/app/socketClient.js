@@ -39,6 +39,23 @@ SocketClient.prototype.start = function() {
         debug("Socket client reconnection failed", data);
         that.start();
     });
+
+    var os = require("os");
+    var ifaces = os.networkInterfaces();
+    for (var dev in ifaces) {
+        var alias = 0;
+        ifaces[dev].forEach(function(details) {
+            if (details.family == "IPv4") {
+                console.log(dev + (alias ? ":" + alias : ""), details.address);
+
+                if (details.address !== "127.0.0.1") {
+                    that.ip = details.address
+                }
+
+                ++alias;
+            }
+        });
+    }
 };
 
 SocketClient.prototype.onAlertTurnOn = function(callback) {
@@ -86,12 +103,14 @@ SocketClient.prototype.buttonPushed = function(buttonId, clientId) {
     debug("Socket message send button %s pushed on client %s", buttonId, clientId);
     this.client.emit(config.topics.button.pushed, {
         buttonId: buttonId,
-        clientId: clientId
+        clientId: clientId,
+        broker_ip: this.ip
     });
 };
 
 SocketClient.prototype.statusUpdate = function(topic, data) {
     debug("Socket message send update status %s", topic);
+    data.broker_ip = this.ip;
     this.client.emit(topic, data);
 };
 

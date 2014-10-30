@@ -18,9 +18,9 @@ define(["hbs!/views/admin/partials/data/visitors", "underscore", "backbone", "ap
             utils.ParentView.prototype.initialize.apply(this, arguments);
             this.listenTo(this.collection, "sync", this.render);
             this.listenTo(this.collection, "update", this.render);
-            this.listenTo(this.collection, "all", function() {
+            /*this.listenTo(this.collection, "all", function() {
                 console.log(arguments);
-            });
+            });*/
             this.collection.fetch({
                 data: {
                     collName: "visitors",
