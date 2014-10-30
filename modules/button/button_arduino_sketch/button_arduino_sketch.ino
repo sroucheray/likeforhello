@@ -21,6 +21,9 @@ char topic_disable[]           = "/button/disable";
 char topic_enable[]            = "/button/enable";
 char topic_reconnect[]         = "/command/reconnect";
 
+unsigned long time;
+unsigned long reconnectDelaySec = 60 * 60;
+
 // State vars
 boolean state_enabled = true;
 int buttonState[] = {0, 0, 0, 0};         // current state of buttons
@@ -192,6 +195,12 @@ void setup() {
 }
 
 void loop() {
+    if ((millis() > (time + reconnectDelaySec * 1000))) {
+        Serial.println("Periodic reconnection");
+        time = millis();
+        reconnect();
+    }
+
     if(!mqttClient.connected()) {
         Serial.println("MQTT not connected, trying to reconnect...");
         connect();
