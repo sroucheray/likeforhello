@@ -1,5 +1,5 @@
 {
-    "server": "https://fb.byperiscope.com:446/",
+    "server": "https://fb.byperiscope.com:8080/broker",
     "topics": {
         "alert": {
             "turn_on": "/alert/turn_on",

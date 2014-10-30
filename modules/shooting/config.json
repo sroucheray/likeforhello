@@ -1,6 +1,6 @@
 {
     "id": "",
-    "server": "https://fb.byperiscope.com:446/shooting",
+    "server": "https://fb.byperiscope.com:8080/shooting",
     "raspicam": {
         "opts": {
             "mode": "photo",
