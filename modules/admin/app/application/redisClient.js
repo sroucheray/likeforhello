@@ -110,7 +110,7 @@ RedisClient.prototype.getAllModulesInfos = function(callback, lastCallback) {
         that.getModuleInfos(name, function(err, result) {
             numRequests++;
             callback.call(that, err, parseData(result));
-            if (numRequests === modules.length) {
+            if (numRequests === modules.length && typeof lastCallback === "function") {
                 lastCallback();
             }
         });
