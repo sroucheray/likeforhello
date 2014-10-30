@@ -17,10 +17,11 @@ module.exports = function(apps) {
             }
             debug("Should disconnect")
 
+
             if (result.broker === data.broker_ip) {
                 result.is_connected = false;
-                redisClient.setModuleInfos(data.id, result, function() {
-                    debug("Signal disconnection of %s module", data.id);
+                redisClient.setModuleInfos(result.id, result, function() {
+                    debug("Signal disconnection of %s module", result.id);
                 })
             }
         });
