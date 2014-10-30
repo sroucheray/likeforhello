@@ -46,7 +46,8 @@ BrokerServer.prototype.start = function() {
         socket.on("disconnect", function() {
             debug("Broker disconnected %s", broker_ip);
             that.statusUpdated("broker_disconnected", {
-                broker_ip: broker_ip
+                broker_ip: broker_ip,
+                clientId : "broker"
             });
         });
 
