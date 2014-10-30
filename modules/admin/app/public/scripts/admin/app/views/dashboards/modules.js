@@ -26,6 +26,11 @@ define(["hbs!/views/admin/partials/dashboards", "underscore", "backbone", "app/v
                 var modulesConnectedStats = [];
                 var modulesDisconnectedStats = [];
                 _.each(modules, function(module) {
+
+                    if(module.get("spared")){
+                        return;
+                    }
+
                     if(module.get("is_connected")){
                         modulesConnectedStats.push({
                             id: module.id,
