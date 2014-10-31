@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"is",
+				"is_connected"
+			],
+			[
+				"las",
+				"lastCallback"
+			],
+			[
+				"broker",
+				"broker_ip"
+			],
+			[
+				"broker_",
+				"broker_disconnected"
+			],
+			[
+				"bro",
+				"broker_connected"
+			],
+			[
 				"shootingS",
 				"shootingServer"
 			],
@@ -82,10 +102,6 @@
 			[
 				"on",
 				"onReadPhotos"
-			],
-			[
-				"bro",
-				"brokerApp"
 			],
 			[
 				"host",
@@ -360,10 +376,6 @@
 				"stackMessage"
 			],
 			[
-				"is",
-				"isPaused"
-			],
-			[
 				"cur",
 				"currentMinute"
 			],
@@ -502,30 +514,34 @@
 			[
 				"fr",
 				"frame"
-			],
-			[
-				"fram",
-				"frameRows"
-			],
-			[
-				"x",
-				"xOffset"
-			],
-			[
-				"row",
-				"rowIndex"
 			]
 		]
 	},
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 112.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
+				"linter",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"lint",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
 				"forma",
 				"CodeFormatter: Format Code"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
 			],
 			[
 				"tagw",
@@ -558,10 +574,6 @@
 			[
 				"forlma",
 				"CodeFormatter: Format as HTML Syntax"
-			],
-			[
-				"lint",
-				"SublimeLinter: Lint This View"
 			],
 			[
 				"up",
@@ -648,20 +660,12 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
 				"instal",
 				"Package Control: Install Package"
 			],
 			[
 				"Package Control: re",
 				"Package Control: Remove Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"packa",
@@ -1032,6 +1036,9 @@
 	},
 	"file_history":
 	[
+		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initBrokerServer.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/redisClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/photos.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/package.json",
 		"/C/_work/GitHub/likeforhello/.gitignore",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/index.hbs",
@@ -1156,20 +1163,21 @@
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/partials/alert.hbs",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/views/settings/week.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/models.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/backbone.io/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/backbone.io/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Base64.as",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/bower/node_modules/mout/date/weekOfTheYear.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/collections/week.js"
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/backbone.io/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as"
 	],
 	"find":
 	{
-		"height": 48.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
 		"height": 90.0,
 		"where_history":
 		[
+			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\application",
+			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\init",
+			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\public\\scripts\\admin",
+			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\public\\views\\admin",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\public\\scripts",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\public\\views\\admin",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\public\\views\\admin\\partials",
@@ -1271,6 +1279,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"reconnect",
+			"reconnect\nreconnect\nreconnect",
+			"reconnect\nreconnect",
+			"div",
+			"data",
+			"statusUpdated",
+			"broker",
+			"ip",
+			"getModule",
+			"statusUpdated",
+			"statusUp",
+			"data.broker_ip",
+			"statusUpdate",
+			"{{else}}N/A{{/if}}",
+			"{{#if is_connected}}",
+			"console.lo",
+			"fromNow",
+			"connect",
 			"}\n",
 			"statusUpdated",
 			"\"192\", \"168\", \"12\", \"104\"",
@@ -1380,25 +1406,7 @@
 			");",
 			"brokerServer",
 			"if",
-			"stateserver",
-			"webclient",
-			"styles",
-			"activeState",
-			"state",
-			"test",
-			"redirectUri",
-			"stateServer.getStateMessage()",
-			"databaseClient",
-			"state",
-			"settingsUpdate",
-			"updateDuration",
-			"datetimepicker",
-			"self",
-			"connect",
-			"redis",
-			"update",
-			"ip",
-			"onReconnect"
+			"stateserver"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1900,7 +1908,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 278.0,
+	"side_bar_width": 348.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

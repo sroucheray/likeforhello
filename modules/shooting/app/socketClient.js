@@ -44,10 +44,18 @@ SocketClient.prototype.start = function() {
                     console.log(dev + (alias ? ":" + alias : ""), details.address);
 
                     if(details.address !== "127.0.0.1"){
-                        that.statusUpdate(config.topics.status.ip, {
-                            ip: details.address,
-                            clientId: config.id
-                        });
+
+                        function periodicUpdate(){
+                            debug("Update IP status to keep alive");
+                            that.statusUpdate(config.topics.status.ip, {
+                                ip: details.address,
+                                clientId: config.id
+                            });
+
+                            setTimeout(periodicUpdate, 1000 * 60 * 10);
+                        }
+
+                        periodicUpdate();
                     }
 
                     ++alias;
@@ -111,6 +119,7 @@ SocketClient.prototype.photoShooted = function(file, shootId) {
         });
     });
 };
+
 SocketClient.prototype.onCameraDisable = function(callback) {
     var that = this;
     this.client.on(config.topics.camera.disable, function(data) {

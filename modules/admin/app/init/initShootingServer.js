@@ -71,6 +71,7 @@ module.exports = function(apps) {
         redisClient.setModuleInfos(data.clientId, {
             "disconnected_at": lastAliveTime,
             "last_alive_time": lastAliveTime,
+            "is_connected": true,
             "shooting": true
         }, function(err, result) {
             if (err) {
@@ -106,6 +107,7 @@ module.exports = function(apps) {
                     "last_alive_time": lastAliveTime,
                     "last_shoot_time": lastAliveTime,
                     "last_shoot_image": "/photos/" + filename,
+                    "is_connected": true,
                     "shooting": false
                 }, function(err, result) {
                     if (err) {
@@ -156,6 +158,7 @@ module.exports = function(apps) {
         redisClient.setModuleInfos(data.clientId, {
             "last_alive_time": lastAliveTime,
             "ip": data.ip,
+            "is_connected": true
         }, function(err, result) {
             if (err) {
                 debug(err);
