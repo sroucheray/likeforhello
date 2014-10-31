@@ -150,13 +150,7 @@ module.exports = function(apps) {
             databaseClient.updateHelloWithPhoto(data.helloId, data).then(function() {
                 debug("TODO: publish to facebook");
                 return databaseClient.getVisitorsWithHello(data.helloId);
-            }).then(function(err, visitors) {
-                if (err) {
-                    debug("Error getting visitors with helloId");
-                    debug(err);
-                    return
-                }
-
+            }).then(function(visitors) {
                 var promises = [];
 
                 _.each(visitors, function(visitor) {

@@ -13,7 +13,7 @@ var sequelize = new Sequelize(config.mysql.database, config.mysql.username, conf
     dialect: "mysql",
     host: config.mysql.host,
     port: config.mysql.port,
-    logging: true
+    logging: function(){}
 });
 var db = {};
 var modelsBasePath = path.join(__dirname, "models");

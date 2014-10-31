@@ -4,6 +4,7 @@ var Q = require("q");
 var FB = require("fb");
 var request = require("request");
 var _ = require("underscore");
+var debug = require("debug")("admin:facebook");
 
 var appUrl = "https://www.facebook.com/pages/Test/646711455426673?sk=app_708032399246642&ref=page_internal";
 var redirectUri = "https://hello.fb.byperiscope.com/redirect_uri";
