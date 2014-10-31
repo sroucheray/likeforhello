@@ -15,9 +15,11 @@ module.exports = function(apps) {
                 debug(err);
                 return;
             }
-            debug("Should disconnect data %s, result %s", data.broker_ip, result.broker);
 
-            if (result.broker === data.broker_ip) {
+            debug("Broker disconnected", data);
+
+            if (data.broker_ip && result.broker === data.broker_ip) {
+                debug("Should disconnect data %s, result %s", data.broker_ip, result.broker);
                 result.is_connected = false;
                 redisClient.setModuleInfos(result.id, result, function(err, savedResult) {
                     if (err) {

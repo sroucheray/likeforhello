@@ -210,11 +210,10 @@ FacebookClient.prototype.greetingVisitor = function(visitor, image) {
         },
         place: pageId,
         link: appUrl,
-        picture: "https://fb.byperiscope.com:8080/photos/35542150-7d6a-4e49-9717-9c864716baae.jpg", //res.link,
+        picture: image, //res.link,
         name: "L'équipe de VVF vient de me dire Bonjour",
         caption: "Demande toi aussi un petit Bonjour !",
         description: "L'ambiance de travail à l'air sympa chez VVF"
-        //}
     });
 };
 

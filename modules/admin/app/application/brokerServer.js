@@ -15,8 +15,9 @@ BrokerServer.prototype.start = function() {
 
     this.io.on("connection", function(socket) {
         var broker_ip;
-        debug("New broker connected : %s", socket.handshake.address);
 
+        debug("New broker connected : %s", socket.handshake.address);
+debug(socket);
         // There seem no to be an easy way to listen (.on) to all sockets
         // at the same time
         // Listen to all topics on all connected client

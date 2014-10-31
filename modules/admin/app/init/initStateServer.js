@@ -156,15 +156,15 @@ module.exports = function(apps) {
                 _.each(visitors, function(visitor) {
                     visitorsNames.push(visitor.name);
                     facebookClient.greetingVisitor(visitor, "https://hello.fb.byperiscope.com" + data.filename).then(function(data) {
-                        debug("Greeted  %s (%s)", visitor.name, visitor.id);
-                        debug(data);
+                        debug("Greeted  %s (%s) with post %s", visitor.name, visitor.id, data.id);
+                        return databaseClient.updateVisitorWithPost(visitor.id, data.id);
                     }).fail(function(error) {
                         debug("Fail to greet %s (%s)", visitor.name, visitor.id);
                         debug(error);
                     });
                 });
 
-                return visitorsNames
+                return visitorsNames;
             }).then(function(someData) {
                 debug("all settled");
                 debug(someData)

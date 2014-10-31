@@ -369,4 +369,14 @@ DataBaseClient.prototype.getVisitorsWithHello = function(helloId) {
     });
 };
 
+DataBaseClient.prototype.updateVisitorWithPost = function(visitorId, postId) {
+    debug("Update visitor %s with post %s", visitorId, postId);
+
+    return sqlClient.Visitor.find(visitorId).success(function(visitor) {
+        return visitor.updateAttributes({
+            facebook_post_id: postId
+        }, ["facebook_post_id"]);
+    });
+};
+
 module.exports = new DataBaseClient();
