@@ -40,9 +40,9 @@ BrokerServer.prototype.start = function() {
         });
 
         _.each(config.topics.connection, function(topic) {
+            socket.on(topic, function(data) {
                 debug("Receive connection from broker");
                 debug(data);
-            socket.on(topic, function(data) {
                 //data.broker_ip = socket.handshake.address;
                 that.statusUpdated(topic, data);
             });
