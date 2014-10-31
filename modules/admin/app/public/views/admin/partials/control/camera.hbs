@@ -1,6 +1,6 @@
 <div class="panel {{#if is_connected}}{{#if shooting}}panel-warning{{else}}panel-success{{/if}}{{else}}panel-danger{{/if}}">
     <div class="panel-heading">{{id}}
-        <fieldset class="pull-right" {{#unless is_connected}}disabled{{/unless}}>
+        <fieldset class="pull-right">
             <div class="form-group">
                 <div class="btn-group">
                     <a href="#" role="button" class="btn {{#if is_connected}}btn-primary{{else}}btn-default{{/if}} btn-xs module-enable {{#if enabled}}disabled{{/if}}">Activer</a>
