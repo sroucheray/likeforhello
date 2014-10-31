@@ -15,7 +15,7 @@ module.exports = function(apps) {
                 debug(err);
                 return;
             }
-            debug("Should disconnect");
+            debug("Should disconnect data %s, result %s", data.broker_ip, result.broker);
 
             if (result.broker === data.broker_ip) {
                 result.is_connected = false;
