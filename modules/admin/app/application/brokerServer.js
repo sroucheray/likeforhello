@@ -22,6 +22,8 @@ BrokerServer.prototype.start = function() {
         // Listen to all topics on all connected client
         _.each(config.topics.status, function(topic) {
             socket.on(topic, function(data) {
+                debug("Receive message from broker");
+                debug(data);
                 if (data.broker_ip) {
                     broker_ip = data.broker_ip;
                 }
@@ -31,11 +33,15 @@ BrokerServer.prototype.start = function() {
         });
 
         socket.on(config.topics.button.pushed, function(data) {
+                debug("Receive button pushed from broker");
+                debug(data);
             //data.broker_ip = socket.handshake.address;
             that.statusUpdated(config.topics.button.pushed, data);
         });
 
         _.each(config.topics.connection, function(topic) {
+                debug("Receive connection from broker");
+                debug(data);
             socket.on(topic, function(data) {
                 //data.broker_ip = socket.handshake.address;
                 that.statusUpdated(topic, data);

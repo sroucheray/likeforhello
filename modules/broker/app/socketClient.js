@@ -40,6 +40,7 @@ SocketClient.prototype.start = function() {
         that.start();
     });
 
+
     var os = require("os");
     var ifaces = os.networkInterfaces();
     for (var dev in ifaces) {
