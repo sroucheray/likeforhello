@@ -78,7 +78,7 @@ SocketClient.prototype.keepAlive = function(ipAddress){
     debug("Keep alive w/ IP status %s", ipAddress);
 
     this.statusUpdate(config.topics.status.ip, {
-        ip: details.address,
+        ip: ipAddress,
         clientId: config.id
     });
 
