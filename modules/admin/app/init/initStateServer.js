@@ -160,14 +160,20 @@ module.exports = function(apps) {
                 var promises = [];
 
                 _.each(visitors, function(visitor) {
-                    visitorsNames.push(visitor.name)
-                    promises.push(facebookClient.greetingVisitor(visitor, "https://hello.fb.byperiscope.com" + data.filename));
+                    visitorsNames.push(visitor.name);
+                    facebookClient.greetingVisitor(visitor, "https://hello.fb.byperiscope.com" + data.filename).then(function(data) {
+                        debug("Greeted  %s (%s)", visitor.name, visitor.id);
+                        debug(data);
+                    }).fail(function(error) {
+                        debug("Fail to greet %s (%s)", visitor.name, visitor.id);
+                        debug(error);
+                    });
                 });
 
-                return promises;
-            }).allSettled(function() {
+                return visitorsNames
+            }).then(function(someData) {
                 debug("all settled");
-                debug(arguments)
+                debug(someData)
                 return facebookClient.postPhotoOnPage(visitorsNames, "https://hello.fb.byperiscope.com" + data.filename);
             });
 
