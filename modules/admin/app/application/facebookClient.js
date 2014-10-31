@@ -221,7 +221,7 @@ FacebookClient.prototype.postPhotoOnPage = function(visitorsName, image) {
     debug("Post photo on page %s", image);
     return this.postPageStory({
         message: "Nous venons de dire un petit bonjour à " + visitorsName.join(", "),
-        access_token: apptoken,
+        access_token: expandedPageToken,
         published: true,
         actions: {
             name: "Demande toi aussi un petit Bonjour ! à VVF",
