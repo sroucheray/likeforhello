@@ -379,4 +379,17 @@ DataBaseClient.prototype.updateVisitorWithPost = function(visitorId, postId) {
     });
 };
 
+DataBaseClient.prototype.updatePhotoWithPost = function(helloId, postId) {
+    return sqlClient.Photos.findAll({
+        order: "createdAt DESC",
+        where: {
+            HellosId: helloId
+        }
+    }).success(function(photo){
+        return photo.updateAttributes({
+            facebook_post_id: postId
+        }, ["facebook_post_id"]);
+    });
+};
+
 module.exports = new DataBaseClient();

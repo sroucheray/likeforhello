@@ -169,6 +169,11 @@ module.exports = function(apps) {
                 debug("all settled");
                 debug(someData)
                 return facebookClient.postPhotoOnPage(visitorsNames, "https://hello.fb.byperiscope.com" + data.filename);
+            }).then(function(data){
+                debug("Photo posted");
+                debug(data);
+
+                databaseClient.updatePhotoWithPost(visitor.id, data.id);
             });
 
         }
