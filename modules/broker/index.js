@@ -11,15 +11,13 @@ mqttServer.start();
 
 mqttServer.onClientConnected(function(clientId) {
     socketClient.statusUpdate(config.topics.connection.connected, {
-        clientId: clientId,
-        broker_ip: socketClient.ip
+        clientId: clientId
     });
 });
 
 mqttServer.onClientDisconnected(function(clientId) {
     socketClient.statusUpdate(config.topics.connection.disconnected, {
-        clientId: clientId,
-        broker_ip: socketClient.ip
+        clientId: clientId
     });
 });
 

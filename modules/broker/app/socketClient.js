@@ -56,6 +56,8 @@ SocketClient.prototype.start = function() {
             }
         });
     }
+
+    debug("Broker ip is %s", this.ip);
 };
 
 SocketClient.prototype.onAlertTurnOn = function(callback) {
@@ -109,8 +111,8 @@ SocketClient.prototype.buttonPushed = function(buttonId, clientId) {
 };
 
 SocketClient.prototype.statusUpdate = function(topic, data) {
-    debug("Socket message send update status %s", topic);
     data.broker_ip = this.ip;
+    debug("Socket message send update status %s (broker IP %s)", topic, this.ip);
     this.client.emit(topic, data);
 };
 
