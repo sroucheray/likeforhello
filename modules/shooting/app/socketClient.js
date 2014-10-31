@@ -44,18 +44,7 @@ SocketClient.prototype.start = function() {
                     console.log(dev + (alias ? ":" + alias : ""), details.address);
 
                     if(details.address !== "127.0.0.1"){
-
-                        function periodicUpdate(){
-                            debug("Update IP status to keep alive");
-                            that.statusUpdate(config.topics.status.ip, {
-                                ip: details.address,
-                                clientId: config.id
-                            });
-
-                            setTimeout(periodicUpdate, 1000 * 60 * 10);
-                        }
-
-                        periodicUpdate();
+                        that.keepAlive(details.address)
                     }
 
                     ++alias;
@@ -82,6 +71,20 @@ SocketClient.prototype.start = function() {
         debug("Socket client reconnection failed", data);
         that.start();
     });
+};
+
+SocketClient.prototype.keepAlive = function(ipAddress){
+    var that = this;
+    debug("Keep alive w/ IP status %s", ipAddress);
+
+    this.statusUpdate(config.topics.status.ip, {
+        ip: details.address,
+        clientId: config.id
+    });
+
+    setTimeout(function(){
+        that.periodicUpdate(ipAddress);
+    }, 1000 * 60 * 10);
 };
 
 SocketClient.prototype.onShootRequested = function(callback) {
