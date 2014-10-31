@@ -72,7 +72,7 @@ SocketClient.prototype.keepAlive = function(ipAddress) {
     });
 
     setTimeout(function() {
-        that.periodicUpdate(ipAddress);
+        that.keepAlive(ipAddress);
     }, 1000 * 60 * 10);
 };
 
