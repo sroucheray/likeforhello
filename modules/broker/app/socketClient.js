@@ -47,10 +47,12 @@ SocketClient.prototype.start = function() {
         var alias = 0;
         ifaces[dev].forEach(function(details) {
             if (details.family == "IPv4") {
-                //console.log(dev + (alias ? ":" + alias : ""), details.address);
+                console.log(dev + (alias ? ":" + alias : ""), details.address);
 
                 if (details.address !== "127.0.0.1") {
-                    that.ip = details.address
+                    that.ip = details.address;
+                    that.keepAlive(details.address);
+
                 }
 
                 ++alias;
@@ -59,6 +61,19 @@ SocketClient.prototype.start = function() {
     }
 
     debug("Broker ip is %s", this.ip);
+};
+
+SocketClient.prototype.keepAlive = function(ipAddress) {
+    var that = this;
+    debug("Keep alive w/ IP status %s", ipAddress);
+
+    this.statusUpdate(config.topics.status.ip, {
+        ip: ipAddress
+    });
+
+    setTimeout(function() {
+        that.periodicUpdate(ipAddress);
+    }, 1000 * 60 * 10);
 };
 
 SocketClient.prototype.onAlertTurnOn = function(callback) {

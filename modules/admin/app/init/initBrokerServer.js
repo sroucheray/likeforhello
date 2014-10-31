@@ -123,22 +123,29 @@ module.exports = function(apps) {
     });
 
     brokerServer.onIPUpdate(function(data) {
-        debug("MQTT client %s IP status %s", data.clientId, data.ip);
-        var lastAliveTime = new Date().getTime();
+        if(data.clientId){
+            debug("MQTT client %s IP status %s", data.clientId, data.ip);
+            var lastAliveTime = new Date().getTime();
 
-        redisClient.setModuleInfos(data.clientId, {
-            "ip": data.ip,
-            "last_alive_time": lastAliveTime,
-            "is_connected": true
-        }, function(err, result) {
-            if (err) {
-                debug(err);
-                return;
-            }
+            redisClient.setModuleInfos(data.clientId, {
+                "ip": data.ip,
+                "last_alive_time": lastAliveTime,
+                "is_connected": true
+            }, function(err, result) {
+                if (err) {
+                    debug(err);
+                    return;
+                }
 
-            result.id = data.clientId;
-            webclient.updateModule(result);
-        });
+                result.id = data.clientId;
+                webclient.updateModule(result);
+            });
+
+            return;
+        }
+
+
+        debug("MQTT broker IP is %s", data.clientId, data.ip);
     });
 
     brokerServer.onEnabledUpdate(function(data) {
