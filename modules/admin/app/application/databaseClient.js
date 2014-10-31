@@ -319,12 +319,12 @@ DataBaseClient.prototype.createOrphanPhoto = function(data) {
     });
 };
 
-DataBaseClient.prototype.getData = function(options){
-    if(options.data.collName === "photos"){
+DataBaseClient.prototype.getData = function(options) {
+    if (options.data.collName === "photos") {
         return this.getPhotos(options.data.offset, options.data.limit);
     }
 
-    if(options.data.collName === "visitors"){
+    if (options.data.collName === "visitors") {
         return this.getVisitors(options.data.offset, options.data.limit);
     }
 
@@ -352,6 +352,18 @@ DataBaseClient.prototype.getVisitors = function(offset, limit) {
         order: "createdAt DESC",
         offset: offset,
         limit: limit
+    }, {
+        raw: true
+    });
+};
+
+DataBaseClient.prototype.getVisitorsWithHello = function(helloId) {
+    debug("Get visitors with hello offset %s", helloId);
+    return sqlClient.Visitor.findAll({
+        order: "createdAt DESC",
+        where: {
+            HellosId: helloId
+        }
     }, {
         raw: true
     });

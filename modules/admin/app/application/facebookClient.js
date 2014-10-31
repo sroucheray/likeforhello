@@ -101,6 +101,9 @@ FB.request = Q.denodeify(request);
 function FacebookClient(options) {
     //FB.setAccessToken(accessToken);
     this.options = options;
+
+    this.appUrl = appUrl;
+    this.pageId = pageId;
 }
 
 FacebookClient.prototype.buildNode = function() {
@@ -189,6 +192,48 @@ FacebookClient.prototype.postPagePhoto = function(opts) {
         "POST", opts
     ];
     return this.api(node, args);
+};
+
+FacebookClient.prototype.greetingVisitor = function(visitor, image) {
+    debug("Greeting visitor %s (%s) with image %s", visitor.name, visitor.id, image);
+    return this.postUserStory({
+        message: "Une opération rigolote de la part de VVF.\nTu leur demande et ils te font un vrai bonjour personnalisé !",
+        access_token: visitor.expanded_access_token,
+        tags: [visitor.id].join(","),
+        privacy: {
+            value: "SELF"
+        },
+        actions: {
+            name: "Demande toi aussi un petit Bonjour ! à VVF",
+            link: appUrl
+        },
+        place: pageId,
+        link: appUrl,
+        picture: "https://fb.byperiscope.com:8080/photos/35542150-7d6a-4e49-9717-9c864716baae.jpg", //res.link,
+        name: "L'équipe de VVF vient de me dire Bonjour",
+        caption: "Demande toi aussi un petit Bonjour !",
+        description: "L'ambiance de travail à l'air sympa chez VVF"
+        //}
+    });
+};
+
+FacebookClient.prototype.postPhotoOnPage = function(visitorsName, image) {
+    debug("Post photo on page %s", image);
+    this.postPageStory({
+        message: "Nous venons de dire un petit bonjour à " + visitorsName.join(", "),
+        access_token: apptoken,
+        published: true,
+        actions: {
+            name: "Demande toi aussi un petit Bonjour ! à VVF",
+            link: appUrl
+        },
+        place: pageId,
+        link: appUrl,
+        picture: image, //res.link,
+        name: "L'équipe de VVF vient de me dire Bonjour",
+        caption: "Demande toi aussi un petit Bonjour !",
+        description: "L'ambiance de travail à l'air sympa chez VVF"
+    });
 };
 
 

@@ -18,6 +18,7 @@ module.exports = function(apps) {
     var databaseClient = apps.databaseClient;
     var brokerServer = apps.brokerServer;
     var shootingServer = apps.shootingServer;
+    var facebookClient = apps.facebookClient;
     var debug = apps.debug;
 
     var stateServer = apps.stateServer;
@@ -71,6 +72,7 @@ module.exports = function(apps) {
             id: "state",
             alert: true
         });
+        //TODO:update broker with alert
     });
 
     //Called in a loop
@@ -107,7 +109,7 @@ module.exports = function(apps) {
                         queue: queues.length
                     });
 
-                    if(queues.length >= minVisitorQueueLength){
+                    if (queues.length >= minVisitorQueueLength) {
                         debug("Num of visitors `%s` is >= to minimum `%s`", queues.length, minVisitorQueueLength);
                         stateServer.transition("alert");
                     }
@@ -128,7 +130,7 @@ module.exports = function(apps) {
         });
     });
 
-/*    brokerServer.onButtonPushed(function(data) {
+    /*    brokerServer.onButtonPushed(function(data) {
         debug("Button %s pushed on %s", data.buttonId, data.clientId);
         databaseClient.provisionHello().then(function(hello) {
             var match = data.clientId.match(/button_(.*)/);
@@ -142,13 +144,33 @@ module.exports = function(apps) {
 
 
     shootingServer.on("photo:created", function(data) {
+        var visitorsNames = [];
         if (data.helloId) {
             debug("Register photo with Hello %s", data.helloId);
             databaseClient.updateHelloWithPhoto(data.helloId, data).then(function() {
                 debug("TODO: publish to facebook");
+                return databaseClient.getVisitorsWithHello(data.helloId);
+            }).then(function(err, visitors) {
+                if (err) {
+                    debug("Error getting visitors with helloId");
+                    debug(err);
+                    return
+                }
+
+                var promises = [];
+
+                _.each(visitors, function(visitor) {
+                    visitorsNames.push(visitor.name)
+                    promises.push(facebookClient.greetingVisitor(visitor, "https://hello.fb.byperiscope.com" + data.filename));
+                });
+
+                return promises;
+            }).allSettled(function() {
+                debug("all settled");
+                debug(arguments)
+                return facebookClient.postPhotoOnPage(visitorsNames, "https://hello.fb.byperiscope.com" + data.filename);
             });
 
-            return;
         }
 
         debug("Register orphan photo");

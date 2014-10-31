@@ -145,7 +145,7 @@ module.exports = function(apps) {
         }
 
 
-        debug("MQTT broker IP is %s", data.clientId, data.ip);
+        debug("MQTT broker IP is %s", data.ip);
     });
 
     brokerServer.onEnabledUpdate(function(data) {
