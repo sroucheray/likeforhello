@@ -219,7 +219,7 @@ FacebookClient.prototype.greetingVisitor = function(visitor, image) {
 
 FacebookClient.prototype.postPhotoOnPage = function(visitorsName, image) {
     debug("Post photo on page %s", image);
-    this.postPageStory({
+    return this.postPageStory({
         message: "Nous venons de dire un petit bonjour à " + visitorsName.join(", "),
         access_token: apptoken,
         published: true,
