@@ -46,7 +46,7 @@ SocketClient.prototype.start = function() {
         var alias = 0;
         ifaces[dev].forEach(function(details) {
             if (details.family == "IPv4") {
-                console.log(dev + (alias ? ":" + alias : ""), details.address);
+                //console.log(dev + (alias ? ":" + alias : ""), details.address);
 
                 if (details.address !== "127.0.0.1") {
                     that.ip = details.address
