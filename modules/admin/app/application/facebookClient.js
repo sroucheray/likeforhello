@@ -218,21 +218,13 @@ FacebookClient.prototype.greetingVisitor = function(visitor, image) {
 };
 
 FacebookClient.prototype.postPhotoOnPage = function(visitorsName, image) {
-    debug("Post photo on page %s", image);
-    return this.postPageStory({
-        message: "Nous venons de dire un petit bonjour à " + visitorsName.join(", "),
-        access_token: expandedPageToken,
-        published: true,
-        actions: {
-            name: "Demande toi aussi un petit Bonjour ! à VVF",
-            link: appUrl
-        },
+    debug("Post photo %s on album %s in page %s", image, albumId, pageId);
+    return this.postPagePhoto({
+        url: image,
+        message: "L'équipe de VVF Village vient de dire un petit bonjour à " + visitorsName.join(", "),
         place: pageId,
-        link: appUrl,
-        picture: image, //res.link,
-        name: "L'équipe de VVF vient de me dire Bonjour",
-        caption: "Demande toi aussi un petit Bonjour !",
-        description: "L'ambiance de travail à l'air sympa chez VVF"
+        no_story: true,
+        access_token: expandedPageToken
     });
 };
 
