@@ -1,11 +1,10 @@
 "use strict";
+
 var sqlClient = require("./db/sqlClient");
 var password = require("./db/password");
 var _ = sqlClient.Sequelize.Utils._;
-var settings = null;
 var dbProperties = ["createdAt", "updatedAt"];
 var dbPropertiesWithId = ["createdAt", "updatedAt", "id"];
-var callbacks = {};
 var EventEmitter = require("events").EventEmitter;
 var debug = require("debug")("admin:databaseclient");
 var passport = require("passport");
@@ -21,7 +20,7 @@ function omitDatabaseProperty(values, keepIndex) {
 }
 
 function DataBaseClient() {
-    debug("Setup authentication method")
+    debug("Setup authentication method");
     passport.use("local-login", new LocalStrategy(
         function(username, pwd, done) {
             sqlClient.User.find({
@@ -380,16 +379,18 @@ DataBaseClient.prototype.updateVisitorWithPost = function(visitorId, postId) {
 };
 
 DataBaseClient.prototype.updatePhotoWithPost = function(helloId, postId) {
-    debug("Update visitor %s with post %s", visitorId, postId);
-    return sqlClient.Photos.findAll({
-        order: "createdAt DESC",
-        where: {
-            HellosId: helloId
+    debug("Update photo with hello %s with post %s", helloId, postId);
+    return sqlClient.Hellos.find(helloId).then(function(hello){
+        return hello.getPhoto();
+    }).then(function(photo){
+        if(!photo){
+            throw new Error("No photo attached to hello " + helloId);
         }
-    }).success(function(photo){
+
         return photo.updateAttributes({
             facebook_post_id: postId
         }, ["facebook_post_id"]);
+
     });
 };
 

@@ -520,9 +520,21 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 352.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"l",
+				"SublimeLinter: Lint This View"
+			],
 			[
 				"up",
 				"Package Control: Upgrade/Overwrite All Packages"
@@ -542,10 +554,6 @@
 			[
 				"linter",
 				"SublimeLinter: Choose Lint Mode"
-			],
-			[
-				"lint",
-				"SublimeLinter: Toggle Linter"
 			],
 			[
 				"remove",
@@ -750,10 +758,6 @@
 			[
 				"hint",
 				"JSHint: Clear Annotations"
-			],
-			[
-				"javas",
-				"Set Syntax: JavaScript"
 			],
 			[
 				"snippe",
@@ -1040,6 +1044,16 @@
 	},
 	"file_history":
 	[
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/databaseClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/main.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/.bowerrc",
+		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/jquery/src/data.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/jquery/src/data/var/data_priv.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/eonasdan-bootstrap-datetimepicker/tasks/bump_version.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/backbone.io/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/build/Release/obj/validation/validation.lastbuildstate",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/sequelize/lib/data-types.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/moment/locale/de-at.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/mosca/Dockerfile",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/node_modules/debug/debug.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/brokerServer.js",
 		"/C/_work/GitHub/likeforhello/modules/broker/index.js",
@@ -1057,7 +1071,6 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/app/index.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/parameters.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/Gruntfile.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/main.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/config.json",
 		"/C/_work/GitHub/likeforhello/modules/.gitgnore",
@@ -1080,7 +1093,6 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/app/admin/public/scripts/app/views/settings/settings.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/admin/public/scripts/app/views/settings/week.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/express-hbs/package.json",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/application/databaseClient.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/webServer.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/facebookClient.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/brokerServer.js",
@@ -1159,15 +1171,7 @@
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app.min.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/collections/states.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/init/initPublicWebServer.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/package.json",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/views/main.hbs",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/engine.io.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/views/index.hbs",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/helpers/formatTime.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/partials/settings/settings.hbs",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/models/state.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/collections/states.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/views/settings/settings.js"
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/package.json"
 	],
 	"find":
 	{
@@ -1283,6 +1287,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"javascript",
 			"err",
 			"er",
 			"erro",
@@ -1409,8 +1414,7 @@
 			"flavor",
 			"model",
 			"'",
-			"SettingsView",
-			"queueView"
+			"SettingsView"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1475,7 +1479,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 34.0
 	},
 	"input":
 	{
@@ -1526,6 +1530,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"databa",
+				"admin\\app\\application\\databaseClient.js"
+			],
+			[
+				"data",
+				"admin\\app\\application\\databaseClient.js"
+			],
 			[
 				"webclient",
 				"admin\\app\\application\\webClient.js"
@@ -1769,10 +1781,6 @@
 			[
 				"audit.",
 				"captain\\public\\css\\audit.css"
-			],
-			[
-				"data",
-				"captain\\database\\database.js"
 			],
 			[
 				"home",

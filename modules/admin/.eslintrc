@@ -3,6 +3,7 @@
         "node": true
     },
     "rules": {
-        "no-underscore-dangle": true
+        "no-underscore-dangle": true,
+        "camelcase": false
     }
 }
