@@ -151,8 +151,6 @@ module.exports = function(apps) {
                 debug("TODO: publish to facebook");
                 return databaseClient.getVisitorsWithHello(data.helloId);
             }).then(function(visitors) {
-                var promises = [];
-
                 _.each(visitors, function(visitor) {
                     visitorsNames.push(visitor.name);
                     facebookClient.greetingVisitor(visitor, "https://hello.fb.byperiscope.com" + data.filename).then(function(data) {
@@ -167,11 +165,15 @@ module.exports = function(apps) {
                 return visitorsNames;
             }).then(function(someData) {
                 debug("all settled");
-                debug(someData)
+                debug(someData);
                 return facebookClient.postPhotoOnPage(visitorsNames, "https://hello.fb.byperiscope.com" + data.filename);
-            }).then(function(){
+            }).then(function(facebookData) {
                 debug("Photo posted");
-                databaseClient.updatePhotoWithPost(data.helloId, data.id);
+                debug(facebookData);
+                return databaseClient.updatePhotoWithPost(data.helloId, facebookData.id);
+            }, function(error) {
+                debug("Error posting on Facebook / Updating database with posts");
+                debug(error);
             });
 
         }
