@@ -86,11 +86,14 @@ sequelize.sync({
 
     if("test" in argv){
         db.Hello.find(10).then(function(hello){
-            for(var attr in hello){
+            return hello.getPhotos();
+            /*for(var attr in hello){
                 if(typeof hello[attr] === "function"){
                     console.log(attr);
                 }
-            }
+            }*/
+        }).then(function(photos){
+            console.log(photos);
         });
     }
 });
