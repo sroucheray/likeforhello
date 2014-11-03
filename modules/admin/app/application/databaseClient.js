@@ -340,7 +340,7 @@ DataBaseClient.prototype.getPhotos = function(startDate, endDate) {
         order: "shootedAt DESC",
         where: {
             createdAt: {
-                between: [startDate, endDate]
+                between: [new Date(startDate), new Date(endDate)]
             }
         }
     }, {
@@ -354,7 +354,7 @@ DataBaseClient.prototype.getVisitors = function(startDate, endDate) {
         order: "createdAt DESC",
         where: {
             createdAt: {
-                between: [startDate, endDate]
+                between: [new Date(startDate), new Date(endDate)]
             }
         }
     }, {
