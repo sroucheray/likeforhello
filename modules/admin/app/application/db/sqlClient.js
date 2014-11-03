@@ -83,6 +83,16 @@ sequelize.sync({
             console.error(err);
         });
     }
+
+    if("test" in argv){
+        db.Hello.find(10).then(function(hello){
+            for(var attr in hello){
+                if(typeof hello[attr] === "function"){
+                    console.log(attr);
+                }
+            }
+        });
+    }
 });
 
 
