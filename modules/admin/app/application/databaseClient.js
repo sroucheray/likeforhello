@@ -320,11 +320,11 @@ DataBaseClient.prototype.createOrphanPhoto = function(data) {
 
 DataBaseClient.prototype.getData = function(options) {
     if (options.data.collName === "photos") {
-        return this.getPhotos(options.data.sartDate, options.data.endDate);
+        return this.getPhotos(options.data.startDate, options.data.endDate);
     }
 
     if (options.data.collName === "visitors") {
-        return this.getVisitors(options.data.sartDate, options.data.endDate);
+        return this.getVisitors(options.data.startDate, options.data.endDate);
     }
 
     var deffer = q.deferred();
