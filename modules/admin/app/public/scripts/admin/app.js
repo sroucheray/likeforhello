@@ -4,6 +4,7 @@
     "use strict";
 
     requirejs.config({
+        base:"https://fb.byperiscope.com/hello/likeforhello/modules/admin/app/public/scripts/admin",
         shim: {
             "bootstrap": {
                 deps: ["jquery"]
