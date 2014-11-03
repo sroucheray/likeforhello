@@ -5,7 +5,7 @@ define(["app/collections/data", "app/models/photo"], function(DataCollection, mo
         backend: "dataBackend",
         model: model.Photo,
         collName: "photos",
-        numPerLine:5,
+        numPerLine: 5,
         limit: 5
     });
 

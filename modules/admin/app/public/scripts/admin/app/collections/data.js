@@ -1,5 +1,5 @@
 /*eslint-env amd */
-define(["underscore", "backbone", "backbone.io"], function(_, Backbone) {
+define(["underscore", "backbone", "moment", "backbone.io"], function(_, Backbone, moment) {
     "use strict";
     var wrapError = function(model, options) {
         var error = options.error;
@@ -10,7 +10,6 @@ define(["underscore", "backbone", "backbone.io"], function(_, Backbone) {
             model.trigger("error", model, resp, options);
         };
     };
-
     var DataCollection = Backbone.Collection.extend({
         backend: "dataBackend",
         offset: 0,
@@ -21,7 +20,6 @@ define(["underscore", "backbone", "backbone.io"], function(_, Backbone) {
                 console.log("This fetch is not for this collection");
                 return "This fetch is not for this collection";
             }
-
             options = options ? _.clone(options) : {};
             if (options.parse === void 0) {
                 options.parse = true;
@@ -43,9 +41,35 @@ define(["underscore", "backbone", "backbone.io"], function(_, Backbone) {
             if (!this.collName) {
                 throw "Must define a collName property to this collection";
             }
-
             this.page = this.page || 0;
+        },
+        getDataByDate: function(startDate, endDate, callback) {
+            var that = this,
+                startDateTime = startDate.getTime(),
+                endDateTime = endDate.getTime();
 
+            function deliver() {
+                callback.call(that, _.filter(that.toJSON(), function(item) {
+                    var dateTime = moment(item.createdAt).valueOf();
+                    return dateTime >= startDateTime && dateTime <= endDateTime;
+                }));
+            }
+
+            if (startDateTime >= this.minDate && endDateTime <= this.maxDate) {
+                deliver();
+                return;
+            }
+
+            this.once("sync", deliver);
+
+            this.fetch({
+                data: {
+                    collName: this.collName,
+                    startDate: startDate.getTime(),
+                    endDate: endDate.getTime()
+                },
+                remove: false
+            });
         },
         getFiltered: function(offset, limit) {
             return _.filter(this.toJSON(), function(item, index) {
@@ -57,15 +81,11 @@ define(["underscore", "backbone", "backbone.io"], function(_, Backbone) {
             var offset = pageNum * this.limit;
             if (this.length > offset + this.limit) {
                 callback.call(this, this.getFiltered(offset, this.limit));
-
                 return;
             }
-
             this.once("sync", function() {
-
                 callback.call(self, self.getFiltered(offset, self.limit));
             });
-
             this.fetch({
                 data: {
                     collName: this.collName,
@@ -76,6 +96,5 @@ define(["underscore", "backbone", "backbone.io"], function(_, Backbone) {
             });
         }
     });
-
     return DataCollection;
 });

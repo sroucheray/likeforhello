@@ -1,6 +1,6 @@
 /*eslint-env amd*/
 /*eslint camelcase:0*/
-define(["hbs!/views/admin/partials/data/photos", "underscore", "backbone", "app/views/utils"], function(template, _, Backbone, utils) {
+define(["hbs!/views/admin/partials/data/photos", "underscore", "backbone", "app/views/utils", "moment"], function(template, _, Backbone, utils, moment) {
     "use strict";
     var SettingsView = utils.ParentView.extend({
         tagName: "div",
@@ -8,33 +8,36 @@ define(["hbs!/views/admin/partials/data/photos", "underscore", "backbone", "app/
         currentPage: 0,
         events: {
             "click .pagination .older": "nextData",
-            "click .pagination .newer": "prevData"
+            "click .pagination .newer": "prevData",
+            "click .pagination .today": "todayData"
         },
         initialize: function() {
             utils.ParentView.prototype.initialize.apply(this, arguments);
-            //this.listenTo(this.collection, "sync", this.render);
-            /*
-            this.listenTo(this.collection, "update", this.render);*/
 
-            /*this.listenTo(this.collection, "all", function() {
-                console.log(arguments);
-            });*/
+            this.endDate = new Date();
+            this.startDate = moment(this.endDate).subtract(1, "days").toDate();
+
+            this.$el.find(".time-control").datetimepicker({
+                language: "fr",
+                sideBySide: true,
+                dateFormat: "DD MMMM YYYY"
+            });
+
+            this.$el.find(".start-date").datetimepicker();
+
             this.render();
         },
         template: template,
         render: function() {
             var self = this;
-            this.collection.getPage(this.collection.page, function(pagedColl) {
-                var collection = _.chain(pagedColl).groupBy(function(num, index) {
+            this.collection.getDataByDate(this.startDate, this.endDate, function(datedPhotos) {
+                var collection = _.chain(datedPhotos).groupBy(function(num, index) {
                     return Math.floor(index / this.numPerLine);
                 }.bind(this)).toArray().value();
                 collection.cols = Math.floor(12 / this.numPerLine);
 
                 self.$el.html(self.template(collection));
             });
-
-
-
 
             return this;
         },

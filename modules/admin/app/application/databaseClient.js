@@ -320,11 +320,11 @@ DataBaseClient.prototype.createOrphanPhoto = function(data) {
 
 DataBaseClient.prototype.getData = function(options) {
     if (options.data.collName === "photos") {
-        return this.getPhotos(options.data.offset, options.data.limit);
+        return this.getPhotos(options.data.sartDate, options.data.endDate);
     }
 
     if (options.data.collName === "visitors") {
-        return this.getVisitors(options.data.offset, options.data.limit);
+        return this.getVisitors(options.data.sartDate, options.data.endDate);
     }
 
     var deffer = q.deferred();
@@ -334,23 +334,29 @@ DataBaseClient.prototype.getData = function(options) {
     return deffer.promise;
 };
 
-DataBaseClient.prototype.getPhotos = function(offset, limit) {
-    debug("Get photos : offset %s, limit %s", offset, limit);
+DataBaseClient.prototype.getPhotos = function(startDate, endDate) {
+    debug("Get photos between %s and %s", startDate, endDate);
     return sqlClient.Photo.findAll({
         order: "shootedAt DESC",
-        offset: offset,
-        limit: limit
+        where: {
+            createdDate: {
+                between: [startDate, endDate]
+            }
+        }
     }, {
         raw: true
     });
 };
 
-DataBaseClient.prototype.getVisitors = function(offset, limit) {
-    debug("Get visitors : offset %s, limit %s", offset, limit);
+DataBaseClient.prototype.getVisitors = function(startDate, endDate) {
+    debug("Get visitors between %s and %s", startDate, endDate);
     return sqlClient.Visitor.findAll({
         order: "createdAt DESC",
-        offset: offset,
-        limit: limit
+        where: {
+            createdDate: {
+                between: [startDate, endDate]
+            }
+        }
     }, {
         raw: true
     });
@@ -380,10 +386,10 @@ DataBaseClient.prototype.updateVisitorWithPost = function(visitorId, postId) {
 
 DataBaseClient.prototype.updatePhotoWithPost = function(helloId, postId) {
     debug("Update photo with hello %s with post %s", helloId, postId);
-    return sqlClient.Hello.find(helloId).then(function(hello){
+    return sqlClient.Hello.find(helloId).then(function(hello) {
         return hello.getPhotos();
-    }).then(function(photo){
-        if(!photo){
+    }).then(function(photo) {
+        if (!photo) {
             throw new Error("No photo attached to hello " + helloId);
         }
 

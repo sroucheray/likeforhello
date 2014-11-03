@@ -5,6 +5,33 @@
         </div>
     </div>
 </nav>
+<div class="row">
+    <div class="col-sm-12">
+        <form class="navbar-form navbar-left" role="form">
+            <div class="form-group">
+                <button type="button" class="btn btn-default older">&laquo; Précédentes</button>
+            </div>
+            <div class="form-group">
+                <div class="input-group date">
+                    <div class="input-group-addon">du</div>
+                    <input type="datetime" id="startDate" class="form-control time-control start-date" data-date-defaultdate="{{formatDate startDate format='DD MMMM YYYY'}}" data-date-format="DD MMMM YYYY" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group date">
+                    <div class="input-group-addon">au</div>
+                    <input type="datetime" id="endDate" class="form-control time-control end-date" data-date-defaultdate="{{formatDate endDate format='DD MMMM YYYY'}}" data-date-format="DD MMMM YYYY" />
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-default newer">Suivantes &raquo;</button>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-default today">Aujourd'hui</button>
+            </div>
+        </form>
+    </div>
+</div>
 {{#each this}}
 <div class="row">
     {{#each this}}

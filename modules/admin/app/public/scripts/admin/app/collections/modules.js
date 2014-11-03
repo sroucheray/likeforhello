@@ -24,7 +24,7 @@ define(["app/models/module", "backbone", "backbone.io"], function(models, Backbo
             });
 
             this.bind("backend:update", function(data) {
-                var model = self.get(data.id).set(data);
+                var model = self.get(data.id);
                 if (model) {
                     model.set(data);
                 } else {
