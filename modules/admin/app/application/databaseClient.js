@@ -380,7 +380,7 @@ DataBaseClient.prototype.updateVisitorWithPost = function(visitorId, postId) {
 
 DataBaseClient.prototype.updatePhotoWithPost = function(helloId, postId) {
     debug("Update photo with hello %s with post %s", helloId, postId);
-    return sqlClient.Hellos.find(helloId).then(function(hello){
+    return sqlClient.Hello.find(helloId).then(function(hello){
         return hello.getPhoto();
     }).then(function(photo){
         if(!photo){
