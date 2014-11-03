@@ -339,7 +339,7 @@ DataBaseClient.prototype.getPhotos = function(startDate, endDate) {
     return sqlClient.Photo.findAll({
         order: "shootedAt DESC",
         where: {
-            createdDate: {
+            createdAt: {
                 between: [startDate, endDate]
             }
         }
@@ -353,7 +353,7 @@ DataBaseClient.prototype.getVisitors = function(startDate, endDate) {
     return sqlClient.Visitor.findAll({
         order: "createdAt DESC",
         where: {
-            createdDate: {
+            createdAt: {
                 between: [startDate, endDate]
             }
         }

@@ -23,7 +23,6 @@ define(["hbs!/views/admin/partials/data/photos", "underscore", "backbone", "app/
                 dateFormat: "DD MMMM YYYY"
             });
 
-            this.$el.find(".start-date").datetimepicker();
 
             this.render();
         },
@@ -36,8 +35,11 @@ define(["hbs!/views/admin/partials/data/photos", "underscore", "backbone", "app/
                 }.bind(this)).toArray().value();
                 collection.cols = Math.floor(12 / this.numPerLine);
 
+                this.collection.startDate = moment(this.startDate).format("DD MMMM YYYY");
+                this.collection.endDate = moment(this.endDate).format("DD MMMM YYYY");
+
                 self.$el.html(self.template(collection));
-            });
+            }.bind(this));
 
             return this;
         },
