@@ -14,13 +14,13 @@
             <div class="form-group">
                 <div class="input-group date">
                     <div class="input-group-addon">du</div>
-                    <input type="datetime" id="startDate" class="form-control time-control start-date" data-date-defaultdate="{{formatDate startDate format='DD MMMM YYYY'}}" data-date-format="DD MMMM YYYY" />
+                    <input type="datetime" class="form-control time-control start-date" data-date-defaultdate="{{formatDate startDate format='DD/MM/YYYY HH:mm'}}" data-date-format="DD/MM/YYYY HH:mm" />
                 </div>
             </div>
             <div class="form-group">
                 <div class="input-group date">
                     <div class="input-group-addon">au</div>
-                    <input type="datetime" id="endDate" class="form-control time-control end-date" data-date-defaultdate="{{formatDate endDate format='DD MMMM YYYY'}}" data-date-format="DD MMMM YYYY" />
+                    <input type="datetime" class="form-control time-control end-date" data-date-defaultdate="{{formatDate endDate format='DD/MM/YYYY HH:mm'}}" data-date-format="DD/MM/YYYY HH:mm" />
                 </div>
             </div>
             <div class="form-group">
@@ -53,12 +53,3 @@
     {{/each}}
 </div>
 {{/each}}
-<div class="row">
-    <div class="col-sm-3 col-sm-offset-3 text-center">
-        <ul class="pagination">
-            <li><a href="#" class="older">&laquo; Plus anciennes</a></li>
-            <li><span>1</span></li>
-            <li><a href="#" class="newer">&raquo; Plus récentes</a></li>
-        </ul>
-    </div>
-</div>
