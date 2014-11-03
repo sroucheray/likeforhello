@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"pos",
+				"postId"
+			],
+			[
+				"vi",
+				"visitorsNames"
+			],
+			[
+				"visi",
+				"visitor"
+			],
+			[
+				"vis",
+				"visitorsNames"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"proto",
+				"proto	Prototype"
+			],
+			[
+				"page",
+				"pageId"
+			],
+			[
+				"faceb",
+				"facebookClient"
+			],
+			[
+				"ip",
+				"ipAddress"
+			],
+			[
+				"kee",
+				"keepAlive"
+			],
+			[
 				"is",
 				"is_connected"
 			],
@@ -60,10 +100,6 @@
 				"databaseClient"
 			],
 			[
-				"visi",
-				"visitors"
-			],
-			[
 				"for",
 				"for	for (…) {…}"
 			],
@@ -108,16 +144,8 @@
 				"hostname"
 			],
 			[
-				"page",
-				"pageToken"
-			],
-			[
 				"exp",
 				"expandToken"
-			],
-			[
-				"pos",
-				"postPageStory"
 			],
 			[
 				"app",
@@ -198,10 +226,6 @@
 			[
 				"ap",
 				"api"
-			],
-			[
-				"prot",
-				"proto	Prototype"
 			],
 			[
 				"ren",
@@ -298,14 +322,6 @@
 			[
 				"pro",
 				"promise"
-			],
-			[
-				"proto",
-				"proto	Prototype"
-			],
-			[
-				"vis",
-				"visitorsToAdd"
 			],
 			[
 				"find",
@@ -498,31 +514,31 @@
 			[
 				"tw",
 				"tweenUpdateLaunched"
-			],
-			[
-				"L",
-				"LedMatrix"
-			],
-			[
-				"ne",
-				"newOffset"
-			],
-			[
-				"n",
-				"newOffset"
-			],
-			[
-				"fr",
-				"frame"
 			]
 		]
 	},
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 352.0,
 		"selected_items":
 		[
+			[
+				"up",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"form",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"forma",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"show",
+				"SublimeLinter: Don’t Show Errors on Save"
+			],
 			[
 				"linter",
 				"SublimeLinter: Choose Lint Mode"
@@ -530,10 +546,6 @@
 			[
 				"lint",
 				"SublimeLinter: Toggle Linter"
-			],
-			[
-				"forma",
-				"CodeFormatter: Format Code"
 			],
 			[
 				"remove",
@@ -550,10 +562,6 @@
 			[
 				"for",
 				"CodeFormatter: Format Code"
-			],
-			[
-				"form",
-				"CodeFormatter: Format as Javascript Syntax"
 			],
 			[
 				"fomr",
@@ -574,10 +582,6 @@
 			[
 				"forlma",
 				"CodeFormatter: Format as HTML Syntax"
-			],
-			[
-				"up",
-				"Package Control: Upgrade/Overwrite All Packages"
 			],
 			[
 				"formla",
@@ -1036,7 +1040,14 @@
 	},
 	"file_history":
 	[
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/node_modules/debug/debug.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/brokerServer.js",
+		"/C/_work/GitHub/likeforhello/modules/broker/index.js",
+		"/C/_work/GitHub/likeforhello/modules/broker/app/socketClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initBrokerServer.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initShootingServer.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/control/camera.hbs",
+		"/C/_work/GitHub/likeforhello/modules/shooting/app/socketClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/redisClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/photos.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/package.json",
@@ -1046,7 +1057,6 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/app/index.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/parameters.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/Gruntfile.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/control/camera.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/main.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/config.json",
@@ -1157,13 +1167,7 @@
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/partials/settings/settings.hbs",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/models/state.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/collections/states.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/views/settings/settings.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/views/body.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/main.hbs",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/views/partials/alert.hbs",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/views/settings/week.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/models.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/backbone.io/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as"
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/public/scripts/app/views/settings/settings.js"
 	],
 	"find":
 	{
@@ -1279,6 +1283,33 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"err",
+			"er",
+			"erro",
+			"console",
+			"periodicUpdate",
+			"debug",
+			"Update camera settings contrast",
+			"hellosid",
+			"hello",
+			"'",
+			"onStatusUpdate",
+			"debug",
+			"postUserStory",
+			"fail",
+			"postPageStory",
+			"pageId",
+			"appUrl",
+			"shootingServer",
+			"each",
+			"getV",
+			"alert state",
+			"statusUpdate",
+			"disconnected",
+			"console",
+			"broker_ip",
+			"broker_disconnected",
+			"ip",
 			"reconnect",
 			"reconnect\nreconnect\nreconnect",
 			"reconnect\nreconnect",
@@ -1379,34 +1410,7 @@
 			"model",
 			"'",
 			"SettingsView",
-			"queueView",
-			"QueueView",
-			"queue",
-			"renewAccessToken",
-			"Error actve token",
-			"visitor",
-			"Setting",
-			"setting",
-			"Setting",
-			"PhotosView",
-			"photosView",
-			"req.model",
-			"queue has been updated",
-			"stateServer",
-			"queue",
-			"sayhello",
-			"updatin",
-			"shoot(",
-			"shoot",
-			"shootingServer.shoot(",
-			"sayHello",
-			"provi",
-			"provisionHello",
-			"orphan",
-			");",
-			"brokerServer",
-			"if",
-			"stateserver"
+			"queueView"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1908,7 +1912,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 348.0,
+	"side_bar_width": 319.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

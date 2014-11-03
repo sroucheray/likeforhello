@@ -380,6 +380,7 @@ DataBaseClient.prototype.updateVisitorWithPost = function(visitorId, postId) {
 };
 
 DataBaseClient.prototype.updatePhotoWithPost = function(helloId, postId) {
+    debug("Update visitor %s with post %s", visitorId, postId);
     return sqlClient.Photos.findAll({
         order: "createdAt DESC",
         where: {
