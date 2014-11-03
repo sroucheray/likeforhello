@@ -381,7 +381,7 @@ DataBaseClient.prototype.updateVisitorWithPost = function(visitorId, postId) {
 DataBaseClient.prototype.updatePhotoWithPost = function(helloId, postId) {
     debug("Update photo with hello %s with post %s", helloId, postId);
     return sqlClient.Hello.find(helloId).then(function(hello){
-        return hello.getPhoto();
+        return hello.getPhotos();
     }).then(function(photo){
         if(!photo){
             throw new Error("No photo attached to hello " + helloId);
