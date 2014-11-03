@@ -176,10 +176,11 @@ module.exports = function(apps) {
                 debug(error);
             });
 
+        } else {
+            debug("Register orphan photo");
+            databaseClient.createOrphanPhoto(data);
         }
 
-        debug("Register orphan photo");
-        databaseClient.createOrphanPhoto(data);
     });
 
     stateServer.on("transition", function(data) {
