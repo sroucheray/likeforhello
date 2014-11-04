@@ -8,29 +8,29 @@ module.exports = function(grunt) {
         less: {
             development: {
                 options: {
-                    paths: ["app/admin/less/"]
+                    paths: ["app/public/styles/admin/"]
                 }, // target name
                 files: [{
                     // no need for files, the config below should work
                     expand: true,
-                    cwd: "app/admin/less/",
+                    cwd: "app/public/styles/admin/",
                     src: "*.less",
                     ext: ".css",
-                    dest: "app/admin/public/styles/"
+                    dest: "app/public/styles/admin"
                 }]
             },
             production: {
                 options: {
-                    paths: ["app/admin/less/"],
+                    paths: ["app/public/styles/admin/"],
                     cleancss: true
                 }, // target name
                 files: [{
                     // no need for files, the config below should work
                     expand: true,
-                    cwd: "app/admin/less/",
+                    cwd: "app/public/styles/admin/",
                     src: "*.less",
                     ext: ".css",
-                    dest: "app/admin/public/styles/"
+                    dest: "app/public/styles/admin"
                 }]
             }
         },
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
                 baseDir: "bower_components"
             },
             all: {
-                src: ["bower_components/bootstrap/dist/css/bootstrap.min.css", "bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css", "app/admin/public/styles/styles.css"],
+                src: ["bower_components/bootstrap/dist/css/bootstrap.min.css", "bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css", "app/public/styles/admin/styles.css"],
                 dest: "app/public/styles/admin/styles.min.css"
             }
         },

@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"min",
+				"minDate"
+			],
+			[
+				"end",
+				"endDateTime"
+			],
+			[
+				"start",
+				"startDateTime"
+			],
+			[
+				"get",
+				"getTime"
+			],
+			[
+				"faceb",
+				"facebookData"
+			],
+			[
+				"hel",
+				"helloId"
+			],
+			[
 				"pos",
 				"postId"
 			],
@@ -30,10 +54,6 @@
 			[
 				"page",
 				"pageId"
-			],
-			[
-				"faceb",
-				"facebookClient"
 			],
 			[
 				"ip",
@@ -74,10 +94,6 @@
 			[
 				"co",
 				"collName"
-			],
-			[
-				"get",
-				"getFiltered"
 			],
 			[
 				"coll",
@@ -332,10 +348,6 @@
 				"databaseClient"
 			],
 			[
-				"min",
-				"minRealertDelay"
-			],
-			[
 				"last",
 				"lastdate"
 			],
@@ -480,20 +492,12 @@
 				"LedUtils"
 			],
 			[
-				"end",
-				"endCallback"
-			],
-			[
 				"frame",
 				"frameRows"
 			],
 			[
 				"dif",
 				"diff"
-			],
-			[
-				"start",
-				"startOffset"
 			],
 			[
 				"spl",
@@ -510,19 +514,27 @@
 			[
 				"ca",
 				"cancel"
-			],
-			[
-				"tw",
-				"tweenUpdateLaunched"
 			]
 		]
 	},
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 172.0,
 		"selected_items":
 		[
+			[
+				"forma",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"form",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"lin",
+				"SublimeLinter: Lint This View"
+			],
 			[
 				"lint",
 				"SublimeLinter: Lint This View"
@@ -538,14 +550,6 @@
 			[
 				"up",
 				"Package Control: Upgrade/Overwrite All Packages"
-			],
-			[
-				"form",
-				"CodeFormatter: Format as Javascript Syntax"
-			],
-			[
-				"forma",
-				"CodeFormatter: Format Code"
 			],
 			[
 				"show",
@@ -638,10 +642,6 @@
 			[
 				"load",
 				"SublimeLinter: Enable Debug Mode"
-			],
-			[
-				"lin",
-				"SublimeLinter: Lint This View"
 			],
 			[
 				"format",
@@ -1044,7 +1044,44 @@
 	},
 	"file_history":
 	[
+		"/C/Documents and Settings/sroucheray.SUBSEND/Application Data/Sublime Text 3/Packages/CodeFormatter/CodeFormatter.sublime-settings",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/bower/node_modules/mout/collection.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/bootstrap/js/collapse.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/bower/node_modules/mout/lang/createObject.js",
+		"/C/_work/GitHub/likeforhello/modules/shooting/app/cam.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/data.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/node_modules/noptify/actions/collectable.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt-contrib-less/node_modules/less/node_modules/request/node_modules/form-data/node_modules/combined-stream/License",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt-contrib-less/node_modules/less/node_modules/request/node_modules/form-data/node_modules/async/component.json",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/databaseClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/express-hbs/example/views/partials-other/other.html",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/sequelize/lib/dialects/postgres/hstore.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/body-parser/node_modules/on-finished/HISTORY.md",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/control/photos.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/photos.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt-contrib-less/node_modules/less/node_modules/clean-css/lib/properties/shorthand-compactor.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/require-handlebars-plugin/demo/template/coolPartial.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/express-hbs/test/optionsSpecs.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/bower/node_modules/p-throttler/node_modules/q/benchmark/scenarios.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt-contrib-copy/node_modules/chalk/node_modules/.bin/supports-color",
+		"/C/_work/GitHub/likeforhello/modules/admin/package.json",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/models/photo.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/db/models/photo.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/jquery/src/core/parseHTML.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initStateServer.js",
+		"/C/_work/GitHub/likeforhello/modules/shooting/index.js",
+		"/C/_work/GitHub/likeforhello/modules/shooting/app/ledController.js",
+		"/C/_work/GitHub/likeforhello/modules/shooting/scripts/testLed.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/modules.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/facebookClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/db/sqlClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/.eslintrc",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt-contrib-less/node_modules/less/.idea/modules.xml",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/bower-requirejs/node_modules/file-utils/tests/module.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/moment-duration-format/lib/moment-duration-format.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/bower/node_modules/graceful-fs/test/max-open.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/socket.io-client/Makefile",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/main.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/.bowerrc",
 		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/jquery/src/data.js",
@@ -1064,14 +1101,12 @@
 		"/C/_work/GitHub/likeforhello/modules/shooting/app/socketClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/redisClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/photos.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/package.json",
 		"/C/_work/GitHub/likeforhello/.gitignore",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/index.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/login.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/index.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/parameters.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/Gruntfile.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/config.json",
 		"/C/_work/GitHub/likeforhello/modules/.gitgnore",
 		"/C/_work/GitHub/likeforhello/.gitgnore",
@@ -1136,42 +1171,7 @@
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/dashboards/modules.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/collections/modules.js",
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/control/alert.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/control/button.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/models.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/main.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/control/module.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/views/partials/control/modules.hbs",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/models/module.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/settings/week.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/views/login.hbs",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/lib/backbone.io/backbone.io.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/views/partials/data/photos.hbs",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/models/photo.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/collections/photos.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/views/partials/photo.hbs",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/shootingServer.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/init/initShootingServer.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/init/initWebClient.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/db/models/photo.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/index.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/broker/config.json",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/Gruntfile.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/db/models/hello.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/bower_components/bootstrap/less/forms.less",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/bower/node_modules/mout/object/forOwn.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/moment/f.coffee",
-		"/C/Documents and Settings/sroucheray.SUBSEND/Application Data/Sublime Text 3/Packages/CodeFormatter/CodeFormatter.sublime-settings",
-		"/C/Documents and Settings/sroucheray.SUBSEND/Application Data/Sublime Text 3/Packages/CodeFormatter/Default (Windows).sublime-keymap",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/node_modules/bower/node_modules/cardinal/test/fixtures/foo-with-errors.js",
-		"/C/Documents and Settings/sroucheray.SUBSEND/Application Data/Sublime Text 3/Packages/User/CodeFormatter.sublime-settings",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/test/test.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/application/db/models/visitor.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/styles/styles.min.css",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app.min.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/collections/states.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/init/initPublicWebServer.js",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/package.json"
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/admin/app/admin/public/scripts/app/views/control/button.js"
 	],
 	"find":
 	{
@@ -1287,6 +1287,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"changeSetting",
+			"prevData",
+			"            event",
+			"nextData",
+			"pagination",
+			").format(dateFormat)",
+			"moment(",
+			"DD/MM",
+			"DD/MM/YYYY HH:mm",
+			"this.",
+			"\"DD/MM/YYYY HH:mm\"",
+			"DD MMMM YYYY",
+			"createdAt",
+			"sartDate",
+			"getdata",
+			"getdate",
+			"startDate",
+			"offset",
+			"this",
+			"endDateTim",
+			"[le] dddd DD MMMM YYYY [à] HH:mm",
+			"create(",
+			"create",
+			"createPhotos",
+			"updateVisitorWithPost",
+			"albumid",
+			"\n\n",
+			"album",
 			"javascript",
 			"err",
 			"er",
@@ -1386,35 +1414,7 @@
 			"ip",
 			"statusUpdated",
 			"data.ip",
-			"data",
-			"from",
-			"'",
-			"\"192\", \"168\", \"0\", \"154\"",
-			"prevenDefault",
-			"currentPage",
-			"collection",
-			"this.collection",
-			"limit",
-			"resp[self.collName]",
-			"fail",
-			"resp[self.collName]",
-			"from",
-			"visitors",
-			"Visitors",
-			"Modules",
-			"span",
-			">\n",
-			"'",
-			"resp",
-			"'",
-			": ",
-			":",
-			"visi",
-			"options",
-			"flavor",
-			"model",
-			"'",
-			"SettingsView"
+			"data"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1530,6 +1530,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"photo.js",
+				"admin\\app\\public\\scripts\\admin\\app\\views\\control\\photos.js"
+			],
+			[
+				"modules.js",
+				"admin\\app\\public\\scripts\\admin\\app\\collections\\modules.js"
+			],
+			[
+				"datab",
+				"admin\\app\\application\\databaseClient.js"
+			],
 			[
 				"databa",
 				"admin\\app\\application\\databaseClient.js"

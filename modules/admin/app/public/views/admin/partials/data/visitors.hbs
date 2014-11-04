@@ -1,10 +1,11 @@
-<nav role="navigation" class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a href="#" class="navbar-brand">Visiteurs</a>
-        </div>
+{{#unless length}}
+<div class="row">
+    <div class="col-sm-{{../../cols}}">
+        Aucun visiteur entre le {{formatDate startDate format='DD/MM/YYYY HH:mm'}} et le {{formatDate endDate format='DD/MM/YYYY HH:mm'}}
     </div>
-</nav>
+</div>
+{{/unless}}
+
 {{#each this}}
 <div class="row">
     {{#each this}}
@@ -22,16 +23,16 @@
                 <div class="clearfix"></div>
             </div>
             <div class="panel-body"  style="overflow:hidden">
-                <small>
+            <p>
                 <a href="mailto:{{email}}" target="_blank">{{email}}</a><br>
                 Facebook <a href="{{link}}" target="_blank">{{id}}</a><br>
                 1ère visite <span title="{{formatDate createdAt}}">{{fromNow createdAt}}</span><br>
                 Dernière visite <span title="{{formatDate updatedAt}}">{{fromNow updatedAt}}</span><br>
                 Liked : <strong>{{#ifEq hasLiked 0}}Non{{else}}Oui{{/ifEq}}</strong> ;
                 Granted : <strong>{{#ifEq granted_publish_actions 0}}Non{{else}}Oui{{/ifEq}}</strong><br>
-                Access Token : <strong>{{access_token}}</strong><br>
-                Expanded Token : <strong>{{expanded_access_token}}</strong><br>
-                </small>
+                Access Token : <strong style="word-wrap: break-word;">{{access_token}}</strong><br>
+                Expanded Token : <strong style="word-wrap: break-word;">{{expanded_access_token}}</strong><br>
+            </p>
             </div>
         </div>
     </div>

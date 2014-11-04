@@ -184,7 +184,7 @@ body {
   display: inline;
   font-weight: bold;
 }
-#content:empty + .spinner {
+div:empty + .spinner {
   display: block;
 }
 .spinner {

@@ -1,37 +1,10 @@
-<nav role="navigation" class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a href="#" class="navbar-brand">Photos</a>
-        </div>
-    </div>
-</nav>
+{{#unless length}}
 <div class="row">
-    <div class="col-sm-12">
-        <form class="navbar-form navbar-left" role="form">
-            <div class="form-group">
-                <button type="button" class="btn btn-default older">&laquo; Précédentes</button>
-            </div>
-            <div class="form-group">
-                <div class="input-group date">
-                    <div class="input-group-addon">du</div>
-                    <input type="datetime" class="form-control time-control start-date" data-date-defaultdate="{{formatDate startDate format='DD/MM/YYYY HH:mm'}}" data-date-format="DD/MM/YYYY HH:mm" />
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="input-group date">
-                    <div class="input-group-addon">au</div>
-                    <input type="datetime" class="form-control time-control end-date" data-date-defaultdate="{{formatDate endDate format='DD/MM/YYYY HH:mm'}}" data-date-format="DD/MM/YYYY HH:mm" />
-                </div>
-            </div>
-            <div class="form-group">
-                <button type="button" class="btn btn-default newer">Suivantes &raquo;</button>
-            </div>
-            <div class="form-group">
-                <button type="button" class="btn btn-default today">Aujourd'hui</button>
-            </div>
-        </form>
+    <div class="col-sm-{{../../cols}}">
+        Aucune photo entre le {{formatDate startDate format='DD/MM/YYYY HH:mm'}} et le {{formatDate endDate format='DD/MM/YYYY HH:mm'}}
     </div>
 </div>
+{{/unless}}
 {{#each this}}
 <div class="row">
     {{#each this}}
@@ -42,9 +15,9 @@
                 <img class="media-object img-responsive" src="{{filename}}?dim=392x313" alt="Photo prise {{formatDate shootedAt}}">
                 </a>
                 <div class="caption small">
-                    <p>{{formatDate shootedAt}} <br>
-                    {{#if facebook_id}}{{else}}Pas sur Facebook{{/if}} <br>
-                    {{#unless HellosId}}Hors jeu{{/unless}}
+                    <p>{{formatDate shootedAt format='DD/MM/YYYY HH:mm'}} <br>
+                    {{#if facebook_post_id}} <a href="https://facebook.com/{{facebook_post_id}}" target="_blank">Voir sur Facebook</a> {{else}}<s>Facebook</s>{{/if}} <br>
+                    {{#unless HellosId}}Image test{{else}}&nbsp;{{/unless}}
                     </p>
                 </div>
             </div>

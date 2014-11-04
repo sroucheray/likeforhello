@@ -4,9 +4,7 @@ define(["app/collections/data", "app/models/photo"], function(DataCollection, mo
     var Photos = DataCollection.extend({
         backend: "dataBackend",
         model: model.Photo,
-        collName: "photos",
-        numPerLine: 5,
-        limit: 5
+        collName: "photos"
     });
 
     return Photos;

@@ -356,7 +356,13 @@ DataBaseClient.prototype.getVisitors = function(startDate, endDate) {
             createdAt: {
                 between: [new Date(startDate), new Date(endDate)]
             }
-        }
+        },
+        include: [{
+            model: sqlClient.Hello,
+            include: [{
+                model: sqlClient.Photo
+            }]
+        }]
     }, {
         raw: true
     });

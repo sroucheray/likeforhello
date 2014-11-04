@@ -1,0 +1,25 @@
+<div class="row">
+    <form class="navbar-form navbar-left" role="form">
+        <div class="form-group">
+            <button type="button" class="btn btn-default older">&laquo; Précédents</button>
+        </div>
+        <div class="form-group">
+            <div class="input-group date">
+                <div class="input-group-addon">du</div>
+                <input type="datetime" class="form-control time-control start-date" data-date-defaultdate="{{formatDate startDate format='DD/MM/YYYY HH:mm'}}" data-date-format="DD/MM/YYYY HH:mm" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group date">
+                <div class="input-group-addon">au</div>
+                <input type="datetime" class="form-control time-control end-date" data-date-defaultdate="{{formatDate endDate format='DD/MM/YYYY HH:mm'}}" data-date-format="DD/MM/YYYY HH:mm" />
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-default newer">Suivants &raquo;</button>
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-default today">Aujourd'hui</button>
+        </div>
+    </form>
+</div>
