@@ -198,22 +198,22 @@ FacebookClient.prototype.postPagePhoto = function(opts) {
 FacebookClient.prototype.greetingVisitor = function(visitor, image) {
     debug("Greeting visitor %s (%s) with image %s", visitor.name, visitor.id, image);
     return this.postUserStory({
-        message: "Une opération rigolote de la part de VVF.\nTu leur demande et ils te font un vrai bonjour personnalisé !",
+        message: "Super idée de VVF Villages : envoyer un Bonjour à ceux qui le demande!",
         access_token: visitor.expanded_access_token,
         tags: [visitor.id].join(","),
         privacy: {
             value: "SELF"
         },
         actions: {
-            name: "Demande toi aussi un petit Bonjour ! à VVF",
+            name: "Demande ton Bonjour à VVF Villages !",
             link: appUrl
         },
         place: pageId,
         link: appUrl,
         picture: image, //res.link,
-        name: "L'équipe de VVF vient de me dire Bonjour",
-        caption: "Demande toi aussi un petit Bonjour !",
-        description: "L'ambiance de travail à l'air sympa chez VVF"
+        name: "L’équipe de VVF Villages vient de me dire Bonjour !",
+        caption: "Quelle ambiance !",
+        description: "Qui sera le plus rapide à venir vous dire Bonjour ?"
     });
 };
 

@@ -5,6 +5,7 @@ define([
     "app/collections/photos",
     "app/collections/settings",
     "app/collections/states",
+    "app/collections/statistics",
     "app/collections/visitors",
     "app/collections/week",
     "underscore",
@@ -15,6 +16,7 @@ define([
     PhotosCollection,
     SettingsCollection,
     StatesCollection,
+    StatisticsCollection,
     VisitorsCollection,
     WeekCollection,
     _
@@ -34,6 +36,9 @@ define([
                 parse: true
             }),
             states: new StatesCollection([], {
+                parse: true
+            }),
+            statistics: new StatisticsCollection([], {
                 parse: true
             }),
             visitors: new VisitorsCollection([], {

@@ -1,7 +1,7 @@
 {{#unless length}}
 <div class="row">
-    <div class="col-sm-{{../../cols}}">
-        Aucun visiteur entre le {{formatDate startDate format='DD/MM/YYYY HH:mm'}} et le {{formatDate endDate format='DD/MM/YYYY HH:mm'}}
+    <div class="col-sm-12">
+        Aucun visiteur {{#if filters.queue}}en attente{{/if}} entre le {{formatDate startDate format='DD/MM/YYYY HH:mm'}} et le {{formatDate endDate format='DD/MM/YYYY HH:mm'}}
     </div>
 </div>
 {{/unless}}
@@ -30,8 +30,26 @@
                 Dernière visite <span title="{{formatDate updatedAt}}">{{fromNow updatedAt}}</span><br>
                 Liked : <strong>{{#ifEq hasLiked 0}}Non{{else}}Oui{{/ifEq}}</strong> ;
                 Granted : <strong>{{#ifEq granted_publish_actions 0}}Non{{else}}Oui{{/ifEq}}</strong><br>
-                Access Token : <strong style="word-wrap: break-word;">{{access_token}}</strong><br>
-                Expanded Token : <strong style="word-wrap: break-word;">{{expanded_access_token}}</strong><br>
+                Access Token : <strong title="{{access_token}}">{{ellipsis 20 access_token}}...</strong><br>
+                Expanded Token : <strong title="{{access_token}}">{{ellipsis 20 expanded_access_token}}...</strong><br>
+
+                {{#if Hello.Photos.filename}}
+                {{#with Hello.Photos}}
+                <div class="thumbnail">
+                    <div class="{{#unless facebook_id}}bg-warning{{/unless}}">
+                        <a href="{{filename}}" target="_blank" style="width:100%;" title="Photo prise {{formatDate shootedAt}}">
+                        <img class="media-object img-responsive" src="{{filename}}?dim=392x313" alt="Photo prise {{formatDate shootedAt}}">
+                        </a>
+                        <div class="caption small">
+                            <p>{{formatDate shootedAt format='DD/MM/YYYY HH:mm'}} <br>
+                            {{#if facebook_post_id}} <a href="https://facebook.com/{{facebook_post_id}}" target="_blank">Voir sur Facebook</a> {{else}}<s>Facebook</s>{{/if}} <br>
+                            {{#unless HellosId}}Image test{{else}}&nbsp;{{/unless}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {{/with}}
+                {{/if}}
             </p>
             </div>
         </div>

@@ -50,6 +50,8 @@ define(["underscore", "backbone", "moment", "backbone.io"], function(_, Backbone
                 endDateTime = endDate.getTime();
 
             function deliver() {
+                var jsonData = that.toJSON();
+
                 this.minDate = moment(that.min(function(item){
                     return moment(item.createdAt).valueOf();
                 }).createdAt).valueOf();
@@ -58,11 +60,12 @@ define(["underscore", "backbone", "moment", "backbone.io"], function(_, Backbone
                     return moment(item.createdAt).valueOf();
                 }).createdAt).valueOf();
 
-                //console.log("Min %s and max %s", that.minDate, that.maxDate);
+                if (typeof that.filterFunc === "function") {
+                    jsonData = _.filter(jsonData, that.filterFunc);
+                }
 
-                callback.call(that, _.filter(that.toJSON(), function(item) {
+                callback.call(that, _.filter(jsonData, function(item) {
                     var dateTime = moment(item.createdAt).valueOf();
-                    //console.log(dateTime >= startDateTime,  dateTime <= endDateTime);
 
                     return dateTime >= startDateTime && dateTime <= endDateTime;
                 }));

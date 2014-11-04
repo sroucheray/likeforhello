@@ -116,6 +116,16 @@ define(["backbone", "app/models", "app/views/body", "app/views/nav"], function(B
             });
         }
 
+        if (what === "statistics") {
+            require(["app/views/data/statistics"], function(StatisticsView) {
+                var statisticsView = new StatisticsView({
+                    collection: models.collections.statistics
+                });
+
+                viewsTemp.add(statisticsView);
+            });
+        }
+
     }
 
 

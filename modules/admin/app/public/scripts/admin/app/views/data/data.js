@@ -36,10 +36,12 @@ define([
                 var collection = _.chain(datedData).groupBy(function(num, index) {
                     return Math.floor(index / this.numPerLine);
                 }.bind(this)).toArray().value();
+
                 collection.cols = Math.floor(12 / this.numPerLine);
 
                 collection.startDate = this.startDate;
                 collection.endDate = this.endDate;
+                collection.filters = this.collection.filters;
 
                 self.$el.find(".data-content").html(self.template(collection));
             }.bind(this));
