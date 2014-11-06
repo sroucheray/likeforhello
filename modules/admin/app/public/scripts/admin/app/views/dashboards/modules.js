@@ -28,13 +28,13 @@ define(["hbs!/views/admin/partials/dashboards", "underscore", "backbone", "app/v
                 var numModules = 0;
                 _.each(modules, function(module) {
 
-                    if(module.get("spared")){
+                    if (module.get("spared")) {
                         return;
                     }
 
                     numModules++;
 
-                    if(module.get("is_connected")){
+                    if (module.get("is_connected")) {
                         modulesConnectedStats.push({
                             id: module.id,
                             is_connected: module.get("is_connected"),
@@ -43,7 +43,7 @@ define(["hbs!/views/admin/partials/dashboards", "underscore", "backbone", "app/v
                             disconnected_at: module.get("connected_at")
 
                         });
-                    }else{
+                    } else {
                         modulesDisconnectedStats.push({
                             id: module.id,
                             is_connected: module.get("is_connected"),
@@ -59,8 +59,8 @@ define(["hbs!/views/admin/partials/dashboards", "underscore", "backbone", "app/v
                     type: type,
                     num: numModules,
                     modules: {
-                        connected : modulesConnectedStats,
-                        disconnected : modulesDisconnectedStats
+                        connected: modulesConnectedStats,
+                        disconnected: modulesDisconnectedStats
                     }
                 };
             });

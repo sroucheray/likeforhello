@@ -1,4 +1,3 @@
-
 /*eslint-env amd */
 define(["underscore", "backbone", "moment", "backbone.io"], function(_, Backbone, moment) {
     "use strict";
@@ -52,11 +51,11 @@ define(["underscore", "backbone", "moment", "backbone.io"], function(_, Backbone
             function deliver() {
                 var jsonData = that.toJSON();
 
-                this.minDate = moment(that.min(function(item){
+                this.minDate = moment(that.min(function(item) {
                     return moment(item.createdAt).valueOf();
                 }).createdAt).valueOf();
 
-                this.maxDate = moment(that.max(function(item){
+                this.maxDate = moment(that.max(function(item) {
                     return moment(item.createdAt).valueOf();
                 }).createdAt).valueOf();
 
@@ -83,6 +82,28 @@ define(["underscore", "backbone", "moment", "backbone.io"], function(_, Backbone
                     collName: this.collName,
                     startDate: startDate.getTime(),
                     endDate: endDate.getTime()
+                },
+                remove: false
+            });
+        },
+        getAllData: function(callback) {
+            var that = this;
+
+            function deliver() {
+                var jsonData = that.toJSON();
+
+                if (typeof that.filterFunc === "function") {
+                    jsonData = _.filter(jsonData, that.filterFunc);
+                }
+
+                callback.call(that, jsonData);
+            }
+
+            this.once("sync", deliver);
+
+            this.fetch({
+                data: {
+                    collName: this.collName
                 },
                 remove: false
             });

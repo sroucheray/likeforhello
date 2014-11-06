@@ -56,6 +56,7 @@
             "async": "/lib/requirejs-plugins/src/async",
             "font": "/lib/requirejs-plugins/src/font",
             "goog": "/lib/requirejs-plugins/src/goog",
+            "propertyParser": "/lib/requirejs-plugins/src/propertyParser",
             "image": "/lib/requirejs-plugins/src/image",
             "json": "/lib/requirejs-plugins/src/json",
             "noext": "/lib/requirejs-plugins/src/noext"
