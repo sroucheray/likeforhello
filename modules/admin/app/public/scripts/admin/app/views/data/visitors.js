@@ -3,9 +3,9 @@
 define([
     "underscore",
     "app/views/data/data",
-    "hbs!/views/admin/partials/data/default",
-    "hbs!/views/admin/partials/data/visitors",
-    "hbs!/views/admin/partials/data/filters/visitors"
+    "hbs!views/admin/partials/data/default",
+    "hbs!views/admin/partials/data/visitors",
+    "hbs!views/admin/partials/data/filters/visitors"
 ], function(_, DataView, layoutTemplate, contentTemplate, filtersTemplate) {
     "use strict";
     var VisitorsView = DataView.extend({

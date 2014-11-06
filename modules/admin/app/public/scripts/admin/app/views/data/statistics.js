@@ -5,9 +5,9 @@ define([
     "underscore",
     "moment",
     "app/views/data/data",
-    "hbs!/views/admin/partials/data/default-nofilters",
-    "hbs!/views/admin/partials/data/statistics",
-    "hbs!/views/admin/partials/data/scores",
+    "hbs!views/admin/partials/data/default-nofilters",
+    "hbs!views/admin/partials/data/statistics",
+    "hbs!views/admin/partials/data/scores",
     "goog!visualization,1,packages:[corechart]"
 ], function(_, moment, DataView, layoutTemplate, contentTemplate, scoresTemplate) {
     "use strict";
@@ -17,8 +17,7 @@ define([
         filters: {},
         events: function() {
             return _.extend({}, DataView.prototype.events, {
-                "click .filter-all": "clickFilterAll",
-                "click .filter-queue": "clickFilterQueue"
+                "click .statistics-refresh": "render",
             });
         },
         initialize: function() {

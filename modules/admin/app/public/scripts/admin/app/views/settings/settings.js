@@ -1,6 +1,6 @@
 /*eslint-env amd*/
 /*eslint camelcase:0*/
-define(["hbs!/views/admin/partials/settings/settings", "app/models/module", "underscore", "backbone", "app/views/utils", "moment", "moment-duration-format"], function(template, moduleModel, _, Backbone, utils, moment) {
+define(["hbs!views/admin/partials/settings/settings", "app/models/module", "underscore", "backbone", "app/views/utils", "moment", "moment-duration-format"], function(template, moduleModel, _, Backbone, utils, moment) {
     "use strict";
     var SettingsView = utils.ParentView.extend({
         tagName: "div",

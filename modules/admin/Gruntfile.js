@@ -51,12 +51,12 @@ module.exports = function(grunt) {
                     optimize: "uglify2",
                     preserveLicenseComments: false,
                     generateSourceMaps: true,
-                    baseUrl: "app/admin/public/scripts",
-                    mainConfigFile: "app/admin/public/scripts/app.js",
+                    baseUrl: "app/public/scripts/admin",
+                    mainConfigFile: "app/public/scripts/admin/app.js",
                     name: "app/main",
-                    out: "app/admin/public/scripts/app.min.js",
+                    out: "app/public/scripts/admin/app.min.js",
                     paths: {
-                        "views": "views",
+                        "views": "../../views",
                         "requirejs": "../../../../bower_components/requirejs/require",
                         "hbs": "../../../../bower_components/require-handlebars-plugin/hbs",
                         "jquery": "../../../../bower_components/jquery/dist/jquery.min",
@@ -76,8 +76,10 @@ module.exports = function(grunt) {
                         "goog": "../../../../bower_components/requirejs-plugins/src/goog",
                         "image": "../../../../bower_components/requirejs-plugins/src/image",
                         "json": "../../../../bower_components/requirejs-plugins/src/json",
-                        "noext": "../../../../bower_components/requirejs-plugins/src/noext"
-                    }
+                        "noext": "../../../../bower_components/requirejs-plugins/src/noext",
+                        "propertyParser": "../../../../bower_components/requirejs-plugins/src/propertyParser"
+                    },
+                    inlineText: true
                 }
             }
         },

@@ -1,6 +1,6 @@
 /*eslint-env amd*/
 /*eslint camelcase:0 no-underscore-dangle:0*/
-define(["hbs!/views/admin/partials/control/alert", "hbs!/views/admin/partials/control/button", "hbs!/views/admin/partials/control/camera", "app/models/module", "underscore", "backbone", "app/views/utils", "jquery"], function(alertTemplate, buttonTemplate, cameraTemplate, moduleModel, _, Backbone, utils, $) {
+define(["hbs!views/admin/partials/control/alert", "hbs!views/admin/partials/control/button", "hbs!views/admin/partials/control/camera", "app/models/module", "underscore", "backbone", "app/views/utils", "jquery"], function(alertTemplate, buttonTemplate, cameraTemplate, moduleModel, _, Backbone, utils, $) {
     "use strict";
     var ModuleView = utils.ParentView.extend({
         tagName: "div",

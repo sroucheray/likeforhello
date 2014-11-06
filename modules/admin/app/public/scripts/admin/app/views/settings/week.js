@@ -1,6 +1,6 @@
 /*eslint-env amd*/
 /*eslint camelcase:0*/
-define(["hbs!/views/admin/partials/settings/week", "underscore", "backbone", "app/views/utils", "datetime-picker"], function(template, _, Backbone, utils) {
+define(["hbs!views/admin/partials/settings/week", "underscore", "backbone", "app/views/utils", "datetime-picker"], function(template, _, Backbone, utils) {
     "use strict";
     var WeekView = utils.ParentView.extend({
         tagName: "div",

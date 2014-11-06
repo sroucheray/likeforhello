@@ -5,6 +5,7 @@
 
     requirejs.config({
         //base:"https://fb.byperiscope.com/hello/likeforhello/modules/admin/app/public/scripts/admin",
+        waitSeconds: 0,
         shim: {
             "bootstrap": {
                 deps: ["jquery"]
@@ -38,7 +39,7 @@
             }
         },
         paths: {
-            //"views": "views",
+            "views": "../../views",
             "requirejs": "/lib/requirejs/require",
             "hbs": "/lib/require-handlebars-plugin/hbs",
             "jquery": "/lib/jquery/dist/jquery.min",
