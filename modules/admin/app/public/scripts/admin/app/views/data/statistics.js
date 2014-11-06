@@ -155,12 +155,15 @@ define([
             var stageChart = new google.visualization.LineChart(this.$(".statistic-stage").get(0));
             stageChart.draw(stageView, {
                 height: 300,
-                title: "Nombre de bonjours par étage",
+                title: "Résultats à tous les étage",
                 vAxis: {
                     gridlines: {
                         count: -1
                     },
                     ticks: _.range(maxVal)
+                },
+                chartArea: {
+                    left: 30
                 }
             });
 
