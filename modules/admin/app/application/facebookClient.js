@@ -27,25 +27,25 @@ var albumId = "580681488726559"; // VVF
     }, {
         perms: 'publish_stream,offline_access,manage_pages'
     });
+
+    "CAAKD86OlhTIBAOiZBrIwZAYq4AhljIyxDe398Dr6LFdpmrUBtMXZC0GfxHegZC8QgJBRwmBXsHXtV39N1fIxVKKTc2yv2blfyvIp0Xmvk13diStutTD9QOjp6NteiZB5pRxdCexl7cJhh8HYdZB9OZBzUOpxwyfxYHrrkhCwut1WAbrueZB1dPG5tIaIX0CEdUc8pTqn9iISfIiwytkvZB2IT"
 */
 
 
 /*
     1 - Get the code
-    https://www.facebook.com/dialog/oauth?client_id=708032399246642&redirect_uri=https://fb.byperiscope.com:444/redirect_uri&scope=manage_pages,publish_actions
+    https://www.facebook.com/dialog/oauth?client_id=708032399246642&redirect_uri=https://hello.fb.byperiscope.com/redirect_uri&scope=manage_pages,publish_actions
 
 
 //VVF :
-{"body":{},"params":{},"query":{"code":"AQBEeQeXzCpOMv4xhQB09AIn2_bIBcyujbFrr08kwCmxCMoEXgfElm4OYsbdejkXgNvhiANvGdpIUhAMaEH4_ZbP8rUEfwvGiUM5Dvm_16l4EUmLQJcJ92VvTyAC9uBSUYBRFf8iaQGG1sKY5qwLxPprW13yXGQSKZTW6HfZJlB81cjEtTGSEZXhS6KAwz5Zgu29YrGINOTDQntnnpUYZ66qVFFujQXKIMRvfqbFSccC77175JxAB-fdFmi0iWx8uR0ZsXQdoqX_atwPij7xKpOcWuWaC4snuzXMUtJiwa9b26IcHDqjFfRHpRjVfj8CEL3AKKqtCa_3xPRdvHeGe2k_"}}
-
+{"body":{},"params":{},"query":{"code":"AQBvH2AsRocXeZWPyqS_O5sNFWP0dvkNNjo-pIs18D9Cf9cX5Cd9sXYATGyYX8xpC_Kb4glCQ2TAVIauVgCxgsp4r85RfHE8IU55392QmkOFe8p0KxP_Vf8x6VSeAdIZEfiMPr3W8YQAZPJ_0rildbrO_jTrLc0EBuOcFyj0tqj20sE3QPy3XP5Va9u04ZtsOCXZoEiNHJs3dN83i5yqdtlrmSn8AeDzVKx8gXsQoRyohcZL60XNqM1MOeezMKPSHI-CEncR-iNX82nHwjK795JthtvDNBgCih76Q6a-37JhPivDORjJT9Boc5KxtjkNF0201InPVJdHvDxvP02rZIT4"}}
 
     2 - Get the access token with the code
-    https://graph.facebook.com/oauth/access_token?client_id=708032399246642&redirect_uri=https://fb.byperiscope.com:444/redirect_uri&client_secret=e0f5ab430e8103e232ecba342d091d38&code=AQCv0pr1rETtOUvs30iHbby5nKkntIrI0CfoTiryzUT61doXtvBS6_Lv94ru_GxrMcYCGXvhXDGp8FWoOTNbZtIyqsS13yivXVJYdFPfqweIoumzn0cH1bwR64IHwgP18VErQWwD2SZHkj0CmwV1IWgC_Zt6m-RyAE6HfPrNrsUZcdcTFmcwrbOU0steCfVcqHup5TCHv5a9r65UlLAqD-mpwTRv6Axn1R9VW_nKSQD5GszOvPLduoyzVrqvbkdCDTsX7NSSXQPxDM_vuIAzqQudyHLUU85ZlyUAJlAm-JfY-0g0vQ2ZaMAJ4imRelhLENz6uu0OSiDXHxqISjubgvvH
+    https://graph.facebook.com/oauth/access_token?client_id=708032399246642&redirect_uri=https://hello.fb.byperiscope.com/redirect_uri&client_secret=e0f5ab430e8103e232ecba342d091d38&code=AQBvH2AsRocXeZWPyqS_O5sNFWP0dvkNNjo-pIs18D9Cf9cX5Cd9sXYATGyYX8xpC_Kb4glCQ2TAVIauVgCxgsp4r85RfHE8IU55392QmkOFe8p0KxP_Vf8x6VSeAdIZEfiMPr3W8YQAZPJ_0rildbrO_jTrLc0EBuOcFyj0tqj20sE3QPy3XP5Va9u04ZtsOCXZoEiNHJs3dN83i5yqdtlrmSn8AeDzVKx8gXsQoRyohcZL60XNqM1MOeezMKPSHI-CEncR-iNX82nHwjK795JthtvDNBgCih76Q6a-37JhPivDORjJT9Boc5KxtjkNF0201InPVJdHvDxvP02rZIT4
 
 
 //VVF :
-access_token=CAAKD86OlhTIBAEx2GsiPgnB3whZCS9NMIsF7XumtEHvWzYvckHWUpPuovmy6cPOXUBuRBbkrUi032aXm1FOGIVF1pZCBc3lVtLvl73sM6lZCa3lVFQW3chZAr9ZBDtPd0bvBJAnN061QwxxAEUXg6U13zixxRekWuIzAZA4o7wEp8zhXvSHohtAMniIDClly5x3qGbIdqnDuDIPpp64rAW&expires=5175145
-
+access_token=CAAKD86OlhTIBAFUZC12ALZCBUyr805nEZAHv9nZCyZCtGyfqVkLlnf92J5tC663uohz6sbzs729uot0xCiu40zZC2db46ykkHyp7WvcXkRhQNhNZAYSmFYGDzEiT6vyuz30Sj1dqbPVZBw8Fe0rUuF61QvFCJZAPZAHNKjupEbROfSfWZAlfIjSn8Rsh4GKtXVhjwGOktC2bW5bmByZBYdxk2f6T&expires=5182843
 
     3 - The access token
     CAAKD86OlhTIBAJGDrQ1eZCCSD3rLMRcDt2gAK98v3O3oeVB2t6SnAykAA1JLbZA2XaH5BdTKtwjpBqiojUpwRlEgwd9yntRWEZAeFzTpKbsKrEuZBrfIu9A2VZBNMs9DkyeA1zU25iy02APqhiCNwpj5BPArnJPbURGCf0KtlSWEqDb1fw8sWS3lZCb7ovd3YlWfd4WoHxpRp4ZCZA3XwbZBh&expires=5181350
@@ -112,7 +112,7 @@ access_token=CAAKD86OlhTIBAEx2GsiPgnB3whZCS9NMIsF7XumtEHvWzYvckHWUpPuovmy6cPOXUB
             }
          ],
          "name": "VVF Villages",
-         "access_token": "CAAKD86OlhTIBANAeY0u3lNC0DZB5EiYwKBhoJdVPA3dO6xhe2DWZCYU8PQGAVug7F42aeKXdQwy8ZB9hiWFbBlPzD0aJXItbq6wYyznRuiL7vNXEI0VhdDvrCHizhtcauPdZAFVZCXLNTgWi5k2ivt6KGqJofr6ozW9GIhvV08DZBTy28P14yeq01eXSVDWrtujrZAAGmR1VgxoVoS6Ct8u",
+         "access_token": "CAAKD86OlhTIBAApmbLCehwN3FX2kVZAmkuwzJkAOyPefJtkZCWMJkob1NNpZAuonCuSqpw0cUbsisDORBvGwt8gzeyLlUWZAEpZCVOOnc9VpZAl2NvL1nGpKM6OQC8mQwFMqZCt9pfSx710gR5UrGRQX0QNkoMnsaZCXpEUaFkwrNlRB7WzhdSL51zG1fJ9fNAZAdwjnoSxqUHvlhF40E5ZBZAE",
          "perms": [
             "ADMINISTER",
             "EDIT_PROFILE",
@@ -126,7 +126,7 @@ access_token=CAAKD86OlhTIBAEx2GsiPgnB3whZCS9NMIsF7XumtEHvWzYvckHWUpPuovmy6cPOXUB
       {
          "category": "Travel/leisure",
          "name": "Test",
-         "access_token": "CAAKD86OlhTIBANn0ACl92M5FWzIcmuFAOurshx8r2yQ8prpPm76cmZBZAB9RiWxEUGMSBJ10ih3pRklHkr2GraYvAZAnj3zhkrZAVeTE0DEOzTU178663ZAy7GmR6xeXXIjsAHBZBFjXK8c6m15TBxxwcTeZAcYSDZAWaCBuTfFhpAWZCpFG6b2YWhA4K0X3XZBEfNfviAmvrVQZAkQ7ksxiNgg",
+         "access_token": "CAAKD86OlhTIBAEqMeA4uvhAfGssgcmyNk68ZBBQXI3StgiUwLZAsn08CeuGut32vu7qBLDNTvgYQAuxeWH0VUaYhMsFAUDIGie1ikdCTv9MW1b8wUuhZCV4WaB6PSxt6KYuwfanYy5Jj8RIZBkZB0zHRC2zx3neZAWZBcltLY3waebpy5ZC8nAlkIgEHNrJZA36uZAz0V7XWfQSRGFTuuDcSxr",
          "perms": [
             "ADMINISTER",
             "EDIT_PROFILE",
@@ -140,7 +140,7 @@ access_token=CAAKD86OlhTIBAEx2GsiPgnB3whZCS9NMIsF7XumtEHvWzYvckHWUpPuovmy6cPOXUB
       {
          "category": "App page",
          "name": "Like for Hello Community",
-         "access_token": "CAAKD86OlhTIBAE8ZAcWZBKRYUMeqLEMnRjDD0O40nROZBb3Ns6q0CAp9ZCz4h53HJDgJcRXwPg3ZCg9hisia4cnDqDhZALZCtdXpFmlCknQHHGBSpxvzKs8Ng5BP1ZAOgTb8aDhvvygZBZAtyCHeCTTDbBdn99tpqqGgUnJ2nqhUwiXJ0MfPD9W3b0wHzd7INDMqaZC73hjnZAGpTMgldO9vNw1w",
+         "access_token": "CAAKD86OlhTIBANvTx4nAC12IlWZC4rzCyFcDnPTIXbX339pTcdC1yAbKBYyYFZAPrZAtgIlTrzBZBbz4bX3NUJDZBgKO9FBnxjfn3gZBaAb3th0TdCmmOn82DFaE4OtCwiPpCi7y9Btmj1KMZAu52FlJpyzvZCmwHcfZB91su7Jh9kcHDpXoJEc8Cc71DKknp3UvoFgiSyeamUp6ETkgx68ja",
          "perms": [
             "ADMINISTER",
             "EDIT_PROFILE",
@@ -153,10 +153,9 @@ access_token=CAAKD86OlhTIBAEx2GsiPgnB3whZCS9NMIsF7XumtEHvWzYvckHWUpPuovmy6cPOXUB
       }
    ],
    "paging": {
-      "next": "https://graph.facebook.com/v2.1/10203709714678221/accounts?access_token=CAAKD86OlhTIBAEx2GsiPgnB3whZCS9NMIsF7XumtEHvWzYvckHWUpPuovmy6cPOXUBuRBbkrUi032aXm1FOGIVF1pZCBc3lVtLvl73sM6lZCa3lVFQW3chZAr9ZBDtPd0bvBJAnN061QwxxAEUXg6U13zixxRekWuIzAZA4o7wEp8zhXvSHohtAMniIDClly5x3qGbIdqnDuDIPpp64rAW&limit=1000&offset=1000&__after_id=enc_Aez83ai1VA5Dqs2pZ_OgptYDmF5DcUYQ9Gfp6J67wXMNXCEmUiEB6WWqQOrYPpGysgtI5VTsFiAmMF9myTOpXpz1"
+      "next": "https://graph.facebook.com/v2.1/10203709714678221/accounts?access_token=CAAKD86OlhTIBAFUZC12ALZCBUyr805nEZAHv9nZCyZCtGyfqVkLlnf92J5tC663uohz6sbzs729uot0xCiu40zZC2db46ykkHyp7WvcXkRhQNhNZAYSmFYGDzEiT6vyuz30Sj1dqbPVZBw8Fe0rUuF61QvFCJZAPZAHNKjupEbROfSfWZAlfIjSn8Rsh4GKtXVhjwGOktC2bW5bmByZBYdxk2f6T&limit=1000&offset=1000&__after_id=enc_Aeyvk_Ovt6caEQz1wHbDPxNBf1j2d_UnMLtl0Y8SVWjTnDP1qw9Q4K9CIKHUrNUNUh02Uk4m21fO8FD_hlrHybAL"
    }
 }
-
 
 
 
@@ -168,12 +167,11 @@ access_token=CAAKD86OlhTIBAEx2GsiPgnB3whZCS9NMIsF7XumtEHvWzYvckHWUpPuovmy6cPOXUB
 */
 
 
-//var pageToken = "CAAKD86OlhTIBAEeY51COSCo5TqZAMkM7C87P5sZBTHFsETXBj71UUfjZB0H9W6uhgYSV35MrZAJk2UIPmGHbGL00C3BhZBJhpblD70tq2gsOHlFUkQsc1SsQvGjEXl9TimBs9aZCYw0PUbwwRaKotZAKZCjsTM5f7woaqou1LjmiILgXWCNL0OIxnXwmKQ2TYDbiPGbri6TZC9lE907HZCkxNd";
 
-var pageToken = "CAAKD86OlhTIBANAeY0u3lNC0DZB5EiYwKBhoJdVPA3dO6xhe2DWZCYU8PQGAVug7F42aeKXdQwy8ZB9hiWFbBlPzD0aJXItbq6wYyznRuiL7vNXEI0VhdDvrCHizhtcauPdZAFVZCXLNTgWi5k2ivt6KGqJofr6ozW9GIhvV08DZBTy28P14yeq01eXSVDWrtujrZAAGmR1VgxoVoS6Ct8u"; // VVF
+var pageToken = "CAAKD86OlhTIBAApmbLCehwN3FX2kVZAmkuwzJkAOyPefJtkZCWMJkob1NNpZAuonCuSqpw0cUbsisDORBvGwt8gzeyLlUWZAEpZCVOOnc9VpZAl2NvL1nGpKM6OQC8mQwFMqZCt9pfSx710gR5UrGRQX0QNkoMnsaZCXpEUaFkwrNlRB7WzhdSL51zG1fJ9fNAZAdwjnoSxqUHvlhF40E5ZBZAE"; // VVF
 //var pageToken = "CAAKD86OlhTIBAPRP7ZBkKdgfE0xKvx0uN8ko2Wyqx7ItqJqZCZAL1ZCJWIVIaDbxqEenVjoqx0dl9qL0GUDMHSacY05xxA8Azcd1rInUxrih6s6HoKkkzddRunvysgZA739Jg1KOwW04kdtsYtZAVRzdBUkn0UVcfNA4JFJ6OU9TZCeZCAq4HZCbaVuO9eQFSNi2iwuHHrb7PWGF2Uf7dDFhR"; // Test
 
-var expandedPageToken = "CAAKD86OlhTIBAAMX6vhe0ulZBYPLcASQu3vshGZB20yYaF89BiiaXSrC1LFOinuwyUbBqupyL1Cvd3p5dwhtdoMEZA3vi2eh76Y0lSj2rwHbIzRbk6AjmZAz3klE1Nz1dmjqN7ZC29OVwZA1gz3nSQUrncbrMghtJwEOO5i8fDxVw0IeWoCnfHNswBFCzUkZCgZD";
+var expandedPageToken = "CAAKD86OlhTIBAApmbLCehwN3FX2kVZAmkuwzJkAOyPefJtkZCWMJkob1NNpZAuonCuSqpw0cUbsisDORBvGwt8gzeyLlUWZAEpZCVOOnc9VpZAl2NvL1nGpKM6OQC8mQwFMqZCt9pfSx710gR5UrGRQX0QNkoMnsaZCXpEUaFkwrNlRB7WzhdSL51zG1fJ9fNAZAdwjnoSxqUHvlhF40E5ZBZAE";
 //var pageToken = "CAAKD86OlhTIBADjJjgkfUj6lDgNOoW4HjnZCaHlo7zZBHkt07WZBX1gh5ub8C3LNwzK0vHANEy4N6SX9g2M3gZCkTnDWbSQPApIZCC4ElTbnnDM0cyNSrjj5WcIodz3BEKse18xfahslicTwanZBnojcGIqpZBdeGfTQ2GLbVsb21yEjINueKrDrIvvmFEeFS0ZD";
 var apptoken = "708032399246642|Zyr06kV4-b-f1BCOKBbnAuHmp3w";
 FB.qapi = Q.denodeify(FB.napi);
