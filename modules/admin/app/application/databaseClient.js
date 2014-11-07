@@ -327,6 +327,10 @@ DataBaseClient.prototype.getData = function(options) {
         return this.getVisitors(options.data.startDate, options.data.endDate);
     }
 
+    if (options.data.collName === "visits") {
+        return this.getVisits(options.data.startDate, options.data.endDate);
+    }
+
     if (options.data.collName === "statistics") {
         return this.getOperationStats();
     }
@@ -414,8 +418,8 @@ DataBaseClient.prototype.getOperationStats = function() {
     return sqlClient.sequelize.query("SELECT DATE_FORMAT(`createdAt`, '%Y-%m-%d')as id, sum(case when `camera`= \"cam_ground\" then 1 else 0 end) as \"Rez-de-Chaussée\", sum(case when `camera`= \"cam_1stfloor\" then 1 else 0 end) as \"1er étage\", sum(case when `camera`= \"cam_2ndfloor\" then 1 else 0 end) as \"2ème étage\", sum(case when `button`= 1 then 1 else 0 end) as \"Equipe A\", sum(case when `button`= 2 then 1 else 0 end) as \"Equipe B\", sum(case when `button`= 3 then 1 else 0 end) as \"Equipe C\", DATE_FORMAT(`createdAt`, '%Y-%m-%d') AS `Jour` FROM `Hellos` WHERE 1 GROUP BY `Jour` ORDER BY `createdAt` ASC");
 };
 
-DataBaseClient.prototype.getVisitorsStats = function() {
-    return sqlClient.sequelize.query("SELECT DATE_FORMAT(`createdAt`, \"%Y-%m-%d\") as `Jour`, count(`id`) as `Visitors` FROM `Visitors` WHERE 1 GROUP BY `Jour` ORDER BY `createdAt` ASC");
+DataBaseClient.prototype.getVisitsStats = function(startDate, endDate) {
+    return sqlClient.sequelize.query("SELECT DATE_FORMAT(`createdAt`, \"%Y-%m-%dT%H:00\") as `Hour`, count(`id`) as `Visitors` FROM `Visitors` WHERE 1 GROUP BY `Hour` ORDER BY `createdAt` ASC");
 };
 
 

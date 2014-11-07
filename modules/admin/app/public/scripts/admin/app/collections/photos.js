@@ -1,9 +1,9 @@
 /*eslint-env amd */
-define(["app/collections/data", "app/models/photo"], function(DataCollection, model) {
+define(["backbone", "app/collections/data"], function(Backbone, DataCollection) {
     "use strict";
     var Photos = DataCollection.extend({
         backend: "dataBackend",
-        model: model.Photo,
+        model: Backbone.Model.extend({}),
         collName: "photos"
     });
 

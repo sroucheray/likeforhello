@@ -1,9 +1,9 @@
 /*eslint-env amd */
-define(["app/collections/data", "app/models/statistic"], function(DataCollection, model) {
+define(["backbone", "app/collections/data"], function(Backbone, DataCollection) {
     "use strict";
     var Statistics = DataCollection.extend({
         backend: "dataBackend",
-        model: model.Statistics,
+        model: Backbone.Model.extend({}),
         collName: "statistics"
     });
 

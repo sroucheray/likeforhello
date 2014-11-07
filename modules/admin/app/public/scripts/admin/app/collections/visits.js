@@ -4,7 +4,7 @@ define(["backbone", "app/collections/data"], function(Backbone, DataCollection) 
     var Visitors = DataCollection.extend({
         backend: "dataBackend",
         model: Backbone.Model.extend({}),
-        collName: "visitors"
+        collName: "visits"
     });
 
     return Visitors;

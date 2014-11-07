@@ -105,6 +105,15 @@ define(["backbone", "app/models", "app/views/body", "app/views/nav"], function(B
             });
         }
 
+        if (what === "visits") {
+            require(["app/views/data/visits"], function(VisitsView) {
+                var visitsView = new VisitsView({
+                    collection: models.collections.visits
+                });
+
+                viewsTemp.add(visitsView);
+            });
+        }
 
         if (what === "visitors") {
             require(["app/views/data/visitors"], function(VisitorsView) {

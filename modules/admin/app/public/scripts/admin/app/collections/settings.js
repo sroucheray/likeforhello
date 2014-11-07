@@ -1,10 +1,10 @@
 /*eslint-env amd */
 
-define(["app/models/setting", "underscore", "backbone", "backbone.io"], function(model, _, Backbone) {
+define(["underscore", "backbone", "backbone.io"], function(_, Backbone) {
     "use strict";
     var Modules = Backbone.Collection.extend({
         backend: "settingsBackend",
-        model: model.Setting,
+        model: Backbone.Model.extend({}),
         initialize: function() {
             var self = this;
             /*this.bind("change", function(data) {

@@ -1,9 +1,9 @@
 /*eslint-env amd */
-define(["app/models/day", "underscore", "backbone", "backbone.io"], function(model, _, Backbone) {
+define(["underscore", "backbone", "backbone.io"], function(_, Backbone) {
     "use strict";
-    var Modules = Backbone.Collection.extend({
+    var Week = Backbone.Collection.extend({
         backend: "settingsBackend",
-        model: model.Day,
+        model: Backbone.Model.extend({}),
         initialize: function() {
             var self = this;
 
@@ -43,5 +43,5 @@ define(["app/models/day", "underscore", "backbone", "backbone.io"], function(mod
         }
     });
 
-    return Modules;
+    return Week;
 });
