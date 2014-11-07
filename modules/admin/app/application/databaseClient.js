@@ -328,7 +328,7 @@ DataBaseClient.prototype.getData = function(options) {
     }
 
     if (options.data.collName === "visits") {
-        return this.getVisits(options.data.startDate, options.data.endDate);
+        return this.getVisitsStats(options.data.startDate, options.data.endDate);
     }
 
     if (options.data.collName === "statistics") {
