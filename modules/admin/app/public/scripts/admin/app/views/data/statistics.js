@@ -118,7 +118,7 @@ define([
                 chartArea: {
                     left: 30
                 },
-                title: "Score quotidien",
+                title: "Scores quotidiens",
                 vAxis: {
                     gridlines: {
                         count: -1
@@ -154,7 +154,7 @@ define([
             var stageChart = new google.visualization.LineChart(this.$(".statistic-stage").get(0));
             stageChart.draw(stageView, {
                 height: 300,
-                title: "Résultats à tous les étage",
+                title: "Résultats à tous les étages",
                 vAxis: {
                     gridlines: {
                         count: -1

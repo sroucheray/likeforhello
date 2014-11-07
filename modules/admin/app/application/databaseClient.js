@@ -414,6 +414,12 @@ DataBaseClient.prototype.getOperationStats = function() {
     return sqlClient.sequelize.query("SELECT DATE_FORMAT(`createdAt`, '%Y-%m-%d')as id, sum(case when `camera`= \"cam_ground\" then 1 else 0 end) as \"Rez-de-Chaussée\", sum(case when `camera`= \"cam_1stfloor\" then 1 else 0 end) as \"1er étage\", sum(case when `camera`= \"cam_2ndfloor\" then 1 else 0 end) as \"2ème étage\", sum(case when `button`= 1 then 1 else 0 end) as \"Equipe A\", sum(case when `button`= 2 then 1 else 0 end) as \"Equipe B\", sum(case when `button`= 3 then 1 else 0 end) as \"Equipe C\", DATE_FORMAT(`createdAt`, '%Y-%m-%d') AS `Jour` FROM `Hellos` WHERE 1 GROUP BY `Jour` ORDER BY `createdAt` ASC");
 };
 
+DataBaseClient.prototype.getVisitorsStats = function() {
+    return sqlClient.sequelize.query("SELECT DATE_FORMAT(`createdAt`, \"%Y-%m-%d\") as `Jour`, count(`id`) as `Visitors` FROM `Visitors` WHERE 1 GROUP BY `Jour` ORDER BY `createdAt` ASC");
+};
+
+
+
 
 
 /*SELECT
