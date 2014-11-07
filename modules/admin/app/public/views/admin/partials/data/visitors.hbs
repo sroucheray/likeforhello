@@ -10,49 +10,7 @@
 <div class="row">
     {{#each this}}
     <div class="col-sm-{{../../cols}}">
-        <div class="panel panel-default {{#if QueueId}}panel-warning{{else}}panel-success{{/if}}">
-            <div class="panel-heading">
-
-                <a class="pull-right" href="#">
-                <img class="media-object" src="https://graph.facebook.com/{{id}}/picture?type=square">
-                </a>
-                <span>{{name}}</span>
-                <span>
-                {{#ifEq gender "male"}}&#9794;{{/ifEq}} {{#ifEq gender "female"}}&#9792;{{/ifEq}}
-                </span>
-                <div class="clearfix"></div>
-            </div>
-            <div class="panel-body"  style="overflow:hidden">
-            <p>
-                <a href="mailto:{{email}}" target="_blank">{{email}}</a><br>
-                Facebook <a href="{{link}}" target="_blank">{{id}}</a><br>
-                1ère visite <span title="{{formatDate createdAt}}">{{fromNow createdAt}}</span><br>
-                Dernière visite <span title="{{formatDate updatedAt}}">{{fromNow updatedAt}}</span><br>
-                Liked : <strong>{{#ifEq hasLiked 0}}Non{{else}}Oui{{/ifEq}}</strong> ;
-                Granted : <strong>{{#ifEq granted_publish_actions 0}}Non{{else}}Oui{{/ifEq}}</strong><br>
-                Access Token : <strong title="{{access_token}}">{{ellipsis 20 access_token}}...</strong><br>
-                Expanded Token : <strong title="{{access_token}}">{{ellipsis 20 expanded_access_token}}...</strong><br>
-
-                {{#if Hello.Photos.filename}}
-                {{#with Hello.Photos}}
-                <div class="thumbnail">
-                    <div class="{{#unless facebook_id}}bg-warning{{/unless}}">
-                        <a href="{{filename}}" target="_blank" style="width:100%;" title="Photo prise {{formatDate shootedAt}}">
-                        <img class="media-object img-responsive" src="{{filename}}?dim=392x313" alt="Photo prise {{formatDate shootedAt}}">
-                        </a>
-                        <div class="caption small">
-                            <p>{{formatDate shootedAt format='DD/MM/YYYY HH:mm'}} <br>
-                            {{#if facebook_post_id}} <a href="https://facebook.com/{{facebook_post_id}}" target="_blank">Voir sur Facebook</a> {{else}}<s>Facebook</s>{{/if}} <br>
-                            {{#unless HellosId}}Image test{{else}}&nbsp;{{/unless}}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                {{/with}}
-                {{/if}}
-            </p>
-            </div>
-        </div>
+        {{> data/visitor}}
     </div>
     {{/each}}
 </div>

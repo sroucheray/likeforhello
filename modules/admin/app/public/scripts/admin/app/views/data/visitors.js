@@ -11,11 +11,13 @@ define([
     var VisitorsView = DataView.extend({
         tagName: "div",
         numPerLine: 3,
-        filters: {},
+        filter: false,
         events: function() {
             return _.extend({}, DataView.prototype.events, {
                 "click .filter-all": "clickFilterAll",
-                "click .filter-queue": "clickFilterQueue"
+                "click .filter-queue": "clickFilterQueue",
+                "click .filter-error": "clickFilterError",
+                "click .data-republish": "clickRepublish"
             });
         },
         initialize: function() {
@@ -28,24 +30,34 @@ define([
 
             DataView.prototype.initialize.apply(this, arguments);
 
-            this.collection.filters = {};
-
             this.collection.filterFunc = function(item) {
-                if (this.filters.queue) {
-                    return !!item.QueueId;
+                console.log(this.filter, item);
+                if (this.filter === "queue") {
+                    return !!item.QueueId && item.facebook_post_id;
+                }
+
+                if (this.filter === "error") {
+                    return !item.QueueId && !item.facebook_post_id;
                 }
 
                 return true;
-            }.bind(this.collection);
+            }.bind(this);
         },
         template: contentTemplate,
         clickFilterAll: function() {
-            this.collection.filters.queue = false;
+            this.filter = false;
             this.render();
         },
         clickFilterQueue: function() {
-            this.collection.filters.queue = true;
+            this.filter = "queue";
             this.render();
+        },
+        clickFilterError: function() {
+            this.filter = "error";
+            this.render();
+        },
+        clickRepublish: function(){
+            console.log("TODO : implement")
         }
     });
 

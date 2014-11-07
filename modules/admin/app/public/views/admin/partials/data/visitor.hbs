@@ -1,0 +1,43 @@
+<div class="panel panel-default {{#if QueueId}}panel-warning{{else}}{{#if facebook_post_id}}panel-success{{else}}panel-danger{{/if}}{{/if}}">
+    <div class="panel-heading">
+        <a class="pull-right" href="{{link}}">
+        <img class="media-object" src="https://graph.facebook.com/{{id}}/picture?type=square">
+        </a>
+        <span><a href="{{link}}" target="_blank" title="{{id}}">{{name}}</a></span>
+        <span>
+        {{#ifEq gender "male"}}&#9794;{{/ifEq}} {{#ifEq gender "female"}}&#9792;{{/ifEq}}
+        </span><br>
+        <a href="mailto:{{email}}" target="_blank">{{email}}</a><br>
+
+        <span class="label {{#ifEq hasLiked 0}}label-danger{{else}}label-success{{/ifEq}}">Liked <span class="glyphicon {{#ifEq hasLiked 0}}glyphicon-remove{{else}}glyphicon-ok{{/ifEq}} text-white"></span></span>
+        <span class="label {{#ifEq granted_publish_actions 0}}label-danger{{else}}label-success{{/ifEq}}">Granted <span class="glyphicon {{#ifEq granted_publish_actions 0}}glyphicon-remove{{else}}glyphicon-ok{{/ifEq}} text-white"></span></span>
+        <div class="clearfix"></div>
+    </div>
+    <div class="panel-body"  style="overflow:hidden">
+        <p>
+        <!-- Facebook <a href="{{link}}" target="_blank">{{id}}</a><br> -->
+        1ère visite <strong><span title="{{formatDate createdAt}}">{{fromNow createdAt}}</span></strong><br>
+        Dernière visite <strong><span title="{{formatDate updatedAt}}">{{fromNow updatedAt}}</span></strong><br>
+        Access Token : <strong title="{{access_token}}">{{ellipsis 20 access_token}}...</strong><br>
+        Expanded Token : <strong title="{{access_token}}">{{ellipsis 20 expanded_access_token}}...</strong><br>
+        {{#if facebook_post_id}}<a href="https://facebook.com/{{facebook_post_id}}" target="_blank">Voir sur Facebook</a>{{else}} <button {{#ifEq granted_publish_actions 0}}disabled{{/ifEq}} class="btn btn-default btn-sm data-republish">{{#ifEq granted_publish_actions 0}}Publication impossible sans les droits utilisateurs{{else}}Publier à nouveau sur Facebook{{/ifEq}}</button> {{/if}}
+        {{#if Hello.Photos.filename}}
+        {{#with Hello.Photos}}
+        <div class="thumbnail">
+            <div class="{{#unless facebook_id}}bg-warning{{/unless}}">
+                <a href="{{filename}}" target="_blank" style="width:100%;" title="Photo prise {{formatDate shootedAt}}">
+                <img class="media-object img-responsive" src="{{filename}}?dim=392x313" alt="Photo prise {{formatDate shootedAt}}">
+                </a>
+                <div class="caption small">
+                    <p>{{formatDate shootedAt format='DD/MM/YYYY HH:mm'}} <br>
+                    {{#if facebook_post_id}} <a href="https://facebook.com/{{facebook_post_id}}" target="_blank">Voir dans l'album de VVF</a> {{else}}<s>Facebook</s>{{/if}} <br>
+                    {{#unless HellosId}}Image test{{else}}&nbsp;{{/unless}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {{/with}}
+        {{/if}}
+        </p>
+    </div>
+</div>
