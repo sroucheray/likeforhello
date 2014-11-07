@@ -62,7 +62,7 @@
             /*var welcomeBlock = document.getElementById("fb-welcome");
             welcomeBlock.innerHTML = "Please log in to our Facebook app!";*/
             FB.login(loginStatusHandler, {
-                scope: "email, publish_actions, user_photos"
+                scope: "email, publish_actions"
             });
         }
 
