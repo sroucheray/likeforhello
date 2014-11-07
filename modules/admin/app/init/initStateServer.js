@@ -155,6 +155,7 @@ module.exports = function(apps) {
                     visitorsNames.push(visitor.name);
                     facebookClient.greetingVisitor(visitor, "https://hello.fb.byperiscope.com" + data.filename).then(function(data) {
                         debug("Greeted  %s (%s) with post %s", visitor.name, visitor.id, data.id);
+                        debug(data);
                         return databaseClient.updateVisitorWithPost(visitor.id, data.id);
                     }).fail(function(error) {
                         debug("Fail to greet %s (%s)", visitor.name, visitor.id);

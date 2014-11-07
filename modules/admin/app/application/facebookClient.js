@@ -3,7 +3,6 @@
 var Q = require("q");
 var FB = require("fb");
 var request = require("request");
-var _ = require("underscore");
 var debug = require("debug")("admin:facebook");
 
 var appUrl = "https://www.facebook.com/VVFVillages.pageofficielle/app_708032399246642"; // VVF
@@ -319,7 +318,13 @@ FacebookClient.prototype.renewAccessToken = function() {
         debug("Error actve token");
         console.error(error);
     });*/
-    this.postPagePhoto({
+    this.getAppToken().then(function(res) {
+        debug("Success", res);
+    }).fail(function(error) {
+        debug("Error actve token");
+        console.error(error);
+    });
+    /*this.postPagePhoto({
         message: "Nous venons de dire un petit bonjour à Stéphane 3",
         access_token: expandedPageToken,
         place: pageId,
@@ -330,7 +335,7 @@ FacebookClient.prototype.renewAccessToken = function() {
     }).fail(function(error) {
         debug("Error actve token");
         debug(error);
-    });
+    });*/
 
     /*    this.getAppToken().then(function(res) {
         debug("Success", res);
@@ -392,11 +397,11 @@ FacebookClient.prototype.redirectMiddleware = function(req, res) {
     });
 };
 
-/*new FacebookClient({
+new FacebookClient({
     appId: appId,
     appSecret: appSecret,
     pageId: pageId
-}).renewAccessToken(pageToken);*/
+}).renewAccessToken();
 
 module.exports = function() {
     return new FacebookClient({
