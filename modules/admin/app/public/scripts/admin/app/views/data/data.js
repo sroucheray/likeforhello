@@ -16,7 +16,6 @@ define([
             "dp.change .end-date": "changeEndDate"
         },
         initialize: function() {
-
             var dateFormat = "DD/MM/YYYY HH:mm";
             this.$el.find(".time-control").datetimepicker({
                 language: "fr",

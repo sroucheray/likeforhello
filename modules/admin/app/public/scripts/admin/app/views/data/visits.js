@@ -6,17 +6,18 @@ define([
     "moment",
     "app/views/data/data",
     "hbs!views/admin/partials/data/default-nofilters",
-    "hbs!views/admin/partials/data/visits",
+    "hbs!views/admin/partials/data/statistics",
+    "hbs!views/admin/partials/data/scores",
     "goog!visualization,1,packages:[corechart]"
 ], function(_, moment, DataView, layoutTemplate, contentTemplate, scoresTemplate) {
     "use strict";
-    var VisitsView = DataView.extend({
+    var StatisticsView = DataView.extend({
         tagName: "div",
         numPerLine: 3,
         filters: {},
         events: function() {
             return _.extend({}, DataView.prototype.events, {
-                "click .statistics-refresh": "render"
+                "click .statistics-refresh": "render",
             });
         },
         initialize: function() {
@@ -120,5 +121,5 @@ define([
         }
     });
 
-    return VisitsView;
+    return StatisticsView;
 });
