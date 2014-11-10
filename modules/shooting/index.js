@@ -82,7 +82,7 @@ socketClient.onShootRequested(function(requestData) {
         }
 
         if (requestData.helloId) {
-            debug("l'equipe " + color[requestData.buttonId + 1] + " gagne !", requestData.buttonId)
+            //debug("l'equipe " + color[requestData.buttonId + 1] + " gagne !", requestData.buttonId)
             ledController.say("l'equipe " + color[requestData.buttonId] + " gagne !", {
                 duration: 3000,
                 endCallback: function() {
