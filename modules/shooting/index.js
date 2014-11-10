@@ -82,8 +82,9 @@ socketClient.onShootRequested(function(requestData) {
         }
 
         if (requestData.helloId) {
+            debug("l'equipe " + color[requestData.buttonId + 1] + " gagne !", requestData.buttonId)
             ledController.say("l'equipe " + color[requestData.buttonId + 1] + " gagne !", {
-                duration: 2000,
+                duration: 3000,
                 endCallback: function() {
                     ledController.stop();
                 }
