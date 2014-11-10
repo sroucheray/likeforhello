@@ -17,7 +17,7 @@ define([
         filters: {},
         events: function() {
             return _.extend({}, DataView.prototype.events, {
-                "click .statistics-refresh": "render",
+                "click .statistics-refresh": "render"
             });
         },
         initialize: function() {

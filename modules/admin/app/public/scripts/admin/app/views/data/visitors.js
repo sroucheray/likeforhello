@@ -57,7 +57,7 @@ define([
             this.render();
         },
         clickRepublish: function(){
-            console.log("TODO : implement")
+            console.log("TODO : implement");
         }
     });
 

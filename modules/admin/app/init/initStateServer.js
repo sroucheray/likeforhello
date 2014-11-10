@@ -77,7 +77,7 @@ module.exports = function(apps) {
 
     //Called in a loop
     //all the queue logic must be here
-    stateServer.on("activestate", function() {
+    stateServer.on("updatequeue", function() {
         //console.trace("DEBUG STACK")
         databaseClient.getAllSettings().then(function(data) {
             var minVisitorQueueLength = parseInt(pickSetting(data.settings, "minVisitorQueueLength"), 10),

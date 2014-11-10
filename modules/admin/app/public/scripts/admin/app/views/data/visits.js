@@ -5,121 +5,167 @@ define([
     "underscore",
     "moment",
     "app/views/data/data",
-    "hbs!views/admin/partials/data/default-nofilters",
-    "hbs!views/admin/partials/data/statistics",
-    "hbs!views/admin/partials/data/scores",
+    "hbs!views/admin/partials/data/default",
+    "hbs!views/admin/partials/data/visits",
     "goog!visualization,1,packages:[corechart]"
-], function(_, moment, DataView, layoutTemplate, contentTemplate, scoresTemplate) {
+], function(_, moment, DataView, layoutTemplate, contentTemplate) {
     "use strict";
-    var StatisticsView = DataView.extend({
+    var VisitsView = DataView.extend({
         tagName: "div",
         numPerLine: 3,
         filters: {},
-        events: function() {
-            return _.extend({}, DataView.prototype.events, {
-                "click .statistics-refresh": "render",
-            });
-        },
         initialize: function() {
             this.$el.html(layoutTemplate({
-                title: "Résultats"
+                title: "Visites"
             }));
 
             this.$el.find(".data-content").html(contentTemplate());
-            //this.$el.find(".filter-all").button("toggle");
+
+            this.visitPerDayChart = new google.visualization.LineChart(this.$(".visits-per-day").get(0));
+            this.visitPerHourChart = new google.visualization.LineChart(this.$(".visits-per-hour").get(0));
 
             DataView.prototype.initialize.apply(this, arguments);
 
             this.collection.filters = {};
-            //this.listenToOnce(this.collection, "sync", console.log);
-
-            /*this.collection.filterFunc = function(item) {
-                if (this.filters.queue) {
-                    return !!item.QueueId;
-                }
-
-                return true;
-            }.bind(this.collection);*/
-
-
-
-
         },
         render: function() {
-            var self = this;
+            this.updateDateTimePicker();
+            if (this.collectedData) {
+                this.createCharts();
+                return;
+            }
             this.collection.getAllData(function(data) {
-                self.createCharts(data);
+                this.collectedData = this.fillInGaps(data, "Hour", 1000 * 60 * 60);
+                this.collectedDataPerDay = this.computeDataPerDay(this.collectedData);
+                this.createCharts();
             }.bind(this));
 
-            return this;
+            return;
         },
-        todaydata: function() {
+        createCharts: function() {
+            var startTime = this.startDate.getTime(),
+                endTime = this.endDate.getTime(),
+                data = this.collectedDataPerDay,
+                dataPerHourTable = new google.visualization.DataTable();
 
-        },
-        createCharts: function(data) {
-            // visualization + corechart + geochart + search are loaded
+            if (endTime - startTime <= 3 * 24 * 60 * 60 * 1000) {
+                data = this.collectedData;
+                dataPerHourTable.addColumn("datetime", "Hour");
+            } else {
+                dataPerHourTable.addColumn("date", "Hour");
 
-
-            // code copied from google charts docs:
-            // http://code.google.com/apis/chart/interactive/docs/gallery/piechart.html
-            var dataTable = new google.visualization.DataTable();
-            dataTable.addColumn("date", "Hour");
-            dataTable.addColumn("number", "Visitors"); //Equipe A  bleu #5EFF29
-
-
-            //this.$el.find(".statistics-score").html(scoresTemplate(score));
-
-
-            function maxInDatum(datum) {
-                return _.max([datum["Equipe A"], datum["Equipe B"], datum["Equipe C"]]);
             }
 
-            var maxVal = _.max(data, function(datum) {
-                return maxInDatum(datum);
+            dataPerHourTable.addColumn("number", "Nb de visites");
+
+            data = _.filter(data, function(datum) {
+                var date = moment(datum.Hour, "YYYY-MM-DD[T]HH:mm").valueOf();
+
+                //datum.Visitors = Math.floor(Math.random() * 50);
+                return date >= startTime && date <= endTime;
             });
 
-            maxVal = maxInDatum(maxVal) + 2;
+
+            var maxVal = _.max(data, function(datum) {
+                return datum.Visitors;
+            });
+            maxVal = maxVal.Visitors + 2;
 
             _(data).each(function(datum) {
-                dataTable.addRow([
-                    new Date(datum.Hour),
+                var row = [
+                    moment(datum.Hour, "YYYY-MM-DD[T]HH:mm").toDate(),
                     datum.Visitors
-                ]);
+                ];
+                dataPerHourTable.addRow(row);
             });
 
-            var visitView = new google.visualization.DataView(dataTable);
-            visitView.setColumns([0, 1, 2, 3]);
+            var visitPerHourView = new google.visualization.DataView(dataPerHourTable);
 
-            var teamChart = new google.visualization.LineChart(this.$(".statistic-team").get(0));
-            teamChart.draw(visitView, {
-                height: 300,
+            this.visitPerHourChart.draw(visitPerHourView, {
+                height: 500,
                 chartArea: {
                     left: 30
                 },
-                title: "Visits par heure",
+                title: "Visites",
                 vAxis: {
                     gridlines: {
-                        count: -1
+                        count: 10
                     },
-                    ticks: _.range(maxVal)
-                },
-                legend: {
-                    position: "none"
-                },
-                colors: ["#66CC66", "#FFCC00", "#0099CC"]
+                    ticks: _.chain(maxVal).range().filter(function(item, index) {
+                        return (index === maxVal - 1) || (index % Math.round(maxVal / 5) === 0);
+                    }).value()
+                }
             });
 
         },
-        template: contentTemplate,
-        clickFilterAll: function() {
-            this.collection.filters.queue = false;
-            this.render();
+        fillInGaps: function(data, key, gap) {
+            var newData = [],
+                lastDatum;
+
+            _.each(data, function(nextDatum) {
+                if (!lastDatum) {
+                    newData.push(nextDatum);
+                    lastDatum = nextDatum;
+
+                    return;
+                }
+                var lastDate = moment(lastDatum[key], "YYYY-MM-DD[T]HH:mm").toDate();
+                var nextDate = moment(nextDatum[key], "YYYY-MM-DD[T]HH:mm").toDate();
+
+                var newDatum;
+                for (var i = lastDate.getTime() + gap; i < nextDate.getTime(); i += gap) {
+                    newDatum = {
+                        Visitors: 0
+                    };
+
+                    newDatum[key] = moment(new Date(i)).format("YYYY-MM-DD[T]HH:mm");
+                    newData.push(newDatum);
+                }
+
+                newData.push(nextDatum);
+                lastDatum = nextDatum;
+            });
+
+            return newData;
         },
-        clickFilterQueue: function() {
-            this.collection.filters.queue = true;
+        computeDataPerDay: function(data) {
+            var groupedData = _.groupBy(data, function(datum) {
+                return datum.Hour.split("T")[0];
+            });
+            var newData = _.map(groupedData, function(group, date) {
+                date = date.split("T")[0];
+                var num = _.reduce(group, function(memo, datum) {
+                    return memo + datum.Visitors;
+                }, 0);
+
+                return {
+                    Hour: moment(date.split("T")[0]).format("YYYY-MM-DD[T]HH:mm"),
+                    Visitors: num
+                };
+            });
+
+            return newData;
+        },
+        template: contentTemplate,
+        todayData: function(event) {
+            var diff;
+
+            if (event) {
+                event.preventDefault();
+            }
+
+            if (!this.endDate || !this.startDate) {
+                this.endDate = moment().hours(24).minutes(0).seconds(0).toDate();
+                this.startDate = moment(this.endDate).subtract(7, "days").toDate();
+            } else {
+                diff = moment(this.endDate).diff(this.startDate);
+                this.endDate = moment().hours(24).minutes(0).seconds(0).toDate();
+                this.startDate = moment(this.startDate).subtract(diff, "milliseconds").toDate();
+            }
+
             this.render();
         }
     });
 
-    return StatisticsView;
+    return VisitsView;
 });

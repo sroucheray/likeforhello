@@ -132,11 +132,12 @@ module.exports = function() {
 
             if (this.state !== "alert") {
                 this.transition("active");
-                this.emit("activestate");
+                this.emit("updatequeue");
             }
 
             if (this.state === "alert") {
                 this.emit("alertstate");
+                this.emit("updatequeue");
             }
 
             return true;

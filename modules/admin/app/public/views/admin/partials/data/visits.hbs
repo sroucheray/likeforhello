@@ -1,33 +1,9 @@
-{{#unless length}}
-<div class="row">
-    <div class="col-sm-12">
-        Aucun visiteur {{#if filters.queue}}en attente{{/if}} entre le {{formatDate startDate format='DD/MM/YYYY HH:mm'}} et le {{formatDate endDate format='DD/MM/YYYY HH:mm'}}
-    </div>
-</div>
-{{/unless}}
+<div class="row statistics-score">
 
-{{#each this}}
-<div class="row">
-    {{#each this}}
-    <div class="col-sm-{{../../cols}}">
-        {{> data/visitor}}
-    </div>
-    {{/each}}
 </div>
-{{/each}}
-<!-- HellosId: 21
-QueueId: null
-access_token: "CAAKD86OlhTIBAKzhHIkaZADi9SLN7ZAzBxw0zyWEffFkbZBy3HH0c2bd5xFQbu9TaDoGhPm2qwl7vakYHutYLh42IgZCug8AKgYTiIwyw3a8rOo7FmnA0fcVmIYe6ZAkSu2m89FNDbjJU2zNOlDXlwgOubqWupmp51vIVaZC7ZAoKmVtb3XyZCHMOf5dE3ZAFZC80m0kwSbDuochtupCimZCfGGFecRYUY84e0ZD"
-createdAt: "2014-10-21T12:35:46.000Z"
-email: "stephane.roucheray@gmail.com"
-expanded_access_token: "CAAKD86OlhTIBAGiOh9CHx0In4qwLvuZAw0HnkZChZCQMOqYYfmmVZBcMN4nzqC4h8V56sFouQBIVl6e9AZC7nW4sQg8QNLEHhUi1IR2aD8mQ5Sh2t6D5zPQ9Q8kRoMmofKxt9ESDH50aQg5cTPO4cEuc7Wt7ZCCFe1som9gF6qV3UXMZA9xRjydZB4ouam6SzrYZD"
-first_name: "Stéphane"
-gender: "male"
-granted_publish_actions: 1
-hasLiked: 0
-id: "10203709714678221"
-last_name: "Roucheray"
-link: "https://www.facebook.com/app_scoped_user_id/10203709714678221/"
-locale: "fr_FR"
-name: "Stéphane Roucheray"
-updatedAt: "2014-10-21T13:31:19.000Z" -->
+<div class="row">
+    <div class="col-sm-12 visits-per-day"></div>
+</div>
+<div class="row">
+    <div class="col-sm-12 visits-per-hour"></div>
+</div>
