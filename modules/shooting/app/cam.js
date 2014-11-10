@@ -96,7 +96,7 @@ Cam.prototype.shoot = function(helloId, callback) {
     } else {
         debug("Already shooting, stacking request for later");
         this.requestedShootsStack.push({
-            shootId: shootId,
+            shootId: helloId,
             callback: callback
         });
     }
