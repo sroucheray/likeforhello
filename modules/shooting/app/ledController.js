@@ -76,7 +76,7 @@ LedUtils.prototype.shooting = function() {
     this.stop();
     this.smile({
         loop: 5,
-        duration: 300
+        duration: 800
     });
 };
 
