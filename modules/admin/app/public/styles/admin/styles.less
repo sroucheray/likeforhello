@@ -187,10 +187,6 @@ top: 20px;
     font-weight: bold;
 }
 
-div:empty + .spinner{
-   display: block;
-}
-
 .spinner {
     display: none;
     margin: 100px auto;
@@ -198,6 +194,10 @@ div:empty + .spinner{
     height: 30px;
     text-align: center;
     font-size: 10px;
+}
+
+div:empty + .spinner{
+   display: block;
 }
 
 .spinner > div {

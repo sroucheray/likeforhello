@@ -64,11 +64,19 @@ LedUtils.prototype.displayChar = function(char) {
     this.ledMatrix.setChar(char);
 };
 
-LedUtils.prototype.shooting = function() {
+LedUtils.prototype.circle = function() {
     this.stop();
     this.ledMatrix.flashFrames(patterns.shootingFrames, {
         loop: -1,
         duration: 1500
+    });
+};
+
+LedUtils.prototype.shooting = function() {
+    this.stop();
+    this.smile({
+        loop: 5,
+        duration: 300
     });
 };
 
