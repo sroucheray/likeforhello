@@ -24,7 +24,7 @@ ShootingServer.prototype.start = function() {
         _.each(config.topics.status, function(topic) {
             socket.on(topic, function(data) {
                 clientId = clientId || data.clientId;
-                if(data.ip){
+                if (data.ip) {
                     debug("Shooting client %s connected IP is %s", clientId, data.ip)
                 }
                 //data.ip = socket.handshake.address;
@@ -71,11 +71,12 @@ ShootingServer.prototype.start = function() {
     });
 };
 
-ShootingServer.prototype.shoot = function(clientId, helloId) {
+ShootingServer.prototype.shoot = function(clientId, helloId, buttonId) {
     debug("Shoot on camera %s", clientId);
     this.io.emit(config.topics.camera.shoot, {
         clientId: clientId,
-        helloId: helloId
+        helloId: helloId,
+        buttonId: buttonId
     });
 };
 ShootingServer.prototype.disableCamera = function(clientId) {

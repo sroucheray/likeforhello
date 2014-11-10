@@ -117,7 +117,7 @@ module.exports = function(apps) {
                 stateServer.checkState();
                 debug("Hello created");
                 var helloId = hello.id;
-                shootingServer.shoot(cameraId, helloId);
+                shootingServer.shoot(cameraId, helloId, data.buttonId);
             });
 
         }
