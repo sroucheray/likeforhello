@@ -33,8 +33,26 @@ cam.onStarted(function() {
 });
 
 socketClient.onShootRequested(function(requestData) {
+    var color = ["verte", "jaune", "bleue"];
+    var floor = {
+        "cam_ground": "Plus rapide a la cafet'",
+        "cam_1stfloor": "Plus rapide au 1er",
+        "cam_2ndfloor": "Plus rapide au 2ème"
+    };
+    //clientId
+    //buttonId
+    //helloId
+
     if (requestData.clientId !== config.id) {
         debug("Shoot requested for '%s', but I am another cam : '%s' ", requestData.clientId, config.id);
+        if (requestData.helloId) {
+            ledController.say(floor[requestData.clientId], {
+                duration: 2000,
+                endCallback: function() {
+                    ledController.stop();
+                }
+            });
+        }
         return;
     }
 
@@ -61,6 +79,22 @@ socketClient.onShootRequested(function(requestData) {
             debug("No filename produced for this shoot");
 
             return;
+        }
+
+        if (requestData.helloId) {
+            ledController.say("l'equipe " + color[requestData.buttonId + 1] + " gagne !", {
+                duration: 2000,
+                endCallback: function() {
+                    ledController.stop();
+                }
+            });
+        } else {
+            ledController.say("Done !", {
+                duration: 1000,
+                endCallback: function() {
+                    ledController.stop();
+                }
+            });
         }
 
         ledController.smile({
