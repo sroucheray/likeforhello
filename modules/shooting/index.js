@@ -97,12 +97,12 @@ socketClient.onShootRequested(function(requestData) {
             });
         }
 
-        ledController.smile({
+        /*ledController.smile({
             loop: 3,
             endCallback: function() {
                 ledController.stop();
             }
-        });
+        });*/
 
         var imageBuffer = fs.readFileSync(path.join(__dirname, config.raspicam.opts.output.path, data.filename));
 
