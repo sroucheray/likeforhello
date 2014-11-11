@@ -39,6 +39,8 @@
         }
 
         function isLoggedIn(response) {
+            $("#review_img").attr("src", "/styles/public/img/message_dattente_facebook_review.png");
+
             loggedInResponse = response;
 
             //api([response.authResponse.userID, "permissions"]);
