@@ -39,7 +39,6 @@
         }
 
         function isLoggedIn(response) {
-            console.log(response);
             loggedInResponse = response;
 
             //api([response.authResponse.userID, "permissions"]);
@@ -88,7 +87,7 @@
             FB.getLoginStatus(loginStatusHandler);
         };
 
-        FB.getLoginStatus(loginStatusHandler);
+        //FB.getLoginStatus(loginStatusHandler);
 
         $("#bonjour").click(function(event) {
             event.preventDefault();
