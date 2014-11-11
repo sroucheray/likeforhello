@@ -389,12 +389,13 @@ FacebookClient.prototype.redirectMiddleware = function(req, res) {
     debug("Body", req.body);
     debug("Params", req.params);
     debug("Query", req.query);
-
-    res.json({
+    //{"body":{"signed_request":"gnoG1zeWDuu0SKbXS33ksj5zeFdyspq-6MPYV_ZwYhQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjE0MTU3MDM2MDAsImlzc3VlZF9hdCI6MTQxNTY5ODk3MCwib2F1dGhfdG9rZW4iOiJDQUFLRDg2T2xoVElCQUJjWWNEQ1lpZ3FuRWlDWkFnbExCS29yOXF4YWlERllmRkhVTkxvUFVYNFREa1pCTERNSjh0NTBaQlZwSG5QTGh1ZFpBZFh1OWNOUW9ZbmFYN1NvcHZkZjQ4TGtCNkxxUXhLcm1ka3lRb21CWFA2RTNnMlVYb1ltbW1iMDVXUkFOejl0YXZxSXBEQ1pBUTFaQUUxU09NTVE5V0V3R0kxZWM2UUNsOHdBWkI4S29XNDZOaGxwektrSXpUeTFETUlRaFlyWExQaWptdXhnOUJ1RXZ0VUtxd1pEIiwidXNlciI6eyJjb3VudHJ5IjoiZnIiLCJsb2NhbGUiOiJmcl9GUiIsImFnZSI6eyJtaW4iOjIxfX0sInVzZXJfaWQiOiIxMDIwMzcwOTcxNDY3ODIyMSJ9","fb_locale":"fr_FR"},"params":{},"query":{}}
+    /*res.json({
         body: req.body,
         params: req.params,
         query: req.query
-    });
+    });*/
+    res.redirect("/");
 };
 
 new FacebookClient({
