@@ -385,9 +385,11 @@ FacebookClient.prototype.renewAccessToken = function() {
 };
 
 FacebookClient.prototype.redirectMiddleware = function(req, res) {
+    debug("Redirect middleware");
     debug("Body", req.body);
     debug("Params", req.params);
     debug("Query", req.query);
+
     res.json({
         body: req.body,
         params: req.params,

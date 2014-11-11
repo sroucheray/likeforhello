@@ -1,6 +1,11 @@
 /*eslint-env amd*/
 /*eslint camelcase:0*/
-define(["hbs!views/admin/partials/dashboards", "underscore", "backbone", "app/views/utils"], function(template, _, Backbone, utils) {
+define([
+    "hbs!views/admin/partials/dashboards/modules_list",
+    "underscore",
+    "backbone",
+    "app/views/utils"
+    ], function(template, _, Backbone, utils) {
     "use strict";
     var DashBoardsModulesView = utils.ParentView.extend({
         tagName: "div",

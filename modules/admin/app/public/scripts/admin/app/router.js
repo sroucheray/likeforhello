@@ -36,12 +36,12 @@ define(["backbone", "app/models", "app/views/body", "app/views/nav"], function(B
 
     function dashboard() {
         navView.activateMenu("#");
-        require(["app/views/dashboards/modules"], function(DashboardModulesView) {
-            var dashboardModulesView = new DashboardModulesView({
+        require(["app/views/dashboards/dashboards"], function(DashboardView) {
+            var dashboardView = new DashboardView({
                 collection: models.collections.modules
             });
 
-            viewsTemp.add(dashboardModulesView);
+            viewsTemp.add(dashboardView);
         });
     }
 
