@@ -96,6 +96,13 @@
             });
         }).hide();
 
+        $("#connection").click(function(event) {
+            event.preventDefault();
+            FB.login(loginStatusHandler, {
+                scope: "email, publish_actions"
+            });
+        }).hide();
+
         $("#logout").click(function(event) {
             event.preventDefault();
             FB.logout(function(response) {

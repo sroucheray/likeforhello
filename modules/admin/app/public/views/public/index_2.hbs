@@ -19,10 +19,17 @@
     </head>
     <body>
         <script src="/scripts/public/script.js"></script>
-        <img src="/styles/public/img/accueil_facebook_review.jpg" usemap="#test">
-
-        <map name="planetmap">
-          <area shape="rect" coords="430,427,724,975" id="connection" href="#" alt="Connexion">
-        </map>
+        <div class="container-fluid">
+            <div class="col-sm-2">
+                <h1 id="fb-welcome"></h1>
+                <div id="fb-root"></div>
+                {{!<div class="fb-like" data-href="https://www.facebook.com/VVFVillages.pageofficielle" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+                }}
+                {{!<button id="bonjour">L'équipe va vous dire un bonjour personnalisé</button>}}
+                {{!<button id="logout">Logout</button>}}
+                <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true" data-scope="email, publish_actions" onlogin="loginButtonPushed"></div>
+            </div>
+            <div id="content" class="col-sm-10"></div>
+        </div>
     </body>
 </html>
