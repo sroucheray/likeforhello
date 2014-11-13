@@ -48,9 +48,25 @@
             api([response.authResponse.userID], function(data) {
                 userData = data;
                 api(["me", "permissions"], function(authData) {
-                    userData.auth = authData.data;
-                    userData.access_token = loggedInResponse.authResponse.accessToken
-                    server.updateUser(userData);
+                    var anAuth,
+                        hasPublishAction;
+                    for(var datum in authData.data){
+                        anAuth = authData.data[datum];
+                        if(anAuth.permission === "publish_actions" && anAuth.status === "granted"){
+                            hasPublishAction = true;
+                        }
+                    }
+
+                    console.log("hasPublishAction", hasPublishAction)
+                    if(hasPublishAction){
+                        $("#facebookModal").modal();
+
+                        userData.auth = authData.data;
+                        userData.access_token = loggedInResponse.authResponse.accessToken
+                        server.updateUser(userData);
+                    }else{
+                        console.log("Sorry no publish action");
+                    }
                 });
                 /*var welcomeBlock = document.getElementById("fb-welcome");
                 welcomeBlock.innerHTML = "Hello, " + data.first_name + "!";*/
