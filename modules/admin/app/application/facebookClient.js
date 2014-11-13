@@ -277,7 +277,7 @@ FacebookClient.prototype.postPagePhoto = function(opts) {
 FacebookClient.prototype.greetingVisitor = function(visitor, image) {
     debug("Greeting visitor %s (%s) with image %s", visitor.name, visitor.id, image);
     return this.postUserStory({
-        message: "Super idée de VVF Villages : envoyer un Bonjour à ceux qui le demande!",
+        message: visitor.message,
         access_token: visitor.expanded_access_token,
         tags: [visitor.id].join(","),
         privacy: {
