@@ -7,7 +7,7 @@ module.exports = function(apps) {
 
     webserver.getPublicApp().all("/redirect_uri", facebookClient.redirectMiddleware);
 
-    webserver.getPublicApp().publicApp.get("/attente", function(req, res) {
+    webserver.getPublicApp().get("/attente", function(req, res) {
         var isActive = stateServer.isActive();
 
         if (isActive) {
