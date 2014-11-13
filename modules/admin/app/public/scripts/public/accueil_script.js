@@ -11,8 +11,8 @@
         }
     }
 
-    Server.prototype.updateUser = function(data) {
-        $.post("/user/update" + (window.location.search || ""), data);
+    Server.prototype.updateUser = function(data, callback) {
+        $.post("/user/update" + (window.location.search || ""), data).done(callback);
     };
 
     var server = new Server();
@@ -57,14 +57,20 @@
                         }
                     }
 
-                    console.log("hasPublishAction", hasPublishAction)
                     if(hasPublishAction){
                         $("#facebookModal").modal();
-
                         userData.auth = authData.data;
-                        userData.access_token = loggedInResponse.authResponse.accessToken
-                        server.updateUser(userData);
+                        userData.access_token = loggedInResponse.authResponse.accessToken;
+
+                        $("#publish").once(function(){
+                            userData.message = $("#message").val();
+                            server.updateUser(userData, function(){
+                                document.location = "/attente";
+                            });
+                        })
+
                     }else{
+                        document.location = "/pas-autorisation";
                         console.log("Sorry no publish action");
                     }
                 });

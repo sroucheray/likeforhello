@@ -110,16 +110,33 @@ WebServer.prototype.setupPublicApp = function() {
         extended: true
     }));
     this.publicApp.use(bodyParser.json());
+
     this.publicApp.get("/", function(req, res) {
-
-
         res.render("public/accueil");
     });
+
+    this.publicApp.get("/pas-autorisation", function(req, res) {
+        res.render("public/pas-autorisation");
+    });
+
+    this.publicApp.get("/attente", function(req, res) {
+        res.render("public/attente");
+    });
+
+    this.publicApp.get("/fermeture", function(req, res) {
+        res.render("public/fermeture");
+    });
+
+    this.publicApp.get("/fermeture-weekend", function(req, res) {
+        res.render("public/fermeture-weekend");
+    });
+
+
     this.publicApp.post("/", function(req, res) {
         console.log("params", req.params);
         console.log("body", req.body);
         console.log("query", req.query);
-        res.render("public/index");
+        res.render("public/accueil");
     });
 };
 WebServer.prototype.setupBrokerApp = function() {
