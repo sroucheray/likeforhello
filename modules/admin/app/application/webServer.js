@@ -5,7 +5,6 @@ var path = require("path");
 var debug = require("debug")("admin:webserver");
 var hbs = require("express-hbs");
 var passport = require("passport");
-var cookieParser = require("cookie-parser");
 var bodyParser = require("body-parser");
 var session = require("express-session");
 var compression = require("compression");
@@ -117,10 +116,6 @@ WebServer.prototype.setupPublicApp = function() {
 
     this.publicApp.get("/pas-autorisation", function(req, res) {
         res.render("public/pas-autorisation");
-    });
-
-    this.publicApp.get("/attente", function(req, res) {
-        res.render("public/attente");
     });
 
     this.publicApp.get("/fermeture", function(req, res) {

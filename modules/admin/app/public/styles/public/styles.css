@@ -548,5 +548,11 @@ h4.modal-title{
 .modal-content{
   font-size: 13px;
   color: #2b2b2b;
-  background-color: #e3e3e3;
+}
+
+.modal-content .btn{
+  background-color: #e86430;
+  border-color: #e86430;
+  font-family: 'futurastd-bold';
+  font-size: 15px;
 }
