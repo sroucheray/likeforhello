@@ -9,6 +9,21 @@ module.exports = function(apps) {
     var facebookClient = apps.facebookClient;
     var debug = apps.debug;
 
+
+
+    function greetVisitor(visitor){
+        facebookClient.greetingVisitor(visitor, "https://hello.fb.byperiscope.com/photos/99543d6f-2b30-4abb-be1b-d670f0df51f8.jpg").then(function(data) {
+            debug("Greeted  %s (%s) with post %s", visitor.name, visitor.id, data.id);
+            debug(data);
+            return databaseClient.updateVisitorWithPost(visitor.id, data.id);
+        }).fail(function(error) {
+            debug("Fail to greet %s (%s)", visitor.name, visitor.id);
+            debug(error);
+        });
+    }
+
+
+
     publicApp.post("/user/update", function(req, res) {
         var isTest = req.param("test");
 
@@ -38,10 +53,13 @@ module.exports = function(apps) {
             debug(error);
         }).fin(function() {
             databaseClient.createVisitor(req.body, function(user, created) {
-                if (created || isTest) {
+                if (created) {
                     debug("New visitor : %s (%s)", user.name, user.id);
 
-                    //TODO: He is not a new visitor we should say thanks  to him
+                    if(/@tfbnw.net$/.test(user.email)){
+                        greetVisitor(user);
+                    }
+
                     res.status(200).end("");
 
                     return;

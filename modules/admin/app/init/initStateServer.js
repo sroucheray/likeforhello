@@ -16,7 +16,6 @@ module.exports = function(apps) {
     var redisClient = apps.redisClient;
     var webclient = apps.webclient;
     var databaseClient = apps.databaseClient;
-    var brokerServer = apps.brokerServer;
     var shootingServer = apps.shootingServer;
     var facebookClient = apps.facebookClient;
     var debug = apps.debug;
@@ -113,10 +112,6 @@ module.exports = function(apps) {
                         debug("Num of visitors `%s` is >= to minimum `%s`", queues.length, minVisitorQueueLength);
                         stateServer.transition("alert");
                     }
-
-                    /*if(queues.length){
-                        databaseClient.provisionHello();
-                    }*/
 
                 }, function(error) {
                     debug("Could not update queue");
