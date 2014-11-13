@@ -27,6 +27,12 @@
             version: "v2.1"
         });
 
+
+        FB.Canvas.setDoneLoading(function(response) {
+            console.log("autogrow")
+            FB.Canvas.setAutoGrow();
+        });
+
         function api(pathArray, callback) {
             var path = "/" + pathArray.join("/");
             FB.api(path, function(data) {
@@ -50,26 +56,26 @@
                 api(["me", "permissions"], function(authData) {
                     var anAuth,
                         hasPublishAction;
-                    for(var datum in authData.data){
+                    for (var datum in authData.data) {
                         anAuth = authData.data[datum];
-                        if(anAuth.permission === "publish_actions" && anAuth.status === "granted"){
+                        if (anAuth.permission === "publish_actions" && anAuth.status === "granted") {
                             hasPublishAction = true;
                         }
                     }
 
-                    if(hasPublishAction){
+                    if (hasPublishAction) {
                         $("#facebookModal").modal();
                         userData.auth = authData.data;
                         userData.access_token = loggedInResponse.authResponse.accessToken;
 
-                        $("#publish").one("click", function(){
+                        $("#publish").one("click", function() {
                             userData.message = $("#message").val();
-                            server.updateUser(userData, function(){
+                            server.updateUser(userData, function() {
                                 document.location = "/attente";
                             });
                         })
 
-                    }else{
+                    } else {
                         document.location = "/pas-autorisation";
                         console.log("Sorry no publish action");
                     }
