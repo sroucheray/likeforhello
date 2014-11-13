@@ -11,8 +11,8 @@
         }
     }
 
-    Server.prototype.updateUser = function(data) {
-        $.post("/user/update" + (window.location.search || ""), data);
+    Server.prototype.updateUser = function(data, callback) {
+        $.post("/user/update" + (window.location.search || ""), data).done(callback);
     };
 
     var server = new Server();
@@ -39,7 +39,7 @@
         }
 
         function isLoggedIn(response) {
-            $("#review_img").attr("src", "/styles/public/img/message_dattente_facebook_review.png");
+            //$("#review_img").attr("src", "/styles/public/img/message_dattente_facebook_review.png");
 
             loggedInResponse = response;
 
@@ -48,9 +48,31 @@
             api([response.authResponse.userID], function(data) {
                 userData = data;
                 api(["me", "permissions"], function(authData) {
-                    userData.auth = authData.data;
-                    userData.access_token = loggedInResponse.authResponse.accessToken
-                    server.updateUser(userData);
+                    var anAuth,
+                        hasPublishAction;
+                    for(var datum in authData.data){
+                        anAuth = authData.data[datum];
+                        if(anAuth.permission === "publish_actions" && anAuth.status === "granted"){
+                            hasPublishAction = true;
+                        }
+                    }
+
+                    if(hasPublishAction){
+                        $("#facebookModal").modal();
+                        userData.auth = authData.data;
+                        userData.access_token = loggedInResponse.authResponse.accessToken;
+
+                        $("#publish").one("click", function(){
+                            userData.message = $("#message").val();
+                            server.updateUser(userData, function(){
+                                document.location = "/attente";
+                            });
+                        })
+
+                    }else{
+                        document.location = "/pas-autorisation";
+                        console.log("Sorry no publish action");
+                    }
                 });
                 /*var welcomeBlock = document.getElementById("fb-welcome");
                 welcomeBlock.innerHTML = "Hello, " + data.first_name + "!";*/
@@ -91,19 +113,12 @@
 
         //FB.getLoginStatus(loginStatusHandler);
 
-        $("#bonjour").click(function(event) {
+        $("#defi").click(function(event) {
             event.preventDefault();
             FB.login(loginStatusHandler, {
                 scope: "email, publish_actions"
             });
-        }).hide();
-
-        $("#connection").click(function(event) {
-            event.preventDefault();
-            FB.login(loginStatusHandler, {
-                scope: "email, publish_actions"
-            });
-        }).hide();
+        });
 
         $("#logout").click(function(event) {
             event.preventDefault();
