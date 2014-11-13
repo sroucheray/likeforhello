@@ -520,9 +520,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 172.0,
+		"height": 252.0,
 		"selected_items":
 		[
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
 			[
 				"forma",
 				"CodeFormatter: Format Code"
@@ -698,10 +702,6 @@
 			[
 				"reinde",
 				"Indentation: Reindent Lines"
-			],
-			[
-				"wra",
-				"HTML: Wrap Selection With Tag"
 			],
 			[
 				"rein",
@@ -1024,7 +1024,7 @@
 				"About"
 			]
 		],
-		"width": 464.0
+		"width": 424.0
 	},
 	"console":
 	{
@@ -1182,6 +1182,7 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\init",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\application",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app",
@@ -1297,6 +1298,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"loginButtonPushed",
+			"redirect_uri",
+			"redir",
+			"redirecr",
+			"redirect",
 			"href=\"#\"",
 			"render",
 			"modules",
@@ -1419,12 +1425,7 @@
 			"plural",
 			"PhotosView",
 			"\"",
-			"if",
-			"console",
-			"app/public/admin/",
-			"app/admin/public/styles/",
-			"app/admin/less/",
-			"datedPhotos"
+			"if"
 		],
 		"highlight": true,
 		"in_selection": false,

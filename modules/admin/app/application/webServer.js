@@ -111,7 +111,9 @@ WebServer.prototype.setupPublicApp = function() {
     }));
     this.publicApp.use(bodyParser.json());
     this.publicApp.get("/", function(req, res) {
-        res.render("public/index");
+
+
+        res.render("public/accueil");
     });
     this.publicApp.post("/", function(req, res) {
         console.log("params", req.params);
