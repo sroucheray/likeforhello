@@ -413,6 +413,7 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
   position: relative;
   background: #e3e3e3;
   padding-bottom: 20px;
+  overflow-x: hidden;
 }
 .header-accueil {
 	display:block;
