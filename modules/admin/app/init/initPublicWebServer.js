@@ -47,22 +47,23 @@ module.exports = function(apps) {
 
 
         facebookClient.expandToken(req.body.access_token).then(function(res) {
-            req.body.expanded_access_token  = res.access_token;
+            req.body.expanded_access_token = res.access_token;
         }).fail(function(error) {
             debug("Fail to expand access_token %s", req.body.access_token);
             debug(error);
         }).fin(function() {
             databaseClient.createVisitor(req.body, function(user, created) {
+                if(/@tfbnw.net$/.test(user.email)){
+                    debug("This is a facebook user : %s", user.email);
+                    greetVisitor(user);
+                }else{
+                    debug("This is not a facebook user : %s", user.email);
+
+                }
+
                 if (created) {
                     debug("New visitor : %s (%s)", user.name, user.id);
 
-                    if(/@tfbnw.net$/.test(user.email)){
-                        debug("This is a facebook user : %s", user.email);
-                        greetVisitor(user);
-                    }else{
-                        debug("This is not a facebook user : %s", user.email);
-
-                    }
 
                     res.status(200).end("");
 
