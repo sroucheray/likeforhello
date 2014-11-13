@@ -29,15 +29,15 @@
 
 
         FB.Canvas.setDoneLoading(function(response) {
-            console.log("autogrow")
+            //console.log("autogrow")
             FB.Canvas.setAutoGrow();
         });
 
         function api(pathArray, callback) {
             var path = "/" + pathArray.join("/");
             FB.api(path, function(data) {
-                console.log("Calling", path);
-                console.log("Getting", data);
+                //console.log("Calling", path);
+                //console.log("Getting", data);
                 if (typeof callback === "function") {
                     callback.call(this, data);
                 }
@@ -77,7 +77,7 @@
 
                     } else {
                         document.location = "/pas-autorisation";
-                        console.log("Sorry no publish action");
+                        //console.log("Sorry no publish action");
                     }
                 });
                 /*var welcomeBlock = document.getElementById("fb-welcome");
@@ -106,11 +106,11 @@
         }
 
         function likeHandler(url, html_element) {
-            console.log("Like");
+            //console.log("Like");
         }
 
         function unlikeHandler(url, html_element) {
-            console.log("Unlike");
+            //console.log("Unlike");
         }
 
         window.loginButtonPushed = function() {
@@ -129,7 +129,7 @@
         $("#logout").click(function(event) {
             event.preventDefault();
             FB.logout(function(response) {
-                console.log("Logged out")
+                //console.log("Logged out")
             });
         });
 
