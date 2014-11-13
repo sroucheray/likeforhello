@@ -22,7 +22,8 @@ module.exports = function(sequelize, DataTypes) {
         },
         access_token: DataTypes.STRING,
         expanded_access_token: DataTypes.STRING,
-        facebook_post_id: DataTypes.STRING
+        facebook_post_id: DataTypes.STRING,
+        message: DataTypes.STRING
     }, {
         classMethods: {
             associate: function(models) {

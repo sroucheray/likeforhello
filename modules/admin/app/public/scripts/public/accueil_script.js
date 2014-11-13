@@ -62,7 +62,7 @@
                         userData.auth = authData.data;
                         userData.access_token = loggedInResponse.authResponse.accessToken;
 
-                        $("#publish").once(function(){
+                        $("#publish").one("click", function(){
                             userData.message = $("#message").val();
                             server.updateUser(userData, function(){
                                 document.location = "/attente";
