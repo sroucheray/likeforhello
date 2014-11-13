@@ -356,7 +356,7 @@ q {
     margin: 10px 70px 20px;
 }
 /*LIENS ET BOUTONS*/
-.btn {
+.btn-defi {
   display: inline-block;
   width:auto;
   height:50px;
@@ -377,7 +377,7 @@ q {
 -moz-box-shadow:    1px 1px 3px 0px rgba(50, 50, 50, 0.25);
 box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
 }
-.btn span{
+.btn-defi span{
   display: block;
   width:50px;
   height:50px;
@@ -389,7 +389,7 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
   border-right:2px solid #d15a2c;
   margin-right:22px;
 }
-.btn b{
+.btn-defi b{
   display: block;
   width:auto;
   height:50px;
@@ -397,8 +397,8 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
   line-height:50px;
 
 }
-.btn:hover,
-.btn:focus{
+.btn-defi:hover,
+.btn-defi:focus{
    text-decoration:none;
    color: #fff;
    filter: alpha(opacity=80);
