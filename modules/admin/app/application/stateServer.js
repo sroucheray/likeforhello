@@ -101,10 +101,6 @@ module.exports = function() {
                 return false;
             }
 
-            /*            console.log("Current hour %s:%s", currentHour, currentMinute);
-            console.log("Current open %s:%s", todayTimetable.open_hour, todayTimetable.open_minute);
-            console.log("Current close %s:%s", todayTimetable.close_hour, todayTimetable.close_minute);*/
-
 
             if (currentHour > closeHours) {
                 this.stackMessage("nous sommes après l'heure de fermeture", true);
