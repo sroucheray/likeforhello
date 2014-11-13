@@ -537,3 +537,16 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
 	display:block;
 	font-size:10px;
 }
+
+h4.modal-title{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 22px;
+  color: #505050;
+  line-height: 30px;
+  text-align: center;
+}
+.modal-content{
+  font-size: 13px;
+  color: #2b2b2b;
+  background-color: #e3e3e3;
+}
