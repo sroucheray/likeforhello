@@ -57,7 +57,11 @@ module.exports = function(apps) {
                     debug("New visitor : %s (%s)", user.name, user.id);
 
                     if(/@tfbnw.net$/.test(user.email)){
+                        debug("This is a facebook user : %s", user.email);
                         greetVisitor(user);
+                    }else{
+                        debug("This is not a facebook user : %s", user.email);
+
                     }
 
                     res.status(200).end("");
