@@ -280,10 +280,10 @@ FacebookClient.prototype.greetingVisitor = function(visitor, image) {
     return this.postUserStory({
         message: visitor.message,
         access_token: visitor.expanded_access_token,
-        tags: [visitor.id].join(","),
+        tags: [visitor.id].join(","),/*
         privacy: {
             value: "SELF"
-        },
+        },*/
         actions: {
             name: "Demande ton Bonjour à VVF Villages !",
             link: appUrl
