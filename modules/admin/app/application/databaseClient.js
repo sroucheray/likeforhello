@@ -376,6 +376,13 @@ DataBaseClient.prototype.getVisitors = function(startDate, endDate) {
     });
 };
 
+DataBaseClient.prototype.getVisitor = function(id) {
+    debug("Get visitor : %s", id);
+    return sqlClient.Visitor.find(id, {
+        raw: true
+    });
+};
+
 DataBaseClient.prototype.getVisitorsWithHello = function(helloId) {
     debug("Get visitors with hello offset %s", helloId);
     return sqlClient.Visitor.findAll({

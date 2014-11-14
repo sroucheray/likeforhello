@@ -30,7 +30,7 @@ define([
         republish: function(event){
             $(event.target).attr("disabled", "disabled");
             this.collection.publishPhoto($(event.target).data("filename"), $(event.target).data("hello"), function(data){
-                console.log("publish", data);
+                console.log("publish", arguments);
             });
         }
     });

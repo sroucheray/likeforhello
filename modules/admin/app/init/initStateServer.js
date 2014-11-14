@@ -143,7 +143,6 @@ module.exports = function(apps) {
         if (data.helloId) {
             debug("Register photo with Hello %s", data.helloId);
             databaseClient.updateHelloWithPhoto(data.helloId, data).then(function() {
-                debug("TODO: publish to facebook");
                 return databaseClient.getVisitorsWithHello(data.helloId);
             }).then(function(visitors) {
                 _.each(visitors, function(visitor) {

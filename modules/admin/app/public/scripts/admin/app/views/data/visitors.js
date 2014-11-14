@@ -56,8 +56,11 @@ define([
             this.filter = "error";
             this.render();
         },
-        clickRepublish: function(){
-            console.log("TODO : implement");
+        clickRepublish: function(event){
+            $(event.target).attr("disabled", "disabled");
+            this.collection.publishPhotoOnWall($(event.target).data("filename"), $(event.target).data("facebookid"), function(data){
+                console.log("publish", arguments);
+            });
         }
     });
 
