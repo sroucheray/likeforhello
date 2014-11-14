@@ -18,6 +18,7 @@ module.exports = function(apps) {
     var databaseClient = apps.databaseClient;
     var shootingServer = apps.shootingServer;
     var facebookClient = apps.facebookClient;
+    var brokerServer = apps.brokerServer;
     var debug = apps.debug;
 
     var stateServer = apps.stateServer;
@@ -63,15 +64,19 @@ module.exports = function(apps) {
             id: "state",
             alert: data.toState === "alert"
         });
+
+        if(data.toState !== "alert"){
+            brokerServer.turnAlertOff();
+        }
     });
 
     stateServer.on("alertstate", function() {
         debug("!! This is alert state !!");
+        brokerServer.turnAlertOn();
         webclient.updateState({
             id: "state",
             alert: true
         });
-        //TODO:update broker with alert
     });
 
     //Called in a loop
