@@ -16,6 +16,7 @@ module.exports = function(apps) {
     var webclient = apps.webclient;
     var databaseClient = apps.databaseClient;
     var stateServer = apps.stateServer;
+    var facebookClient = apps.facebookClient;
     var debug = apps.debug;
 
     webclient.onReadModule(function(req, res, next) {
@@ -179,28 +180,46 @@ module.exports = function(apps) {
     });
 
     webclient.onReadData(function(req, res, next) {
-        var options = req.options;
+            var options = req.options;
 
-        if (!options.data) {
-            next();
-            return;
-        }
+            if (!options.data) {
+                next();
+                return;
+            }
 
-        debug("Read data %s", options.data.collName);
+            debug("Read data %s", options.data.collName);
 
-        databaseClient.getData(options).then(function(data) {
-            debug("Send %s %s", data.length, options.data.collName);
-            debug(data);
-            res.end(data);
-        }, function(error) {
-            debug(error);
-            next();
-        });
+            if (options.data.action) {
+                if (options.data.action === "publish") {
+                    facebookClient.postPhotoOnPage(null, "https://hello.fb.byperiscope.com" + options.data.filename).then(function(facebookData) {
+                            debug("Photo posted");
+                            debug(facebookData);
+                            if(options.data.action.helloId){
+                                databaseClient.updatePhotoWithPost(options.data.action.helloId, facebookData.id);
+                            }
+                            res.end(facebookData);
+                        }, function(error) {
+                            debug("Error posting on Facebook / Updating database with posts");
+                            debug(error);
+                            res.end(error);
+                        });
+                    }
+                } else {
+                    databaseClient.getData(options).then(function(data) {
+                        debug("Send %s %s", data.length, options.data.collName);
+                        debug(data);
+                        res.end(data);
+                    }, function(error) {
+                        debug(error);
+                        next();
+                    });
+                }
 
-    });
-};
 
-/*{ id: 7,
+            });
+    };
+
+    /*{ id: 7,
   filename: '/photos/249646d5-42cc-43df-bf95-5831a246d784.jpg',
   facebook_id: null,
   facebook_post_id: null,

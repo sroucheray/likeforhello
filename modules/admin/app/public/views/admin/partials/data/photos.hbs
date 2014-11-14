@@ -16,7 +16,10 @@
                 </a>
                 <div class="caption small">
                     <p>{{formatDate shootedAt format='DD/MM/YYYY HH:mm'}} <br>
-                    {{#if facebook_post_id}} <a href="https://facebook.com/{{facebook_post_id}}" target="_blank">Voir sur Facebook</a> {{else}}<s>Facebook</s>{{/if}} <br>
+                    {{#if facebook_post_id}}<a href="https://facebook.com/{{facebook_post_id}}" target="_blank">Voir sur Facebook</a>
+                    {{else}}<button class="btn btn-default btn-sm data-republish" data-filename="{{filename}}" data-hello="{{HellosId}}">Publier sur Facebook</button>
+                    {{/if}}
+                    <br>
                     {{#unless HellosId}}Image test{{else}}&nbsp;{{/unless}}
                     </p>
                 </div>

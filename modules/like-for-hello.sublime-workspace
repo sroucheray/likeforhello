@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"ba",
+				"background-color"
+			],
+			[
+				"auth",
+				"authData"
+			],
+			[
 				"request",
 				"requestData"
 			],
@@ -340,10 +348,6 @@
 				"backend"
 			],
 			[
-				"ba",
-				"backendData"
-			],
-			[
 				"Dta",
 				"DataBaseClient"
 			],
@@ -510,26 +514,34 @@
 			[
 				"con",
 				"config"
-			],
-			[
-				"upda",
-				"updateTimeoutId"
 			]
 		]
 	},
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 252.0,
+		"height": 172.0,
 		"selected_items":
 		[
 			[
-				"wra",
-				"Word Wrap: Toggle"
-			],
-			[
 				"forma",
 				"CodeFormatter: Format Code"
+			],
+			[
+				"upgrae",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
 			],
 			[
 				"fomra",
@@ -558,10 +570,6 @@
 			[
 				"l",
 				"SublimeLinter: Lint This View"
-			],
-			[
-				"up",
-				"Package Control: Upgrade/Overwrite All Packages"
 			],
 			[
 				"show",
@@ -808,10 +816,6 @@
 				"Set Syntax: CSS"
 			],
 			[
-				"rem",
-				"Package Control: Remove Package"
-			],
-			[
 				"snippet",
 				"Snippet: html"
 			],
@@ -1044,6 +1048,24 @@
 	},
 	"file_history":
 	[
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/head.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/footer.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/attente.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/pas-autorisation.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture-weekend.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/public/script.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/db/models/visitor.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/styles.css",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/facebookClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/admin/styles.css",
+		"/C/_work/GitHub/likeforhello/modules/broker/app/socketClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/backbone.io/test/sync_test.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/message_fermeture.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil.html",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action_container.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt/appveyor.yml",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/visits.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/statistics.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/stateServer.js",
@@ -1061,17 +1083,14 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/visits.js",
 		"/C/_work/GitHub/likeforhello/modules/libraries/readme.txt",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initPublicWebServer.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/public/script.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/filters/visitors.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/visitor.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/index.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/application/facebookClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/statistics.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/week.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/nav.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/settings.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/photos.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/application/db/models/visitor.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt-contrib-less/node_modules/less/test/css/variables-in-at-rules.css",
 		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/bootstrap/less/variables.less",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/visitors.hbs",
@@ -1102,14 +1121,11 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/mysql/lib/protocol/sequences/Statistics.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/backbone.io/node_modules/socket.io/lib/static.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/express-hbs/node_modules/readdirp/stream-api.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/admin/styles.css",
-		"/C/_work/GitHub/likeforhello/modules/broker/app/socketClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/express/lib/router/route.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/bower/node_modules/retry/lib/retry_operation.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/photos.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/db/sqlClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/filters/dates.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/backbone.io/test/sync_test.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/load-grunt-tasks/node_modules/findup-sync/.jshintrc",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/bower-requirejs/node_modules/update-notifier/node_modules/latest-version/node_modules/package-json/node_modules/registry-url/node_modules/rc/node_modules/.bin/strip-json-comments",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/sequelize/lib/data-types.js",
@@ -1159,19 +1175,7 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/brokerServer.js",
 		"/C/_work/GitHub/likeforhello/modules/broker/index.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initBrokerServer.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initShootingServer.js",
-		"/C/_work/GitHub/likeforhello/modules/shooting/app/socketClient.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/application/redisClient.js",
-		"/C/_work/GitHub/likeforhello/.gitignore",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/login.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/index.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/parameters.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/config.json",
-		"/C/_work/GitHub/likeforhello/modules/.gitgnore",
-		"/C/_work/GitHub/likeforhello/.gitgnore",
-		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt-contrib-less/package.json",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/dashboards.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/admin/public/scripts/app.js"
+		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initShootingServer.js"
 	],
 	"find":
 	{
@@ -1182,6 +1186,7 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\public\\views\\public",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\init",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\application",
@@ -1298,6 +1303,27 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"stateser",
+			"console",
+			"17",
+			"width=\"811",
+			"811",
+			"wrapper",
+			"greetingVisitor",
+			"attente",
+			"pas-autorisation",
+			"updateUser",
+			"myModalLabel",
+			"modal",
+			"h1",
+			"asPublishAction",
+			".btn",
+			"class=\"btn\"",
+			"gfx",
+			"gfx/",
+			"../font",
+			"../gfx",
+			"partials",
 			"loginButtonPushed",
 			"redirect_uri",
 			"redir",
@@ -1404,28 +1430,7 @@
 			"data",
 			"'",
 			"datedData",
-			"this.startDate",
-			"Photos",
-			"listento",
-			"VisitorsView",
-			"goog",
-			"'",
-			"visitorsView",
-			"VisitorsView",
-			"Visitor",
-			"connect",
-			"socket",
-			"Equipe ",
-			"\"",
-			"console",
-			"primary",
-			"options",
-			"event",
-			"'",
-			"plural",
-			"PhotosView",
-			"\"",
-			"if"
+			"this.startDate"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1433,6 +1438,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"width=\"810",
 			"hbs!",
 			"hbs!/views/",
 			"hbs!views/admin/partials",
@@ -1542,6 +1548,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"styles",
+				"admin\\app\\public\\styles\\public\\styles.css"
+			],
+			[
+				"style",
+				"admin\\app\\public\\styles\\public\\styles.css"
+			],
+			[
+				"accueil",
+				"admin\\app\\public\\views\\public\\accueil.html"
+			],
 			[
 				"router",
 				"admin\\app\\public\\scripts\\admin\\app\\router.js"

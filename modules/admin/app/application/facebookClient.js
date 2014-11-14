@@ -300,7 +300,7 @@ FacebookClient.prototype.postPhotoOnPage = function(visitorsName, image) {
     debug("Post photo %s on album %s in page %s", image, albumId, pageId);
     return this.postPagePhoto({
         url: image,
-        message: "L'équipe de VVF Village vient de dire un petit bonjour à " + visitorsName.join(", "),
+        message: visitorsName ? "L'équipe de VVF Villages vient de dire un petit bonjour à " + visitorsName.join(", ") : "L'équipe de VVF Villages vient de passer un petit bonjour",
         place: pageId,
         no_story: true,
         access_token: expandedPageToken

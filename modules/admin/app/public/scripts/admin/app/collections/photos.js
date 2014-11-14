@@ -4,7 +4,20 @@ define(["backbone", "app/collections/data"], function(Backbone, DataCollection) 
     var Photos = DataCollection.extend({
         backend: "dataBackend",
         model: Backbone.Model.extend({}),
-        collName: "photos"
+        collName: "photos",
+        publishPhoto: function(filename, helloId, callback) {
+            this.once("sync", callback);
+
+            this.fetch({
+                data: {
+                    collName: this.collName,
+                    action: "publish",
+                    filename: filename,
+                    helloId: helloId
+                },
+                remove: false
+            });
+        }
     });
 
     return Photos;
