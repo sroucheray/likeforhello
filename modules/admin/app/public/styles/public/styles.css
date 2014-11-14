@@ -557,3 +557,16 @@ h4.modal-title{
   font-family: 'futurastd-bold';
   font-size: 15px;
 }
+
+.col-middle-extended{
+  padding: 20px;
+  text-align: center;
+}
+
+.col-middle-extended p{
+  text-align: left;
+}
+
+.col-middle-extended h3{
+  font-size: 20px;
+}
