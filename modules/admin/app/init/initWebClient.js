@@ -194,8 +194,8 @@ module.exports = function(apps) {
                     facebookClient.postPhotoOnPage(null, "https://hello.fb.byperiscope.com" + options.data.filename).then(function(facebookData) {
                             debug("Photo posted");
                             debug(facebookData);
-                            if(options.data.action.helloId){
-                                databaseClient.updatePhotoWithPost(options.data.action.helloId, facebookData.id);
+                            if(options.data.helloId){
+                                databaseClient.updatePhotoWithPost(options.data.helloId, facebookData.id);
                             }
                             res.end(facebookData);
                         }, function(error) {
