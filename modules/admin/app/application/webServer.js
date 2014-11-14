@@ -126,6 +126,10 @@ WebServer.prototype.setupPublicApp = function() {
         res.render("public/fermeture-weekend");
     });
 
+    this.publicApp.get("/reglement", function(req, res) {
+        res.render("public/reglement");
+    });
+
 
     this.publicApp.post("/", function(req, res) {
         console.log("params", req.params);
