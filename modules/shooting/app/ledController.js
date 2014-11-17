@@ -110,16 +110,17 @@ LedUtils.prototype.off = function() {
 };
 
 LedUtils.prototype.countDown = function(num, callback) {
+    var self = this;
     num = num || 3;
 
-    function updateCount(){
-        if(num === 0){
+    function updateCount() {
+        if (num === 0) {
             callback();
         }
-       this.displayChar(num+"");
-       num--;
-       setTimeout(updateCount, 1000);
-    }.bind(this);
+        self.displayChar(num + "");
+        num--;
+        setTimeout(updateCount, 1000);
+    }
 
     updateCount();
 };
