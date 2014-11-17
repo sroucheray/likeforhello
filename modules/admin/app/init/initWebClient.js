@@ -221,8 +221,14 @@ module.exports = function(apps) {
                 });
             }else if (options.data.action === "deleteHello"){
                 databaseClient.getVisitor(options.data.visitorId, true).then(function(visitor) {
-                    visitor.HellosId = null;
-                    visitor.save();
+                    for(var meth in visitor){
+                        if(typeof visitor[meth] === "function"){
+                            console.log(meth);
+                        }
+                    }
+
+                    /*visitor.HellosId = null;
+                    visitor.save();*/
                 }, function(error) {
                     debug(error);
                     res.end(error);
