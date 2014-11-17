@@ -43,7 +43,7 @@ define(["underscore", "backbone", "moment", "backbone.io"], function(_, Backbone
             }
             this.page = this.page || 0;
         },
-        getDataByDate: function(startDate, endDate, callback) {
+        getDataByDate: function(startDate, endDate, callback, remove, force) {
             var that = this,
                 startDateTime = startDate.getTime(),
                 endDateTime = endDate.getTime();
@@ -70,7 +70,7 @@ define(["underscore", "backbone", "moment", "backbone.io"], function(_, Backbone
                 }));
             }
 
-            if (startDateTime >= this.minDate && endDateTime <= this.maxDate) {
+            if (!force && startDateTime >= this.minDate && endDateTime <= this.maxDate) {
                 deliver();
                 return;
             }
@@ -83,7 +83,7 @@ define(["underscore", "backbone", "moment", "backbone.io"], function(_, Backbone
                     startDate: startDate.getTime(),
                     endDate: endDate.getTime()
                 },
-                remove: false
+                remove: remove
             });
         },
         getAllData: function(callback, remove) {

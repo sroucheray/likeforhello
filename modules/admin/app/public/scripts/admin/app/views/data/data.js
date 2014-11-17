@@ -27,7 +27,7 @@ define([
 
             utils.ParentView.prototype.initialize.apply(this, arguments);
         },
-        render: function() {
+        render: function(force) {
             //$(".bootstrap-datetimepicker-widget").remove();
             this.updateDateTimePicker();
             var self = this;
@@ -43,7 +43,7 @@ define([
                 collection.filters = this.collection.filters;
 
                 self.$el.find(".data-content").html(self.template(collection));
-            }.bind(this));
+            }.bind(this), force, force);
 
             return this;
         },
@@ -86,7 +86,7 @@ define([
                 this.startDate = moment(this.startDate).subtract(diff, "milliseconds").toDate();
             }
 
-            this.render();
+            this.render(true);
         },
         changeStartDate: function(event) {
             this.startDate = this.$(event.target).data("DateTimePicker").getDate().toDate();
