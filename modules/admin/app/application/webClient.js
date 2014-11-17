@@ -62,7 +62,7 @@ WebClient.prototype.start = function() {
         var newBackend = backboneio.createBackend();
         this[backendData.backend] = newBackend;
         this[backendData.backend].use(function(req, res, next) {
-            debug("%s %s", req.method.toUpperCase(), lowerCaseName);
+            //debug("%s %s", req.method.toUpperCase(), lowerCaseName);
             next();
         });
         backends[backendData.backend] = newBackend;
@@ -81,7 +81,7 @@ WebClient.prototype.start = function() {
         };
 
         WebClient.prototype["emit" + backendData.name] = function(command, data) {
-            debug("'%s' %s '%s'", command, lowerCaseName, data.id);
+            //debug("'%s' %s '%s'", command, lowerCaseName, data.id);
             return newBackend.emit(command, data);
         };
 

@@ -109,6 +109,21 @@ LedUtils.prototype.off = function() {
     this.ledMatrix.setFrame(patterns.empty);
 };
 
+LedUtils.prototype.countDown = function(num, callback) {
+    num = num || 3;
+
+    function updateCount(){
+        if(num === 0){
+            callback();
+        }
+       this.displayChar(num+"");
+       num--;
+       setTimeout(updateCount, 1000);
+    }.bind(this);
+
+    updateCount();
+};
+
 module.exports = function(options) {
     return new LedUtils(options);
 };

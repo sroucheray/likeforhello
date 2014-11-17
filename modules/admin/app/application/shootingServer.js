@@ -133,7 +133,7 @@ ShootingServer.prototype.turnAlertOff = function(clientId) {
 
 ShootingServer.prototype.statusUpdated = function(topic, data) {
     var that = this;
-    debug("%s from %s", topic, data.clientId);
+    //debug("%s from %s", topic, data.clientId);
     if (this._statusCalback && this._statusCalback[topic]) {
         _.each(this._statusCalback[topic], function(callback) {
             callback.call(that, data);

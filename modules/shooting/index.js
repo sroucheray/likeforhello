@@ -63,58 +63,52 @@ socketClient.onShootRequested(function(requestData) {
 
     debug("Shoot requested for '%s'", requestData.clientId);
 
-    ledController.shooting();
 
-    cam.shoot(requestData.helloId, function(err, data) {
-        if (err) {
-            debug("Error while shooting");
-            debug(err);
+    ledController.countDown(3, function() {
+        ledController.shooting();
 
-            return;
-        }
+        cam.shoot(requestData.helloId, function(err, data) {
+            if (err) {
+                debug("Error while shooting");
+                debug(err);
 
-        data.clientId = config.id;
-
-        if (!data.filename) {
-            debug("No filename produced for this shoot");
-
-            return;
-        }
-
-        if (requestData.helloId) {
-            //debug("l'equipe " + color[requestData.buttonId + 1] + " gagne !", requestData.buttonId)
-            ledController.say("l'equipe " + color[requestData.buttonId] + " gagne !", {
-                duration: 3000,
-                endCallback: function() {
-                    ledController.stop();
-                }
-            });
-        } else {
-            ledController.say("Done !", {
-                duration: 1000,
-                endCallback: function() {
-                    ledController.stop();
-                }
-            });
-        }
-
-        /*ledController.smile({
-            loop: 3,
-            endCallback: function() {
-                ledController.stop();
+                return;
             }
-        });*/
 
-        var imageBuffer = fs.readFileSync(path.join(__dirname, config.raspicam.opts.output.path, data.filename));
+            data.clientId = config.id;
 
-        data.imageBuffer = imageBuffer;
+            if (!data.filename) {
+                debug("No filename produced for this shoot");
 
-        data.enabled = enabled;
+                return;
+            }
 
-        socketClient.statusUpdate(config.topics.camera.shooted, data);
-        //data.filename
-        //data.shootId
-        //data.notRequested
+            if (requestData.helloId) {
+                //debug("l'equipe " + color[requestData.buttonId + 1] + " gagne !", requestData.buttonId)
+                ledController.say("l'equipe " + color[requestData.buttonId] + " gagne !", {
+                    duration: 3000,
+                    endCallback: function() {
+                        ledController.stop();
+                    }
+                });
+            } else {
+                ledController.say("Done !", {
+                    duration: 1000,
+                    endCallback: function() {
+                        ledController.stop();
+                    }
+                });
+            }
+
+            var imageBuffer = fs.readFileSync(path.join(__dirname, config.raspicam.opts.output.path, data.filename));
+
+            data.imageBuffer = imageBuffer;
+
+            data.enabled = enabled;
+
+            socketClient.statusUpdate(config.topics.camera.shooted, data);
+        });
+
     });
 });
 

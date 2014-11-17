@@ -81,7 +81,7 @@ RedisClient.prototype.start = function() {
 };
 
 RedisClient.prototype.setModuleInfos = function(clientId, infos, callback) {
-    debug("Set module infos %s", clientId);
+    //debug("Set module infos %s", clientId);
     if (infos.pwd) {
         infos.pwd = "";
     }
