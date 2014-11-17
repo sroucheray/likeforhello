@@ -116,6 +116,7 @@ LedUtils.prototype.countDown = function(num, callback) {
     function updateCount() {
         if (num === 0) {
             callback();
+            return;
         }
         self.displayChar(num + "");
         num--;
