@@ -86,7 +86,7 @@ define(["underscore", "backbone", "moment", "backbone.io"], function(_, Backbone
                 remove: false
             });
         },
-        getAllData: function(callback) {
+        getAllData: function(callback, remove) {
             var that = this;
 
             function deliver() {
@@ -105,7 +105,7 @@ define(["underscore", "backbone", "moment", "backbone.io"], function(_, Backbone
                 data: {
                     collName: this.collName
                 },
-                remove: false
+                remove: remove
             });
         },
         getFiltered: function(offset, limit) {

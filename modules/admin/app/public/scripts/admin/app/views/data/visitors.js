@@ -16,7 +16,7 @@ define([
             return _.extend({}, DataView.prototype.events, {
                 "click .filter-all": "clickFilterAll",
                 "click .filter-queue": "clickFilterQueue",
-                "click .filter-error": "clickFilterError",
+                "click .filter-next": "clickFilterNext",
                 "click .data-republish": "clickRepublish",
                 "click .data-rephoto": "clickRephoto"
 
@@ -35,11 +35,11 @@ define([
             this.collection.filterFunc = function(item) {
                 console.log(this.filter, item);
                 if (this.filter === "queue") {
-                    return !!item.QueueId || (!item.QueueId && !item.facebook_post_id);
+                    return item.QueueId;
                 }
 
-                if (this.filter === "error") {
-                    return !item.granted_publish_actions;
+                if (this.filter === "next") {
+                    return (!item.QueueId && !item.facebook_post_id);
                 }
 
                 return true;
@@ -54,8 +54,8 @@ define([
             this.filter = "queue";
             this.render();
         },
-        clickFilterError: function() {
-            this.filter = "error";
+        clickFilterNext: function() {
+            this.filter = "next";
             this.render();
         },
         clickRepublish: function(event){

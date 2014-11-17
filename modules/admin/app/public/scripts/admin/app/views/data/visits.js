@@ -38,7 +38,7 @@ define([
                 this.collectedData = this.fillInGaps(data, "Hour", 1000 * 60 * 60);
                 this.collectedDataPerDay = this.computeDataPerDay(this.collectedData);
                 this.createCharts();
-            }.bind(this));
+            }.bind(this), true);
 
             return;
         },
