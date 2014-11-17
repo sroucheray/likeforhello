@@ -219,6 +219,14 @@ module.exports = function(apps) {
                     debug(error);
                     res.end(error);
                 });
+            }else if (options.data.action === "deleteHello"){
+                databaseClient.getVisitor(options.data.visitorId, true).then(function(visitor) {
+                    visitor.HellosId = null;
+                    visitor.save();
+                }, function(error) {
+                    debug(error);
+                    res.end(error);
+                });
             }
         } else {
             databaseClient.getData(options).then(function(data) {

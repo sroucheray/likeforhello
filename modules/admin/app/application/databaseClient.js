@@ -376,10 +376,10 @@ DataBaseClient.prototype.getVisitors = function(startDate, endDate) {
     });
 };
 
-DataBaseClient.prototype.getVisitor = function(id) {
+DataBaseClient.prototype.getVisitor = function(id, notRaw) {
     debug("Get visitor : %s", id);
     return sqlClient.Visitor.find(id, {
-        raw: true
+        raw: notRaw ? false : true
     });
 };
 

@@ -17,7 +17,9 @@ define([
                 "click .filter-all": "clickFilterAll",
                 "click .filter-queue": "clickFilterQueue",
                 "click .filter-error": "clickFilterError",
-                "click .data-republish": "clickRepublish"
+                "click .data-republish": "clickRepublish",
+                "click .data-rephoto": "clickRephoto"
+
             });
         },
         initialize: function() {
@@ -59,6 +61,12 @@ define([
         clickRepublish: function(event){
             $(event.target).attr("disabled", "disabled");
             this.collection.publishPhotoOnWall($(event.target).data("filename"), $(event.target).data("facebookid"), function(data){
+                console.log("publish", arguments);
+            });
+        },
+        clickRephoto: function(event){
+            $(event.target).attr("disabled", "disabled");
+            this.collection.clickDeleteHello($(event.target).data("facebookid"), function(data){
                 console.log("publish", arguments);
             });
         }

@@ -17,6 +17,18 @@ define(["backbone", "app/collections/data"], function(Backbone, DataCollection) 
                 },
                 remove: false
             });
+        },
+        clickDeleteHello: function(visitorId, callback) {
+            this.once("sync", callback);
+
+            this.fetch({
+                data: {
+                    collName: this.collName,
+                    action: "deleteHello",
+                    visitorId: visitorId
+                },
+                remove: false
+            });
         }
     });
 
