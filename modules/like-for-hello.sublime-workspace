@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"v",
+				"visitors"
+			],
+			[
+				"hell",
+				"helloId"
+			],
+			[
 				"ba",
 				"background-color"
 			],
@@ -506,14 +514,6 @@
 			[
 				"pwd",
 				"pwdHash"
-			],
-			[
-				"create",
-				"createUser"
-			],
-			[
-				"con",
-				"config"
 			]
 		]
 	},
@@ -525,6 +525,10 @@
 		[
 			[
 				"forma",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"form",
 				"CodeFormatter: Format Code"
 			],
 			[
@@ -550,10 +554,6 @@
 			[
 				"wrap",
 				"Word Wrap: Toggle"
-			],
-			[
-				"form",
-				"CodeFormatter: Format Code"
 			],
 			[
 				"lin",
@@ -1048,17 +1048,20 @@
 	},
 	"file_history":
 	[
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/head.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/footer.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/reglement.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/facebookClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initStateServer.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/databaseClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/styles.css",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/attente.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/pas-autorisation.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture-weekend.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/pas-autorisation.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/head.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/footer.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/public/script.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/db/models/visitor.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/styles.css",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/application/facebookClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/admin/styles.css",
 		"/C/_work/GitHub/likeforhello/modules/broker/app/socketClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/backbone.io/test/sync_test.js",
@@ -1069,7 +1072,6 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/visits.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/statistics.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/stateServer.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initStateServer.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/main.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/admin/styles.less",
 		"/C/_work/GitHub/likeforhello/modules/shooting/app/ledController.js",
@@ -1078,7 +1080,6 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/data.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/models.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/router.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/application/databaseClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/visits.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/visits.js",
 		"/C/_work/GitHub/likeforhello/modules/libraries/readme.txt",
@@ -1174,8 +1175,7 @@
 		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/node_modules/debug/debug.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/brokerServer.js",
 		"/C/_work/GitHub/likeforhello/modules/broker/index.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initBrokerServer.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initShootingServer.js"
+		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initBrokerServer.js"
 	],
 	"find":
 	{
@@ -1303,6 +1303,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"facebookClient",
+			"h2",
+			"h1",
+			".",
+			"<h3>",
+			"ARTICLE",
+			"article",
+			"ARTICLE",
+			"getvis",
+			"publish",
+			"helloId",
+			"updatePhotoWit",
+			"updatePhotoWithPost",
+			"CAAKD86OlhTIBAApmbLCehwN3FX2kVZAmkuwzJkAOyPefJtkZCWMJkob1NNpZAuonCuSqpw0cUbsisDORBvGwt8gzeyLlUWZAEpZCVOOnc9VpZAl2NvL1nGpKM6OQC8mQwFMqZCt9pfSx710gR5UrGRQX0QNkoMnsaZCXpEUaFkwrNlRB7WzhdSL51zG1fJ9fNAZAdwjnoSxqUHvlhF40E5ZBZAE",
+			"AQBvH2AsRocXeZWPyqS_O5sNFWP0dvkNNjo",
+			"id",
+			"stateServer",
 			"stateser",
 			"console",
 			"17",
@@ -1413,24 +1430,7 @@
 			"=",
 			";",
 			"maxTeamInDatum",
-			"chart",
-			"teamView",
-			"View",
-			"view",
-			"datum",
-			"'",
-			"]]",
-			"[d",
-			"[",
-			", ",
-			"'",
-			"2ème étage",
-			"1er étage",
-			"Data",
-			"data",
-			"'",
-			"datedData",
-			"this.startDate"
+			"chart"
 		],
 		"highlight": true,
 		"in_selection": false,

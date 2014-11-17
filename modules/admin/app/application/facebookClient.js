@@ -292,7 +292,7 @@ FacebookClient.prototype.greetingVisitor = function(visitor, image) {
         link: appUrl,
         picture: image, //res.link,
         name: "L’équipe de VVF Villages vient de me dire Bonjour !",
-        caption: "Quelle ambiance !",
+        caption: "1 an de vacances à gagner !",
         description: "Qui sera le plus rapide à venir vous dire Bonjour ?"
     });
 };

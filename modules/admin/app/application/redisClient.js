@@ -147,8 +147,8 @@ RedisClient.prototype.getLastAlertDate = function(callback) {
     this.client.hgetall.call(this.client, "alert", function(err, result) {
         var lastdate = (result && result.lastdate && parseInt(result.lastdate, 10)) || 0;
         var random = parseInt(result.nextrandom, 10);
-
-        callback.call(that, err, lastdate, random);
+        debug("Last date is %s", lastdate);
+        callback.call(that, err, lastdate, random * 1000);
     });
 };
 
