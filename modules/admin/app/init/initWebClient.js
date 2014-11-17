@@ -222,8 +222,8 @@ module.exports = function(apps) {
             }else if (options.data.action === "deleteHello"){
                 databaseClient.getVisitor(options.data.visitorId, true).then(function(visitor) {
                     for(var meth in visitor){
-                        if(typeof visitor[meth] === "function"){
                             console.log(meth);
+                        if(typeof visitor[meth] === "function"){
                         }
                     }
 
