@@ -221,6 +221,7 @@ module.exports = function(apps) {
                 });
             }else if (options.data.action === "deleteHello"){
                 databaseClient.getVisitor(options.data.visitorId, true).then(function(visitor) {
+                    debug("Get visitor to delete hello", visitor);
                     for(var meth in visitor){
                             console.log(meth);
                         if(typeof visitor[meth] === "function"){
