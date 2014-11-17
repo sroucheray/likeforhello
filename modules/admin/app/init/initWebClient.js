@@ -232,7 +232,7 @@ module.exports = function(apps) {
 
                             /*visitor.HellosId = null;
                     visitor.save();*/
-                        }.then(function() {
+                        }).then(function() {
                             debug("Hello deleted");
 
                         }, function(error) {
