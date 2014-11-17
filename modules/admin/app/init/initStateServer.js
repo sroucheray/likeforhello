@@ -101,6 +101,8 @@ module.exports = function(apps) {
                 var now = Date.now(),
                     diff = now - lastDate;
 
+                debug("Now is %s, last was %s so diff = %s", now, lastDate, diff);
+                debug("Waiting for a diff of %s", durationThreshold);
                 if (diff < durationThreshold) {
                     debug("No processing, waiting to reach realert delay : %s < %s", diff, durationThreshold);
                     return;
