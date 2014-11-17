@@ -9,7 +9,7 @@
         </span><br>
         <a href="mailto:{{email}}" target="_blank">{{email}}</a><br>
 
-        <span class="label {{#ifEq hasLiked 0}}label-danger{{else}}label-success{{/ifEq}}">Liked <span class="glyphicon {{#ifEq hasLiked 0}}glyphicon-remove{{else}}glyphicon-ok{{/ifEq}} text-white"></span></span>
+        <!-- <span class="label {{#ifEq hasLiked 0}}label-danger{{else}}label-success{{/ifEq}}">Liked <span class="glyphicon {{#ifEq hasLiked 0}}glyphicon-remove{{else}}glyphicon-ok{{/ifEq}} text-white"></span></span> -->
         <span class="label {{#ifEq granted_publish_actions 0}}label-danger{{else}}label-success{{/ifEq}}">Granted <span class="glyphicon {{#ifEq granted_publish_actions 0}}glyphicon-remove{{else}}glyphicon-ok{{/ifEq}} text-white"></span></span>
         <div class="clearfix"></div>
     </div>
@@ -20,8 +20,8 @@
         Dernière visite <strong><span title="{{formatDate updatedAt}}">{{fromNow updatedAt}}</span></strong><br>
         Access Token : <strong title="{{access_token}}">{{ellipsis 20 access_token}}...</strong><br>
         Expanded Token : <strong title="{{access_token}}">{{ellipsis 20 expanded_access_token}}...</strong><br>
-        <button {{#if facebook_post_id}}style="visibility:hidden;"{{/if}} {{#ifEq granted_publish_actions 0}}disabled{{/ifEq}} class="btn btn-default btn-sm data-republish" data-filename="{{filename}}" data-facebookid="{{id}}">{{#ifEq granted_publish_actions 0}}Publication impossible sans les droits utilisateurs{{else}}Publier à nouveau sur Facebook{{/ifEq}}</button>
         {{#if Hello.Photos.filename}}
+        <button {{#if facebook_post_id}}style="visibility:hidden;"{{/if}} {{#ifEq granted_publish_actions 0}}disabled{{/ifEq}} class="btn btn-default btn-sm data-republish" data-filename="{{filename}}" data-facebookid="{{id}}">{{#ifEq granted_publish_actions 0}}Publication impossible sans les droits utilisateurs{{else}}Publier à nouveau sur Facebook{{/ifEq}}</button>
         {{#with Hello.Photos}}
         <div class="thumbnail">
             <div class="{{#unless facebook_id}}bg-warning{{/unless}}">

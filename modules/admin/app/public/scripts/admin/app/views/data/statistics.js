@@ -114,7 +114,7 @@ define([
 
             var teamChart = new google.visualization.LineChart(this.$(".statistic-team").get(0));
             teamChart.draw(teamView, {
-                height: 300,
+                height: 600,
                 chartArea: {
                     left: 30
                 },
@@ -153,7 +153,7 @@ define([
 
             var stageChart = new google.visualization.LineChart(this.$(".statistic-stage").get(0));
             stageChart.draw(stageView, {
-                height: 300,
+                height: 600,
                 title: "Résultats à tous les étages",
                 vAxis: {
                     gridlines: {

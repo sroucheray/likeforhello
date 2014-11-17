@@ -35,11 +35,11 @@ define([
             this.collection.filterFunc = function(item) {
                 console.log(this.filter, item);
                 if (this.filter === "queue") {
-                    return !!item.QueueId && item.facebook_post_id;
+                    return !!item.QueueId || (!item.QueueId && !item.facebook_post_id);
                 }
 
                 if (this.filter === "error") {
-                    return !item.QueueId && !item.facebook_post_id;
+                    return !item.granted_publish_actions;
                 }
 
                 return true;
