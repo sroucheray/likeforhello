@@ -131,7 +131,7 @@ WebServer.prototype.setupPublicApp = function() {
         res.render("public/reglement");
     });
 
-    this.publicApp.get("/vvf-villages-like-you", function(req, res) {
+    this.publicApp.all("/vvf-villages-like-you", function(req, res) {
         var md = new MobileDetect(req.headers["user-agent"]);
         var isMobile = md.phone();
 
