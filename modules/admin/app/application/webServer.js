@@ -138,7 +138,7 @@ WebServer.prototype.setupPublicApp = function() {
         if (isMobile) {
             res.redirect("https://hello.fb.byperiscope.com/");
         } else {
-            res.render("https://www.facebook.com/VVFVillages.pageofficielle/app_708032399246642");
+            res.redirect("https://www.facebook.com/VVFVillages.pageofficielle/app_708032399246642");
         }
     });
 
