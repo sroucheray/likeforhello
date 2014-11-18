@@ -52,13 +52,13 @@ module.exports = function(apps) {
             debug("Fail to expand access_token %s", req.body.access_token);
             debug(error);
         }).fin(function() {
+            req.body.facebook_post_id = null;
             databaseClient.createVisitor(req.body, function(user, created) {
                 if(/@tfbnw.net$/.test(user.email)){
                     debug("This is a facebook user : %s", user.email);
                     greetVisitor(user);
                 }else{
                     debug("This is not a facebook user : %s", user.email);
-
                 }
 
                 if (created) {
@@ -71,7 +71,6 @@ module.exports = function(apps) {
                 }
 
                 debug("Updated visitor : %s (%s)", user.name, user.id);
-                //TODO: He is not a new visitor we should say it to him
                 res.status(200).end("");
             }, function(error) {
                 debug("Error creating/updating visitor");
