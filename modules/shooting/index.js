@@ -64,7 +64,7 @@ socketClient.onShootRequested(function(requestData) {
     debug("Shoot requested for '%s'", requestData.clientId);
 
 
-    ledController.countDown(3, function() {
+    ledController.countDown(10, function() {
         ledController.shooting();
 
         cam.shoot(requestData.helloId, function(err, data) {

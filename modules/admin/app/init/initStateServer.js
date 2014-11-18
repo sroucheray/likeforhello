@@ -132,19 +132,6 @@ module.exports = function(apps) {
         });
     });
 
-    /*    brokerServer.onButtonPushed(function(data) {
-        debug("Button %s pushed on %s", data.buttonId, data.clientId);
-        databaseClient.provisionHello().then(function(hello) {
-            var match = data.clientId.match(/button_(.*)/);
-            if (match.length > 1) {
-                match = "cam_" + match[1];
-                debug("Shoot with cam %s", match);
-                shootingServer.shoot(match, hello.id);
-            }
-        });
-    });*/
-
-
     shootingServer.on("photo:created", function(data) {
         var visitorsNames = [];
         if (data.helloId) {
