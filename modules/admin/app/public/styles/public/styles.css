@@ -326,7 +326,7 @@ p span{
 	display:block;
 	font-size:26px;
     color:#f84e61;
-    line-height:30px;
+    line-height:36px;
 	font-family: 'Gloria Hallelujah', cursive;
 	margin-bottom:15px;
 }
@@ -407,6 +407,10 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
    opacity: 0.80;
 
 }
+.btn-margin{
+	margin-top:100px;
+	margin-left:90px;
+}	
 #wrapper {
 	width:793px;
   margin: 0 auto;
@@ -488,17 +492,35 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
 .col-right {
 	display:block;
 	width:430px;
+	height:370px;
 	margin:0 0 20px 300px;
+}
+.col-right-large {
+	width:470px;
+	text-align:center;
 }
 .col-int {
 	display:block;
 	width:320px;
 	margin-left:115px;
 }
+.col-int-large {
+	display:block;
+	width:450px;
+	float:left;
+	text-align:center;
+	margin-bottom:25px;
+}
 .col-video {
 	display:block;
 	padding:0 25px;
 	clear:both;
+}
+.col-video p {
+	display:block;
+	color:#868585;
+	font-size:11px;
+	margin:10px 0;
 }
 .col-middle {
 	display:block;
@@ -536,19 +558,15 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
 }
 .conditions {
 	display:block;
-	font-size:10px;
+	font-size:12px;
 }
 
-h4.modal-title{
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 22px;
-  color: #505050;
-  line-height: 30px;
-  text-align: center;
-}
-.modal-content{
-  font-size: 13px;
-  color: #2b2b2b;
+.vacances {
+	display:block;
+	clear:both;
+	float:left;
+	width:auto;
+	margin:30px 0 0 25px;
 }
 
 .modal-content .btn{
@@ -578,11 +596,15 @@ h4.modal-title{
   .feuille span { position: absolute; width: 210%; margin-top: 10px; }
   .logo { width: 75%; height: auto; margin-bottom: 40%; }
   h2, h3, .pola-shopie, .polas-accueil { display: none; }
-  .col-right { margin-left: 0; width: 100%; margin-top: 200px; }
+  .col-right { margin-left: 0; width: 100%; margin-top: 175px; height: auto; }
+  .btn-margin { margin: 0; }
   p { padding: 0 20px; }
+  .vacances { float: none; margin: 25px auto; }
   .col-int { width: 100%; margin-left: 0; text-align: center; }
+  .col-int-large { width: 100%; }
   .left30 { margin-left: 0 !important; }
   .left15 { margin-left: 0 !important; display: inline !important; }
   .col-video img { display: none; }
+  .col-video p { padding: 0; }
   iframe { height: auto; }
 }

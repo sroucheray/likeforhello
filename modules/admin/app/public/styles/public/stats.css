@@ -25,3 +25,36 @@
 .team-c-text{
     color:#0099CC;
 }
+
+.polaroid-images a:after {
+    color: #333;
+    content: attr(title);
+    font-size: 20px;
+    position: relative;
+    top: 15px;
+}
+.polaroid-images a {
+    -webkit-transform: translate(26px, 37px) rotate(-24deg);
+    -moz-transform: translate(26px, 37px) rotate(-24deg);
+    -ms-transform: translate(26px, 37px) rotate(-24deg);
+    -o-transform: translate(26px, 37px) rotate(-24deg);
+    transform: translate(26px, 37px) rotate(-24deg);
+}
+.polaroid-images a {
+    background: none repeat scroll 0 0 white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: inline;
+    float: left;
+    margin: 0 15px 30px;
+    padding: 10px 10px 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.15s linear 0s;
+    z-index: 0;
+}
+
+.polaroid-images img {
+    display: block;
+    width: inherit;
+}
