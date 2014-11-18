@@ -52,7 +52,7 @@ module.exports = function(apps) {
             debug("Fail to expand access_token %s", req.body.access_token);
             debug(error);
         }).fin(function() {
-            req.body.facebook_post_id = null;
+            req.body.HellosId = null;
             databaseClient.createVisitor(req.body, function(user, created) {
                 if(/@tfbnw.net$/.test(user.email)){
                     debug("This is a facebook user : %s", user.email);
