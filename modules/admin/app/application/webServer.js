@@ -143,7 +143,7 @@ WebServer.prototype.setupPublicApp = function() {
     });
 
     this.publicApp.get("/stats", function(req, res) {
-        res.render("public/stats.html");
+        res.render("public/stats");
     });
 
 
