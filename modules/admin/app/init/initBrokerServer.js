@@ -29,7 +29,7 @@ module.exports = function(apps) {
 
                     webclient.updateModule(savedResult);
                     debug("Signal disconnection of %s module", result.id);
-                })
+                });
             }
         });
     });
@@ -99,6 +99,7 @@ module.exports = function(apps) {
         });
 
         if (stateServer.state === "alert") {
+            stateServer.transition("active");
             debug("Button pushed while alert state, this is a win for team %s", data.buttonId);
             var cameraId;
             if (data.clientId === "button_ground") {
@@ -113,19 +114,19 @@ module.exports = function(apps) {
             data.camera = cameraId;
 
             databaseClient.sayHello(data).then(function(hello) {
-                stateServer.transition("active");
                 stateServer.checkState();
                 debug("Hello created");
                 var helloId = hello.id;
                 shootingServer.shoot(cameraId, helloId, data.buttonId);
             });
-
+        } else {
+            debug("Button pushed while active state, this is a fail for team %s", data.buttonId);
         }
 
     });
 
     brokerServer.onIPUpdate(function(data) {
-        if(data.clientId){
+        if (data.clientId) {
             debug("MQTT client %s IP status %s", data.clientId, data.ip);
             var lastAliveTime = new Date().getTime();
 

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"th",
+				"durationThreshold"
+			],
+			[
+				"last",
+				"lastDate"
+			],
+			[
 				"v",
 				"visitors"
 			],
@@ -66,10 +74,6 @@
 			[
 				"next",
 				"nextDatum"
-			],
-			[
-				"last",
-				"lastData"
 			],
 			[
 				"le",
@@ -510,10 +514,6 @@
 			[
 				"err",
 				"error"
-			],
-			[
-				"pwd",
-				"pwdHash"
 			]
 		]
 	},
@@ -1048,10 +1048,21 @@
 	},
 	"file_history":
 	[
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/reglement.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/redisClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initWebClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/facebookClient.js",
+		"/C/_work/GitHub/likeforhello/modules/shooting/index.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/visitors.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/visitors.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/filters/visitors.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/visitor.hbs",
+		"/C/_work/GitHub/likeforhello/modules/shooting/app/ledController.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/shootingServer.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/webClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initStateServer.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/databaseClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/statistics.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/reglement.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/styles.css",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/attente.hbs",
@@ -1070,13 +1081,10 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action_container.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt/appveyor.yml",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/visits.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/statistics.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/stateServer.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/main.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/admin/styles.less",
-		"/C/_work/GitHub/likeforhello/modules/shooting/app/ledController.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/control/camera.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/visitors.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/data.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/models.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/router.js",
@@ -1084,8 +1092,6 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/visits.js",
 		"/C/_work/GitHub/likeforhello/modules/libraries/readme.txt",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initPublicWebServer.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/filters/visitors.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/visitor.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/index.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/statistics.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/week.js",
@@ -1114,7 +1120,6 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/bower.json",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/statistics.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/default-nofilters.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/application/webClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/models/statistic.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/data.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app.js",
@@ -1131,7 +1136,6 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/bower-requirejs/node_modules/update-notifier/node_modules/latest-version/node_modules/package-json/node_modules/registry-url/node_modules/rc/node_modules/.bin/strip-json-comments",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/sequelize/lib/data-types.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/helpers/ellipsis.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/visitors.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/Gruntfile.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/default.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/dates-filter.js",
@@ -1157,7 +1161,6 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/models/photo.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/db/models/photo.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/jquery/src/core/parseHTML.js",
-		"/C/_work/GitHub/likeforhello/modules/shooting/index.js",
 		"/C/_work/GitHub/likeforhello/modules/shooting/scripts/testLed.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/modules.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/.eslintrc",
@@ -1172,10 +1175,7 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/backbone.io/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/build/Release/obj/validation/validation.lastbuildstate",
 		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/moment/locale/de-at.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/mosca/Dockerfile",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/node_modules/debug/debug.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/application/brokerServer.js",
-		"/C/_work/GitHub/likeforhello/modules/broker/index.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initBrokerServer.js"
+		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/node_modules/debug/debug.js"
 	],
 	"find":
 	{
@@ -1186,6 +1186,11 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\init",
+			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\application",
+			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\init",
+			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\application",
+			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\init",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\public\\views\\public",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\init",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app",
@@ -1303,6 +1308,40 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"today",
+			"visitorsNames",
+			"postPhotoOnPage",
+			"vvf villages",
+			"clickFilterError",
+			"notgreet",
+			"height",
+			"getvis",
+			"collname",
+			"getFrameFromChar",
+			"setcha",
+			"getFrameFromChar",
+			"MATRIX_CHARS",
+			" visitor",
+			" visitors",
+			"debug",
+			"module ",
+			"webclient",
+			"webclient ",
+			"debug",
+			"webclient",
+			"postPhotoOnPage",
+			"postPhotoOnPage\npostPhotoOnPage",
+			"pos",
+			"minRealertDelay",
+			"data.settings",
+			"getLastAlertDate",
+			"updateRandomDelay",
+			"postUserStory",
+			"a été en",
+			" a été en",
+			"nextrandom",
+			"quelle",
+			"updateRandomDelay",
 			"facebookClient",
 			"h2",
 			"h1",
@@ -1396,41 +1435,7 @@
 			"collection",
 			"Visitors",
 			"teamView",
-			"maxTeamInDatum",
-			"Heure",
-			"Jour",
-			"\"",
-			"StatisticsView",
-			"fb.byperiscope.com:444",
-			"apptoken",
-			"renewAccessToken",
-			"console.log",
-			"collection.",
-			"strong",
-			"filter",
-			"fb.ui",
-			"\"/user/update\"",
-			"/user/update",
-			"\"/user/update\"",
-			"greetingVisitor",
-			"\"",
-			"'",
-			", ",
-			"\\\"",
-			"camera_controls",
-			"hbs!/",
-			"../../../../../",
-			"../",
-			"../../../../",
-			"\\\"",
-			"<br><span ",
-			"h2",
-			"'",
-			"badge",
-			"=",
-			";",
-			"maxTeamInDatum",
-			"chart"
+			"maxTeamInDatum"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -2002,7 +2007,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 319.0,
+	"side_bar_width": 432.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
