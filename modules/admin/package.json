@@ -34,6 +34,7 @@
     "lodash": "^2.4.1",
     "machina": "^0.3.8",
     "minimist": "^1.1.0",
+    "mobile-detect": "^0.4.2",
     "moment": "^2.8.2",
     "mosca": "^0.22.0",
     "mysql": "^2.4.3",
