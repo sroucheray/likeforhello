@@ -73,12 +73,28 @@
                             server.updateUser(userData, function() {
                                 document.location = "/attente";
                             });
+
+                            ga("send", "event", "button", "click", "publish", userData.message);
                         })
 
                     } else {
                         document.location = "/pas-autorisation";
                         //console.log("Sorry no publish action");
                     }
+
+                    ga("send", {
+                        "hitType": "event",
+                        "eventCategory": "facebook",
+                        "eventAction": "api",
+                        "eventLabel": "permission"
+                    });
+                });
+
+                ga("send", {
+                    "hitType": "event",
+                    "eventCategory": "facebook",
+                    "eventAction": "api",
+                    "eventLabel": "user_data"
                 });
                 /*var welcomeBlock = document.getElementById("fb-welcome");
                 welcomeBlock.innerHTML = "Hello, " + data.first_name + "!";*/
@@ -124,6 +140,7 @@
             FB.login(loginStatusHandler, {
                 scope: "email, publish_actions"
             });
+            ga("send", "event", "button", "click", "defi", "defi");
         });
 
         $("#logout").click(function(event) {
