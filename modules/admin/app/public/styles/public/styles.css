@@ -452,7 +452,7 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
 .feuille-page {
 	display:block;
 	width:353px;
-	height:181px;
+	height:234px;
 	background:url(/styles/public/gfx/feuille-page.png) no-repeat;
 	position:absolute;
 	top:0;
