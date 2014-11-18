@@ -1,0 +1,27 @@
+.row-results .glyphicon-user {
+    font-size: 90px;
+}
+
+.team-a{
+    background-color:#66CC66;
+}
+
+.team-b{
+    background-color:#FFCC00;
+}
+
+.team-c{
+    background-color:#0099CC;
+}
+
+.team-a-text{
+    color:#66CC66;
+}
+
+.team-b-text{
+    color:#FFCC00;
+}
+
+.team-c-text{
+    color:#0099CC;
+}

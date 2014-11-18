@@ -570,3 +570,19 @@ h4.modal-title{
 .col-middle-extended h3{
   font-size: 20px;
 }
+
+@media screen and (max-width: 809px) {
+  #wrapper { width: 100%; }
+  .header-accueil { width: 100%; height: auto; }
+  .feuille { width: 45%; background-position: center top; background-size: contain; height: auto; left: 0; }
+  .feuille span { position: absolute; width: 210%; margin-top: 10px; }
+  .logo { width: 75%; height: auto; margin-bottom: 40%; }
+  h2, h3, .pola-shopie, .polas-accueil { display: none; }
+  .col-right { margin-left: 0; width: 100%; margin-top: 200px; }
+  p { padding: 0 20px; }
+  .col-int { width: 100%; margin-left: 0; text-align: center; }
+  .left30 { margin-left: 0 !important; }
+  .left15 { margin-left: 0 !important; display: inline !important; }
+  .col-video img { display: none; }
+  iframe { height: auto; }
+}
