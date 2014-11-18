@@ -597,6 +597,7 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
 
 @media screen and (max-width: 809px) {
   #wrapper { width: 100%; }
+  .j-aime-img{display:none;}
   .header-accueil { width: 100%; height: auto; }
   .feuille { width: 45%; background-position: center top; background-size: contain; height: auto; left: 0; }
   .feuille span { position: absolute; width: 210%; margin-top: 10px; }
