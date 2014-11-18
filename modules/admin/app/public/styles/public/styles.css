@@ -410,7 +410,7 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
 .btn-margin{
 	margin-top:100px;
 	margin-left:90px;
-}	
+}
 #wrapper {
 	width:793px;
   margin: 0 auto;
@@ -510,6 +510,7 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
 	float:left;
 	text-align:center;
 	margin-bottom:25px;
+  position: relative;
 }
 .col-video {
 	display:block;
@@ -587,6 +588,11 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
 
 .col-middle-extended h3{
   font-size: 20px;
+}
+.j-aime-img{
+    position: absolute;
+    right: 117px;
+    top: 51px;
 }
 
 @media screen and (max-width: 809px) {
