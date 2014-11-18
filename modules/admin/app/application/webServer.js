@@ -142,6 +142,10 @@ WebServer.prototype.setupPublicApp = function() {
         }
     });
 
+    this.publicApp.get("/stats", function(req, res) {
+        res.render("public/stats.html");
+    });
+
 
     this.publicApp.post("/", function(req, res) {
         console.log("params", req.params);
