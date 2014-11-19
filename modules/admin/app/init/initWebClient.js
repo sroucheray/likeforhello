@@ -213,7 +213,6 @@ module.exports = function(apps) {
                         });
                     }).then(function(data) {
                         debug("Visitor updated");
-                        debug(data);
                         res.end(data);
                     }, function(error) {
                         debug(error);
@@ -222,10 +221,6 @@ module.exports = function(apps) {
                 } else if (options.data.action === "deleteHello") {
                     databaseClient.getVisitor(options.data.visitorId, true).then(function(visitor) {
                             debug("Get visitor to delete hello %s", options.data.visitorId);
-                            for (var meth in visitor) {
-                                console.log(meth);
-                                if (typeof visitor[meth] === "function") {}
-                            }
 
                             visitor.setHello(null);
                             return visitor.save();
@@ -243,7 +238,6 @@ module.exports = function(apps) {
                 } else {
                     databaseClient.getData(options).then(function(data) {
                         debug("Send %s %s", data.length, options.data.collName);
-                        debug(data);
                         res.end(data);
                     }, function(error) {
                         debug(error);

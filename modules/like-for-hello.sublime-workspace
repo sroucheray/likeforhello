@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-size"
+			],
+			[
 				"th",
 				"durationThreshold"
 			],
@@ -510,10 +514,6 @@
 			[
 				"brokerS",
 				"brokerServer"
-			],
-			[
-				"err",
-				"error"
 			]
 		]
 	},
@@ -1048,10 +1048,27 @@
 	},
 	"file_history":
 	[
+		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initBrokerServer.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/webServer.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/public/stats.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/footer.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/public/script.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/head.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/stats.css",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil2.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/styles.css",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/redirect.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initStateServer.js",
+		"/C/_work/GitHub/likeforhello/modules/shooting/index.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/facebookClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initPublicWebServer.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/attente.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture-weekend.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/pas-autorisation.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/redisClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initWebClient.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/application/facebookClient.js",
-		"/C/_work/GitHub/likeforhello/modules/shooting/index.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/visitors.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/visitors.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/filters/visitors.hbs",
@@ -1059,19 +1076,9 @@
 		"/C/_work/GitHub/likeforhello/modules/shooting/app/ledController.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/shootingServer.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/webClient.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initStateServer.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/databaseClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/statistics.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/reglement.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/styles.css",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/attente.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture-weekend.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/pas-autorisation.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/head.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/footer.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/public/script.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/db/models/visitor.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/admin/styles.css",
 		"/C/_work/GitHub/likeforhello/modules/broker/app/socketClient.js",
@@ -1091,7 +1098,6 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/visits.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/visits.js",
 		"/C/_work/GitHub/likeforhello/modules/libraries/readme.txt",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initPublicWebServer.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/index.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/statistics.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/week.js",
@@ -1169,13 +1175,7 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/moment-duration-format/lib/moment-duration-format.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/bower/node_modules/graceful-fs/test/max-open.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/socket.io-client/Makefile",
-		"/C/_work/GitHub/likeforhello/modules/admin/.bowerrc",
-		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/jquery/src/data/var/data_priv.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/eonasdan-bootstrap-datetimepicker/tasks/bump_version.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/backbone.io/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/build/Release/obj/validation/validation.lastbuildstate",
-		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/moment/locale/de-at.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/mosca/Dockerfile",
-		"/C/_work/_svn_projects/vvf/vvflikeforhello/trunk/modules/shooting/node_modules/debug/debug.js"
+		"/C/_work/GitHub/likeforhello/modules/admin/.bowerrc"
 	],
 	"find":
 	{
@@ -1186,6 +1186,8 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\init",
+			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\public\\views\\public",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\init",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\application",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\init",
@@ -1308,6 +1310,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"video",
+			"réglem",
+			"feuille",
+			"feulle",
+			"\"gfx",
+			"gfx/",
+			"defi",
+			"col-int-large",
+			"\"gfx/",
+			"rotate(-24deg)",
+			"web-",
+			" // Required.",
+			"'",
+			"col-sm-3",
+			"{",
+			"3",
+			"ms",
+			"hbs",
+			"onButtonPushed",
+			"'",
+			"Réglement",
+			"Règlement",
 			"today",
 			"visitorsNames",
 			"postPhotoOnPage",
@@ -1413,29 +1437,7 @@
 			"new Date(",
 			"this.collecteData",
 			"computeDataPerDay",
-			"'",
-			"computeDataPerDay",
-			"startTime",
-			"StatisticsView",
-			"{}",
-			"console",
-			"datum",
-			"lastData",
-			"visitPerHourChart",
-			"visitPerHourView",
-			"dataPerHourTable",
-			"dataTable",
-			"teamChart",
-			"visitView",
-			"getVisits",
-			"getVisitsStats",
-			"getVisits",
-			"read",
-			"read dat",
-			"collection",
-			"Visitors",
-			"teamView",
-			"maxTeamInDatum"
+			"'"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1443,6 +1445,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Règlement",
 			"width=\"810",
 			"hbs!",
 			"hbs!/views/",
@@ -1502,7 +1505,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 34.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -1545,7 +1548,7 @@
 	},
 	"replace":
 	{
-		"height": 44.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
