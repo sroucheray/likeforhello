@@ -11,7 +11,7 @@ module.exports = function(apps) {
     var debug = apps.debug;
 
 
-    function greetVisitor(visitor){
+    function greetVisitor(visitor) {
         facebookClient.greetingVisitor(visitor, "https://hello.fb.byperiscope.com/photos/99543d6f-2b30-4abb-be1b-d670f0df51f8.jpg").then(function(data) {
             debug("Greeted  %s (%s) with post %s", visitor.name, visitor.id, data.id);
             debug(data);
@@ -25,15 +25,31 @@ module.exports = function(apps) {
 
     publicApp.post("/stats/get", function(req, res) {
         var result = {};
-        databaseClient.getLastPhotos().then(function(photos){
+        databaseClient.getLastPhotos().then(function(photos) {
             result.lastPhotos = photos;
 
-        })
+            return databaseClient.getOperationStats();
+        }).then(function(stats) {
+            result.stats = stats;
+
+            redisClient.getPhotoOfTheDay(function(err, filename) {
+                if (err) {
+                    result.error = err;
+                    res.end(result);
+                    return;
+                }
+                result.ofTheDay = filename;
+            });
+        }, function(err) {
+            result.error = err;
+            res.end(result);
+            res.end(result);
+        });
 
     });
 
     publicApp.post("/user/update", function(req, res) {
-        var isTest = req.param("test");
+        //var isTest = req.param("test");
 
         if (!req.xhr) {
             res.status(400).end("Not right buddy");
@@ -62,10 +78,10 @@ module.exports = function(apps) {
         }).fin(function() {
             req.body.HellosId = null;
             databaseClient.createVisitor(req.body, function(user, created) {
-                if(/@tfbnw.net$/.test(user.email)){
+                if (/@tfbnw.net$/.test(user.email)) {
                     debug("This is a facebook user : %s", user.email);
                     greetVisitor(user);
-                }else{
+                } else {
                     debug("This is not a facebook user : %s", user.email);
                 }
 
