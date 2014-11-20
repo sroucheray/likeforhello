@@ -1,0 +1,90 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta charset=utf-8>
+    <title>VVF Villages like you, le jeu !</title>
+    <link rel="stylesheet" type="text/css" media="all" href="/styles/public/metricsgraphics.css" />
+    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="/styles/public/stats.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/lib/underscore/underscore.js"></script>
+    <script src="/scripts/public/metricsgraphics.min.js"></script>
+    <script src="/scripts/public/stats.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-sm-3">
+                <h1>
+                <img src="/styles/public/gfx/logo-vvf-like-you.png" alt="VVF Villages like you">
+                </h1>
+            </div>
+        </div>
+        <div class="row text-center row-results">
+            <div class="col-sm-3 polaroid-images">
+                <a title="Photo du jour !" href="">
+                    <img height="180" id="ofTheDay">
+                </a>
+            </div>
+            <div class="col-sm-2">
+                <div class="thumbnail">
+                    <span class="glyphicon glyphicon-user team-a-text"></span><br>
+                    <div class="caption">
+                        <h3><span class="label label-default team-a-score"></span></h3>
+                        <p>Achats, Comptabilité, Juridique, RH et Direction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="thumbnail">
+                    <span class="glyphicon glyphicon-user team-b-text"></span><br>
+                    <div class="caption">
+                        <h3><span class="label label-default team-b-score"></span></h3>
+                        <p>Communication, Marketing et Revenue Management</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="thumbnail">
+                    <span class="glyphicon glyphicon-user team-c-text"></span><br>
+                    <div class="caption">
+                        <h3><span class="label label-default team-c-score"></span></h3>
+                        <p>Commerciaux grand public et groupes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 polaroid-images polaroid-list">
+                <a title="Dernières photos !" href="">
+                    <img height="180">
+                </a>
+                <a title="Dernières photos !" href="">
+                    <img height="180">
+                </a>
+                <a title="Dernières photos !" href="">
+                    <img height="180">
+                </a>
+                <a title="Dernières photos !" href="">
+                    <img height="180">
+                </a>
+                <a title="Dernières photos !" href="">
+                    <img height="180">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div id="graphic-data"></div>
+            </div>
+            <div class="col-sm-2">
+                <div class="legend"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
