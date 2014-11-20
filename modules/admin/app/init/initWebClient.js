@@ -235,11 +235,11 @@ module.exports = function(apps) {
                     debug(error);
                     res.end(error);
                 });
+            } else if (options.data && options.data.action === "ofTheDay") {
+                redisClient.setPhotoOfTheDay(options.data.filename);
+                res.end();
+                return;
             }
-        } else if (options.data && options.data.action === "ofTheDay") {
-            redisClient.setPhotoOfTheDay(options.data.filename);
-            res.end();
-            return;
         } else {
             databaseClient.getData(options).then(function(data) {
                 debug("Send %s %s", data.length, options.data.collName);
