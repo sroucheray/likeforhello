@@ -38,15 +38,15 @@ module.exports = function(apps) {
                 debug("Photo of the day getted");
                 if (err) {
                     result.error = err;
-                    res.end(result);
+                    res.json(result);
                     return;
                 }
                 result.ofTheDay = filename;
-                res.end(result);
+                res.json(result);
             });
         }, function(err) {
             result.error = err;
-            res.end(result);
+            res.json(result);
         });
 
     });
