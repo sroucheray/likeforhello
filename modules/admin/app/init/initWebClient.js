@@ -160,14 +160,6 @@ module.exports = function(apps) {
 
     webclient.onReadPhotos(function(req, res, next) {
         console.log("Read photos", req.model);
-        var options = req.options;
-
-        if(options.data.action === "ofTheDay"){
-             redisClient.setPhotoOfTheDay(options.data.filename);
-             res.end();
-             return;
-        }
-
 
         var fromDate,
             toDate;
@@ -189,76 +181,80 @@ module.exports = function(apps) {
     });
 
     webclient.onReadData(function(req, res, next) {
-            var options = req.options;
+        var options = req.options;
 
-            if (!options.data) {
-                next();
-                return;
-            }
+        if (!options.data) {
+            next();
+            return;
+        }
 
-            debug("Read data %s", options.data.collName);
+        debug("Read data %s", options.data.collName);
 
-            if (options.data.action) {
-                if (options.data.action === "publish") {
-                    facebookClient.postPhotoOnPage(null, "https://hello.fb.byperiscope.com" + options.data.filename).then(function(facebookData) {
-                        debug("Photo posted");
-                        debug(facebookData);
-                        if (options.data.helloId) {
-                            databaseClient.updatePhotoWithPost(options.data.helloId, facebookData.id);
-                        }
-                        res.end(facebookData);
-                    }, function(error) {
-                        debug("Error posting on Facebook / Updating database with posts");
-                        debug(error);
-                        res.end(error);
-                    });
-                } else if (options.data.action === "publishOnWall") {
-
-                    databaseClient.getVisitor(options.data.visitorId).then(function(visitor) {
-                        return facebookClient.greetingVisitor(visitor, "https://hello.fb.byperiscope.com" + options.data.filename).then(function(data) {
-                            debug("Greeted  %s (%s) with post %s", visitor.name, visitor.id, data.id);
-                            debug(data);
-                            return databaseClient.updateVisitorWithPost(visitor.id, data.id);
-                        });
-                    }).then(function(data) {
-                        debug("Visitor updated");
-                        res.end(data);
-                    }, function(error) {
-                        debug(error);
-                        res.end(error);
-                    });
-                } else if (options.data.action === "deleteHello") {
-                    databaseClient.getVisitor(options.data.visitorId, true).then(function(visitor) {
-                            debug("Get visitor to delete hello %s", options.data.visitorId);
-
-                            visitor.setHello(null);
-                            return visitor.save();
-
-                            /*visitor.HellosId = null;
-                    visitor.save();*/
-                        }).then(function() {
-                            debug("Hello deleted");
-
-                        }, function(error) {
-                            debug(error);
-                            res.end(error);
-                        });
+        if (options.data.action) {
+            debug("Action %s", options.data.action);
+            if (options.data.action === "publish") {
+                facebookClient.postPhotoOnPage(null, "https://hello.fb.byperiscope.com" + options.data.filename).then(function(facebookData) {
+                    debug("Photo posted");
+                    debug(facebookData);
+                    if (options.data.helloId) {
+                        databaseClient.updatePhotoWithPost(options.data.helloId, facebookData.id);
                     }
-                } else {
-                    databaseClient.getData(options).then(function(data) {
-                        debug("Send %s %s", data.length, options.data.collName);
-                        res.end(data);
-                    }, function(error) {
-                        debug(error);
-                        next();
+                    res.end(facebookData);
+                }, function(error) {
+                    debug("Error posting on Facebook / Updating database with posts");
+                    debug(error);
+                    res.end(error);
+                });
+            } else if (options.data.action === "publishOnWall") {
+                databaseClient.getVisitor(options.data.visitorId).then(function(visitor) {
+                    return facebookClient.greetingVisitor(visitor, "https://hello.fb.byperiscope.com" + options.data.filename).then(function(data) {
+                        debug("Greeted  %s (%s) with post %s", visitor.name, visitor.id, data.id);
+                        debug(data);
+                        return databaseClient.updateVisitorWithPost(visitor.id, data.id);
                     });
-                }
+                }).then(function(data) {
+                    debug("Visitor updated");
+                    res.end(data);
+                }, function(error) {
+                    debug(error);
+                    res.end(error);
+                });
+            } else if (options.data.action === "deleteHello") {
+                databaseClient.getVisitor(options.data.visitorId, true).then(function(visitor) {
+                    debug("Get visitor to delete hello %s", options.data.visitorId);
 
+                    visitor.setHello(null);
+                    return visitor.save();
 
+                    /*visitor.HellosId = null;
+                    visitor.save();*/
+                }).then(function() {
+                    debug("Hello deleted");
+
+                }, function(error) {
+                    debug(error);
+                    res.end(error);
+                });
+            }
+        } else if (options.data && options.data.action === "ofTheDay") {
+            redisClient.setPhotoOfTheDay(options.data.filename);
+            res.end();
+            return;
+        } else {
+            databaseClient.getData(options).then(function(data) {
+                debug("Send %s %s", data.length, options.data.collName);
+                res.end(data);
+            }, function(error) {
+                debug(error);
+                next();
             });
-    };
+        }
 
-    /*{ id: 7,
+
+    });
+};
+
+/*{ id: 7,
   filename: '/photos/249646d5-42cc-43df-bf95-5831a246d784.jpg',
   facebook_id: null,
   facebook_post_id: null,
