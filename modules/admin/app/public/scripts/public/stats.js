@@ -58,8 +58,8 @@ $(function() {
 
             data_graphic({
                 data: stats,
-                width: 919,
-                height: 400,
+                width: 800,
+                height: 200,
                 target: "#graphic-data",
                 x_accessor: "date",
                 y_accessor: "value",

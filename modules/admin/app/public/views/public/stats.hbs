@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <meta charset=utf-8>
     <title>VVF Villages like you, le jeu !</title>
+    <link rel="stylesheet" type="text/css" media="all" href="/styles/public/metricsgraphics.css" />
     <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="all" href="/styles/public/stats.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/styles/public/metricsgraphics.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -19,20 +19,13 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row text-center">
+        <div class="row text-center row-results">
             <div class="col-sm-3">
                 <h1>
                 <img src="/styles/public/gfx/logo-vvf-like-you.png" alt="VVF Villages like you">
                 </h1>
             </div>
-        </div>
-        <div class="row text-center row-results">
-            <div class="col-sm-3 polaroid-images">
-                <a title="Photo du jour !" href="">
-                    <img height="200" id="ofTheDay">
-                </a>
-            </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 cell-result">
                 <div class="thumbnail">
                     <span class="glyphicon glyphicon-user team-a-text"></span><br>
                     <div class="caption">
@@ -41,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 cell-result">
                 <div class="thumbnail">
                     <span class="glyphicon glyphicon-user team-b-text"></span><br>
                     <div class="caption">
@@ -50,35 +43,42 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 cell-result">
                 <div class="thumbnail">
                     <span class="glyphicon glyphicon-user team-c-text"></span><br>
                     <div class="caption">
                         <h3><span class="label label-default team-c-score"></span></h3>
-                        <p>Commerciaux grand public et groupes <br>&nbsp;</p>
+                        <p>Commerciaux grand public et groupes</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2 polaroid-images polaroid-list">
+            <div class="col-sm-2 polaroid-images polaroid-list cell-result">
                 <a title="Dernières photos !" href="">
-                    <img height="200">
+                    <img height="180">
                 </a>
                 <a title="Dernières photos !" href="">
-                    <img height="200">
+                    <img height="180">
                 </a>
                 <a title="Dernières photos !" href="">
-                    <img height="200">
+                    <img height="180">
                 </a>
                 <a title="Dernières photos !" href="">
-                    <img height="200">
+                    <img height="180">
                 </a>
                 <a title="Dernières photos !" href="">
-                    <img height="200">
+                    <img height="180">
+                </a>
+            </div>
+        </div>
+        <div class="row text-center row-results">
+            <div class="col-sm-3 polaroid-images">
+                <a title="Photo du jour !" href="">
+                    <img height="180" id="ofTheDay">
                 </a>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
+            <div class="col-sm-7 col-sm-offset-3">
                 <div id="graphic-data"></div>
             </div>
             <div class="col-sm-2">

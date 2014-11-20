@@ -393,9 +393,7 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
   display: block;
   width:auto;
   height:50px;
-  float:left;
   line-height:50px;
-
 }
 .btn-defi:hover,
 .btn-defi:focus{
@@ -410,6 +408,9 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
 .btn-margin{
 	margin-top:100px;
 	margin-left:90px;
+}
+.btn-gallerie{
+
 }
 #wrapper {
 	width:793px;

@@ -1,7 +1,9 @@
 .row-results .glyphicon-user {
-    font-size: 90px;
+    font-size: 60px;
 }
-
+.caption p{
+    font-size: 14px;
+}
 .team-a{
     background-color:#66CC66;
 }
@@ -38,11 +40,11 @@
     top: 15px;
 }
 .polaroid-images a {
-    -webkit-transform: translate(-130px, 19px) rotate(-24deg);
-    -moz-transform: translate(-130px, 19px) rotate(-24deg);
-    -ms-transform: translate(-130px, 19px) rotate(-24deg);
-    -o-transform: translate(-130px, 19px) rotate(-24deg);
-    transform: translate(-130px, 19px) rotate(-24deg);
+    -webkit-transform: translate(-85px, -115px) rotate(-24deg);
+    -moz-transform: translate(-85px, -115px) rotate(-24deg);
+    -ms-transform: translate(-85px, -115px) rotate(-24deg);
+    -o-transform: translate(-85px, -115px) rotate(-24deg);
+    transform: translate(-85px, -115px) rotate(-24deg);
 }
 .polaroid-images a {
     background: none repeat scroll 0 0 white;
@@ -64,93 +66,97 @@
 }
 
 .polaroid-list a:nth-child(1){
-    -webkit-transform: translate(-93px, -5px) rotate(5deg);
-    -moz-transform: translate(-93px, -5px) rotate(5deg);
-    -ms-transform: translate(-93px, -5px) rotate(5deg);
-    -o-transform: translate(-93px, -5px) rotate(5deg);
-    transform: translate(-93px, -5px) rotate(5deg);
+    -webkit-transform: translate(-131px, 121px) rotate(5deg);
+    -moz-transform: translate(-131px, 121px) rotate(5deg);
+    -ms-transform: translate(-131px, 121px) rotate(5deg);
+    -o-transform: translate(-131px, 121px) rotate(5deg);
+    transform: translate(-131px, 121px) rotate(5deg);
 }
 
 .polaroid-list a:nth-child(2){
-    -webkit-transform: translate(-93px, -5px) rotate(8deg);
-    -moz-transform: translate(-93px, -5px) rotate(8deg);
-    -ms-transform: translate(-93px, -5px) rotate(8deg);
-    -o-transform: translate(-93px, -5px) rotate(8deg);
-    transform: translate(-93px, -5px) rotate(8deg);
+    -webkit-transform: translate(-131px, 121px) rotate(8deg);
+    -moz-transform: translate(-131px, 121px) rotate(8deg);
+    -ms-transform: translate(-131px, 121px) rotate(8deg);
+    -o-transform: translate(-131px, 121px) rotate(8deg);
+    transform: translate(-131px, 121px) rotate(8deg);
 }
 
 .polaroid-list a:nth-child(3){
-    -webkit-transform: translate(-93px, -5px) rotate(11deg);
-    -moz-transform: translate(-93px, -5px) rotate(11deg);
-    -ms-transform: translate(-93px, -5px) rotate(11deg);
-    -o-transform: translate(-93px, -5px) rotate(11deg);
-    transform: translate(-93px, -5px) rotate(11deg);
+    -webkit-transform: translate(-131px, 121px) rotate(11deg);
+    -moz-transform: translate(-131px, 121px) rotate(11deg);
+    -ms-transform: translate(-131px, 121px) rotate(11deg);
+    -o-transform: translate(-131px, 121px) rotate(11deg);
+    transform: translate(-131px, 121px) rotate(11deg);
 }
 
 .polaroid-list a:nth-child(4){
-    -webkit-transform: translate(-93px, -5px) rotate(15deg);
-    -moz-transform: translate(-93px, -5px) rotate(15deg);
-    -ms-transform: translate(-93px, -5px) rotate(15deg);
-    -o-transform: translate(-93px, -5px) rotate(15deg);
-    transform: translate(-93px, -5px) rotate(15deg);
+    -webkit-transform: translate(-131px, 121px) rotate(15deg);
+    -moz-transform: translate(-131px, 121px) rotate(15deg);
+    -ms-transform: translate(-131px, 121px) rotate(15deg);
+    -o-transform: translate(-131px, 121px) rotate(15deg);
+    transform: translate(-131px, 121px) rotate(15deg);
 }
 
 .polaroid-list a:nth-child(5){
-    -webkit-transform: translate(-93px, -5px) rotate(18deg);
-    -moz-transform: translate(-93px, -5px) rotate(18deg);
-    -ms-transform: translate(-93px, -5px) rotate(18deg);
-    -o-transform: translate(-93px, -5px) rotate(18deg);
-    transform: translate(-93px, -5px) rotate(18deg);
+    -webkit-transform: translate(-131px, 121px) rotate(18deg);
+    -moz-transform: translate(-131px, 121px) rotate(18deg);
+    -ms-transform: translate(-131px, 121px) rotate(18deg);
+    -o-transform: translate(-131px, 121px) rotate(18deg);
+    transform: translate(-131px, 121px) rotate(18deg);
 }
 
 .polaroid-list a:nth-child(6){
-    -webkit-transform: translate(-93px, -5px) rotate(21deg);
-    -moz-transform: translate(-93px, -5px) rotate(21deg);
-    -ms-transform: translate(-93px, -5px) rotate(21deg);
-    -o-transform: translate(-93px, -5px) rotate(21deg);
-    transform: translate(-93px, -5px) rotate(21deg);
+    -webkit-transform: translate(-131px, 121px) rotate(21deg);
+    -moz-transform: translate(-131px, 121px) rotate(21deg);
+    -ms-transform: translate(-131px, 121px) rotate(21deg);
+    -o-transform: translate(-131px, 121px) rotate(21deg);
+    transform: translate(-131px, 121px) rotate(21deg);
 }
 
 .polaroid-list a:nth-child(7){
-    -webkit-transform: translate(-93px, -5px) rotate(24deg);
-    -moz-transform: translate(-93px, -5px) rotate(24deg);
-    -ms-transform: translate(-93px, -5px) rotate(24deg);
-    -o-transform: translate(-93px, -5px) rotate(24deg);
-    transform: translate(-93px, -5px) rotate(24deg);
+    -webkit-transform: translate(-131px, 121px) rotate(24deg);
+    -moz-transform: translate(-131px, 121px) rotate(24deg);
+    -ms-transform: translate(-131px, 121px) rotate(24deg);
+    -o-transform: translate(-131px, 121px) rotate(24deg);
+    transform: translate(-131px, 121px) rotate(24deg);
 }
 
 .polaroid-list a:nth-child(8){
-    -webkit-transform: translate(-93px, -5px) rotate(27deg);
-    -moz-transform: translate(-93px, -5px) rotate(27deg);
-    -ms-transform: translate(-93px, -5px) rotate(27deg);
-    -o-transform: translate(-93px, -5px) rotate(27deg);
-    transform: translate(-93px, -5px) rotate(27deg);
+    -webkit-transform: translate(-131px, 121px) rotate(27deg);
+    -moz-transform: translate(-131px, 121px) rotate(27deg);
+    -ms-transform: translate(-131px, 121px) rotate(27deg);
+    -o-transform: translate(-131px, 121px) rotate(27deg);
+    transform: translate(-131px, 121px) rotate(27deg);
 }
 
 .polaroid-list a:nth-child(9){
-    -webkit-transform: translate(-93px, -5px) rotate(30deg);
-    -moz-transform: translate(-93px, -5px) rotate(30deg);
-    -ms-transform: translate(-93px, -5px) rotate(30deg);
-    -o-transform: translate(-93px, -5px) rotate(30deg);
-    transform: translate(-93px, -5px) rotate(30deg);
+    -webkit-transform: translate(-131px, 121px) rotate(30deg);
+    -moz-transform: translate(-131px, 121px) rotate(30deg);
+    -ms-transform: translate(-131px, 121px) rotate(30deg);
+    -o-transform: translate(-131px, 121px) rotate(30deg);
+    transform: translate(-131px, 121px) rotate(30deg);
 }
 
 .polaroid-list a:nth-child(10){
-    -webkit-transform: translate(-93px, -5px) rotate(33deg);
-    -moz-transform: translate(-93px, -5px) rotate(33deg);
-    -ms-transform: translate(-93px, -5px) rotate(33deg);
-    -o-transform: translate(-93px, -5px) rotate(33deg);
-    transform: translate(-93px, -5px) rotate(33deg);
+    -webkit-transform: translate(-131px, 121px) rotate(33deg);
+    -moz-transform: translate(-131px, 121px) rotate(33deg);
+    -ms-transform: translate(-131px, 121px) rotate(33deg);
+    -o-transform: translate(-131px, 121px) rotate(33deg);
+    transform: translate(-131px, 121px) rotate(33deg);
 }
 
 .polaroid-list a.slide{
-    -webkit-transform: translate(-415px, -5px) rotate(0deg);
-    -moz-transform: translate(-415px, -5px) rotate(0deg);
-    -ms-transform: translate(-415px, -5px) rotate(0deg);
-    -o-transform: translate(-415px, -5px) rotate(0deg);
-    transform: translate(-415px, -5px) rotate(0deg);
+    -webkit-transform: translate(-415px, 121px) rotate(0deg);
+    -moz-transform: translate(-415px, 121px) rotate(0deg);
+    -ms-transform: translate(-415px, 121px) rotate(0deg);
+    -o-transform: translate(-415px, 121px) rotate(0deg);
+    transform: translate(-415px, 121px) rotate(0deg);
 }
 
 .legend span{
     display: block;
+}
+
+.cell-result{
+    padding-top: 20px;
 }
