@@ -153,6 +153,20 @@ RedisClient.prototype.getLastAlertDate = function(callback) {
     });
 };
 
+RedisClient.prototype.setPhotoOfTheDay = function(photo) {
+    debug("Update photo of the day to : %s", photo);
+    this.client.hmset.call(this.client, "photos", {
+        "oftheday": photo
+    });
+};
+
+RedisClient.prototype.getPhotoOfTheDay = function(callback) {
+    var that = this;
+    this.client.hgetall.call(this.client, "photos", function(err, result) {
+        callback.call(that, err, result.oftheday);
+    });
+};
+
 
 module.exports = function(settings) {
     return new RedisClient(settings);

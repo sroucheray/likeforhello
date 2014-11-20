@@ -7,8 +7,8 @@ module.exports = function(apps) {
     var databaseClient = apps.databaseClient;
     var publicApp = webserver.getPublicApp();
     var facebookClient = apps.facebookClient;
+    var redisClient = apps.redisClient;
     var debug = apps.debug;
-
 
 
     function greetVisitor(visitor){
@@ -23,6 +23,14 @@ module.exports = function(apps) {
     }
 
 
+    publicApp.post("/stats/get", function(req, res) {
+        var result = {};
+        databaseClient.getLastPhotos().then(function(photos){
+            result.lastPhotos = photos;
+
+        })
+
+    });
 
     publicApp.post("/user/update", function(req, res) {
         var isTest = req.param("test");

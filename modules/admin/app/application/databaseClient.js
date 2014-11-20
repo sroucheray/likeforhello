@@ -356,6 +356,18 @@ DataBaseClient.prototype.getPhotos = function(startDate, endDate) {
     });
 };
 
+
+DataBaseClient.prototype.getLastPhotos = function(num) {
+    num = num || 100;
+    debug("Get last %s photos", num);
+    return sqlClient.Photo.findAll({
+        order: "shootedAt DESC",
+        limit: num
+    }, {
+        raw: true
+    });
+};
+
 DataBaseClient.prototype.getVisitors = function(startDate, endDate) {
     debug("Get visitors between %s and %s", startDate, endDate);
     return sqlClient.Visitor.findAll({
