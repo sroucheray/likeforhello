@@ -17,7 +17,8 @@ define([
         numPerLine: 5,
         events: function() {
             return _.extend({}, DataView.prototype.events, {
-                "click .data-republish": "republish"
+                "click .data-republish": "republish",
+                "click .photo-of-the-day": "ofTheDay"
             });
         },
         initialize: function() {
@@ -30,6 +31,12 @@ define([
         republish: function(event){
             $(event.target).attr("disabled", "disabled");
             this.collection.publishPhoto($(event.target).data("filename"), $(event.target).data("hello"), function(data){
+                console.log("publish", arguments);
+            });
+        },
+        ofTheDay: function(event){
+            $(event.target).attr("disabled", "disabled");
+            this.collection.ofTheDay($(event.target).data("filename"), function(data){
                 console.log("publish", arguments);
             });
         }

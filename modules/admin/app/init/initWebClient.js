@@ -235,6 +235,9 @@ module.exports = function(apps) {
                             res.end(error);
                         });
                     }
+                } else if(options.data.action === "ofTheDay"){
+                     redisClient.setPhotoOfTheDay(options.data.filename);
+                     res.end();
                 } else {
                     databaseClient.getData(options).then(function(data) {
                         debug("Send %s %s", data.length, options.data.collName);

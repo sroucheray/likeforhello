@@ -17,6 +17,18 @@ define(["backbone", "app/collections/data"], function(Backbone, DataCollection) 
                 },
                 remove: false
             });
+        },
+        ofTheDay: function(filename, callback) {
+            this.once("sync", callback);
+
+            this.fetch({
+                data: {
+                    collName: this.collName,
+                    action: "ofTheDay",
+                    filename: filename
+                },
+                remove: false
+            });
         }
     });
 
