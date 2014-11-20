@@ -23,7 +23,7 @@ module.exports = function(apps) {
     }
 
 
-    publicApp.post("/stats/get", function(req, res) {
+    publicApp.get("/stats/get", function(req, res) {
         var result = {};
         databaseClient.getLastPhotos().then(function(photos) {
             result.lastPhotos = photos;
