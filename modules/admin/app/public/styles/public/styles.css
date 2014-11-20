@@ -408,6 +408,7 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
 .btn-margin{
 	margin-top:100px;
 	margin-left:90px;
+  width: 337px;
 }
 .btn-gallerie{
   width:345px;
