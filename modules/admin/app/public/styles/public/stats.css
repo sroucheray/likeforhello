@@ -54,7 +54,7 @@
     position: absolute;
     text-align: center;
     text-decoration: none;
-    transition: all 0.15s linear 0s;
+    transition: all 400ms ease-out 0s;
     z-index: 0;
 }
 
@@ -141,4 +141,16 @@
     -ms-transform: translate(-93px, -5px) rotate(33deg);
     -o-transform: translate(-93px, -5px) rotate(33deg);
     transform: translate(-93px, -5px) rotate(33deg);
+}
+
+.polaroid-list a.slide{
+    -webkit-transform: translate(-415px, -5px) rotate(0deg);
+    -moz-transform: translate(-415px, -5px) rotate(0deg);
+    -ms-transform: translate(-415px, -5px) rotate(0deg);
+    -o-transform: translate(-415px, -5px) rotate(0deg);
+    transform: translate(-415px, -5px) rotate(0deg);
+}
+
+.legend span{
+    display: block;
 }
