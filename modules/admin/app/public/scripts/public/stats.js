@@ -59,7 +59,7 @@ $(function() {
             data_graphic({
                 data: stats,
                 width: 919,
-                height: 400,
+                height: 300,
                 target: "#graphic-data",
                 x_accessor: "date",
                 y_accessor: "value",
