@@ -26,23 +26,26 @@ module.exports = function(apps) {
     publicApp.get("/stats/get", function(req, res) {
         var result = {};
         databaseClient.getLastPhotos().then(function(photos) {
+            debug("Last photos getted");
             result.lastPhotos = photos;
 
             return databaseClient.getOperationStats();
         }).then(function(stats) {
+            debug("Operations stats getted");
             result.stats = stats;
 
             redisClient.getPhotoOfTheDay(function(err, filename) {
+                debug("Photo of the day getted");
                 if (err) {
                     result.error = err;
                     res.end(result);
                     return;
                 }
                 result.ofTheDay = filename;
+                res.end(result);
             });
         }, function(err) {
             result.error = err;
-            res.end(result);
             res.end(result);
         });
 
