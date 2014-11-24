@@ -149,7 +149,7 @@ WebServer.prototype.setupPublicApp = function() {
             res.redirect("https://hello.fb.byperiscope.com/mobile");
         } else {
             res.render("public/redirect", {
-                "app_data" : JSON.stringify(data)
+                id: data.id
             });
         }
     });
