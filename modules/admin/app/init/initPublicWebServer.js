@@ -23,24 +23,32 @@ module.exports = function(apps) {
     }
 
 
-
-    publicApp.get("/", function(req, res) {
+    function renderHome(req, res){
         var id = req.query.id;
 
         if(id){
             databaseClient.getFullVisitor(req.query.id).then(function(visitor){
-                debug(visitor);
-                res.render("public/accueil-desktop");
+                if(visitor){
+                    debug("Showing home with user id : %s", visitor.id);
+                    res.render("public/accueil-desktop-photo", visitor);
+                }else{
+                    debug("Error showing home with user id : %s", id);
+                    res.render("public/accueil-desktop");
+                }
             },
             function(err){
+                debug("Error showing home with user id : %s", id);
                 debug(err);
                 res.render("public/accueil-desktop");
             });
         }else{
             res.render("public/accueil-desktop");
         }
+    }
 
-    });
+
+    publicApp.post("/", renderHome);
+    publicApp.get("/", renderHome);
 
 
     publicApp.get("/stats/get", function(req, res) {

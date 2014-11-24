@@ -146,14 +146,6 @@ WebServer.prototype.setupPublicApp = function() {
     this.publicApp.get("/stats", function(req, res) {
         res.render("public/stats");
     });
-
-
-    this.publicApp.post("/", function(req, res) {
-        console.log("params", req.params);
-        console.log("body", req.body);
-        console.log("query", req.query);
-        res.render("public/accueil-desktop");
-    });
 };
 WebServer.prototype.setupBrokerApp = function() {
     var that = this;
