@@ -283,16 +283,21 @@ FacebookClient.prototype.greetingVisitor = function(visitor, image) {
     return this.postUserStory({
         message: visitor.message,
         access_token: visitor.expanded_access_token,
-        tags: [visitor.id].join(","),/*
+        tags: [visitor.id].join(","),
+        /*
         privacy: {
             value: "SELF"
         },*/
         actions: {
             name: "Demande ton Bonjour à VVF Villages !",
-            link: appUrl
+            link: appUrl + "?app_data=" + JSON.stringify({
+                id: visitor.id
+            })
         },
         place: pageId,
-        link: appUrl,
+        link: appUrl + "?app_data=" + JSON.stringify({
+            id: visitor.id
+        }),
         picture: image, //res.link,
         name: "L’équipe de VVF Villages vient de me dire Bonjour !",
         caption: "1 an de vacances à gagner !",
