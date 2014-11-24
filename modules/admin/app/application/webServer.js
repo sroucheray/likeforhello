@@ -111,10 +111,6 @@ WebServer.prototype.setupPublicApp = function() {
     }));
     this.publicApp.use(bodyParser.json());
 
-    this.publicApp.get("/", function(req, res) {
-        res.render("public/accueil-desktop");
-    });
-
     this.publicApp.get("/mobile", function(req, res) {
         res.render("public/accueil");
     });

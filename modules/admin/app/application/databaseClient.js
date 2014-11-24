@@ -407,6 +407,20 @@ DataBaseClient.prototype.getVisitorsWithHello = function(helloId) {
     });
 };
 
+DataBaseClient.prototype.getFullVisitor = function(id) {
+    debug("Get visitor : %s", id);
+    return sqlClient.Visitor.find(id, {
+        include: [{
+            model: sqlClient.Hello,
+            include: [{
+                model: sqlClient.Photo
+            }]
+        }]
+    }, {
+        raw: true
+    });
+};
+
 DataBaseClient.prototype.updateVisitorWithPost = function(visitorId, postId) {
     debug("Update visitor %s with post %s", visitorId, postId);
 

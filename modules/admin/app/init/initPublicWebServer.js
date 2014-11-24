@@ -23,6 +23,26 @@ module.exports = function(apps) {
     }
 
 
+
+    publicApp.get("/", function(req, res) {
+        var id = req.query.id;
+
+        if(id){
+            databaseClient.getFullVisitor(req.query.id).then(function(visitor){
+                debug(visitor);
+                res.render("public/accueil-desktop");
+            },
+            function(err){
+                debug(err);
+                res.render("public/accueil-desktop");
+            });
+        }else{
+            res.render("public/accueil-desktop");
+        }
+
+    });
+
+
     publicApp.get("/stats/get", function(req, res) {
         var result = {};
         databaseClient.getLastPhotos().then(function(photos) {
