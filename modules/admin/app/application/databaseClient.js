@@ -409,7 +409,10 @@ DataBaseClient.prototype.getVisitorsWithHello = function(helloId) {
 
 DataBaseClient.prototype.getFullVisitor = function(id) {
     debug("Get visitor : %s", id);
-    return sqlClient.Visitor.find(id, {
+    return sqlClient.Visitor.findAll({
+        where: {
+            id: id
+        },
         include: [{
             model: sqlClient.Hello,
             include: [{
