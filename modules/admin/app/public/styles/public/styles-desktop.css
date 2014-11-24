@@ -419,6 +419,7 @@ margin-top: 20px;
   position: relative;
   background: #e3e3e3;
   padding-bottom: 20px;
+  overflow-x: hidden;
 }
 .header-accueil {
   display:block;
