@@ -132,6 +132,10 @@ WebServer.prototype.setupPublicApp = function() {
     });
 
     this.publicApp.all("/vvf-villages-like-you", function(req, res) {
+
+        console.log("params", req.params);
+        console.log("body", req.body);
+        console.log("query", req.query);
         var md = new MobileDetect(req.headers["user-agent"]);
         var isMobile = md.phone();
 
