@@ -358,7 +358,7 @@ q {
 /*LIENS ET BOUTONS*/
 .btn-defi {
   display: inline-block;
-  width:auto;
+  width:270;
   height:50px;
   font-family: 'futurastd-bold';
   font-size: 21px;
@@ -414,7 +414,7 @@ margin-top: 20px;
   margin-left:90px;
 }
 #wrapper {
-  width:810px;
+  width:784px;
   margin: 0 auto;
   position: relative;
   background: #e3e3e3;
