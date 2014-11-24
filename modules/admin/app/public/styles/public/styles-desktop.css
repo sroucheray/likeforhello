@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'futurastd-bold';
-    src: url('../font/futurastd-bold.eot');
-    src: url('../font/clarendon_b_cn-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/futurastd-bold.woff') format('woff'),
-         url('../font/futurastd-bold.ttf') format('truetype'),
-         url('../font/futurastd-bold.svg#futurastd-bold') format('svg');
+    src: url('/styles/public/font/futurastd-bold.eot');
+    src: url('/styles/public/font/clarendon_b_cn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/styles/public/font/futurastd-bold.woff') format('woff'),
+         url('/styles/public/font/futurastd-bold.ttf') format('truetype'),
+         url('/styles/public/font/futurastd-bold.svg#futurastd-bold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -387,7 +387,7 @@ margin-top: 20px;
   border-radius: 5px 0 0 5px;
   -moz-border-radius: 5px 0 0 5px;
   -webkit-border-radius: 5px 0 0 5px;
-  background: url(../gfx/fleche.png) no-repeat center #dc5f2e;
+  background: url(/styles/public/gfx/fleche.png) no-repeat center #dc5f2e;
   border-right:2px solid #d15a2c;
   margin-right:22px;
 }
@@ -432,7 +432,7 @@ margin-top: 20px;
   display:block;
   width:360px;
   height:411px;
-  background:url(../gfx/feuille.png) no-repeat;
+  background:url(/styles/public/gfx/feuille.png) no-repeat;
   position:absolute;
   top:0;
   left:10px;
@@ -454,7 +454,7 @@ margin-top: 20px;
   display:block;
   width:353px;
   height:181px;
-  background:url(../gfx/feuille-page.png) no-repeat;
+  background:url(/styles/public/gfx/feuille-page.png) no-repeat;
   position:absolute;
   top:0;
   left:10px;
