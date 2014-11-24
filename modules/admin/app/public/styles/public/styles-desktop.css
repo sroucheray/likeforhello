@@ -379,6 +379,9 @@ box-shadow:         1px 1px 3px 0px rgba(50, 50, 50, 0.25);
 margin-left: 300px;
 margin-top: 20px;
 }
+.btn-defi-photo{
+  margin-left: 0;
+}
 .btn-defi span{
   display: block;
   width:50px;
@@ -420,6 +423,9 @@ margin-top: 20px;
   background: #e3e3e3;
   padding-bottom: 20px;
   overflow-x: hidden;
+}
+#wrapper .polas-accueil {
+   top: 464px;
 }
 .header-accueil {
   display:block;
@@ -498,6 +504,9 @@ margin-top: 20px;
   margin:0 0 20px 390px;
   padding: 20px 0 0;
 }
+.col-right-photo .tirage{
+  width: 329px;
+}
 .col-right-large {
   width:400px;
   text-align:center;
@@ -519,6 +528,10 @@ margin-top: 20px;
   display:block;
   padding:360px 25px 0;
   clear:both;
+
+}
+.col-video-photo {
+  padding:0 25px 0;
 
 }
 .col-video p {
@@ -574,10 +587,25 @@ margin-top: 20px;
   margin-top: 25px;
 }
 
+.btn-like-photo{
+    left: -88px;
+    top: -15px;
+
+  height: 50px;
+  margin-left: 198px;
+  margin-top: 0;
+  position: relative;
+}
+
 .btn-like > img{
   position: absolute;
   left: 91px;
+  top: -12px;
+}
+
+.btn-like-photo > img{
   position: absolute;
+  left: -85px;
   top: -12px;
 }
 
@@ -600,11 +628,11 @@ margin-top: 20px;
     top: 15px;
 }
 .polaroid-images a {
-    -webkit-transform: translate(-130px, 19px) rotate(-24deg);
-    -moz-transform: translate(-130px, 19px) rotate(-24deg);
-    -ms-transform: translate(-130px, 19px) rotate(-24deg);
-    -o-transform: translate(-130px, 19px) rotate(-24deg);
-    transform: translate(-130px, 19px) rotate(-24deg);
+    -webkit-transform: translate(-196px, -37px) rotate(14deg);
+    -moz-transform: translate(-196px, -37px) rotate(14deg);
+    -ms-transform: translate(-196px, -37px) rotate(14deg);
+    -o-transform: translate(-196px, -37px) rotate(14deg);
+    transform: translate(-196px, -37px) rotate(14deg);
 }
 .polaroid-images a {
     background: none repeat scroll 0 0 white;

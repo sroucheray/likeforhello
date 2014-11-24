@@ -29,8 +29,8 @@ module.exports = function(apps) {
         if(id){
             databaseClient.getFullVisitor(req.query.id).then(function(visitor){
                 if(visitor){
-                    debug("Showing home with user id : %s", visitor.id);
-                    res.render("public/accueil-desktop-photo", visitor);
+                    debug("Showing home with user id : %s", visitor[0].id);
+                    res.render("public/accueil-desktop-photo", visitor[0]);
                 }else{
                     debug("Error showing home with user id : %s", id);
                     res.render("public/accueil-desktop");
