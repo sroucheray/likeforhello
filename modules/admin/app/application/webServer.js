@@ -138,7 +138,7 @@ WebServer.prototype.setupPublicApp = function() {
         console.log("query", req.query.app_data);
         var data;
         if(req.query.app_data){
-            data = req.query.app_data;
+            data = req.query;
         }
 
         var md = new MobileDetect(req.headers["user-agent"]);
