@@ -139,6 +139,7 @@ WebServer.prototype.setupPublicApp = function() {
         var md = new MobileDetect(req.headers["user-agent"]);
         var isMobile = md.phone();
 
+        debug("Getting canvas page, is mobile : %s", isMobile);
         if (isMobile) {
             res.redirect("https://hello.fb.byperiscope.com/mobile");
         } else {
