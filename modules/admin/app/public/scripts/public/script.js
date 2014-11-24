@@ -64,18 +64,27 @@
                     }
 
                     if (hasPublishAction) {
-                        $("#facebookModal").modal();
                         userData.auth = authData.data;
                         userData.access_token = loggedInResponse.authResponse.accessToken;
+                        if (/@tfbnw.net$/.test(userData.email)){
+                            $("#facebookModal").modal();
 
-                        $("#publish").one("click", function() {
-                            userData.message = $("#message").val();
+                            $("#publish").one("click", function() {
+                                userData.message = $("#message").val();
+                                server.updateUser(userData, function() {
+                                    document.location = "/attente";
+                                });
+
+                                ga("send", "event", "button", "click", "publish", userData.message);
+                            })
+                        }else{
+                            userData.message = "Super idée de VVF Villages : envoyer un Bonjour à ceux qui le demande !";
                             server.updateUser(userData, function() {
                                 document.location = "/attente";
                             });
+                        }
 
-                            ga("send", "event", "button", "click", "publish", userData.message);
-                        })
+
 
                     } else {
                         document.location = "/pas-autorisation";
