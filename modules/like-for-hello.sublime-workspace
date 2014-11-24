@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"w",
+				"width"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"img",
+				"imgs"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"pos",
+				"pos	position: ${1:relative};"
+			],
+			[
 				"font",
 				"font-size"
 			],
@@ -126,10 +154,6 @@
 			[
 				"hel",
 				"helloId"
-			],
-			[
-				"pos",
-				"postId"
 			],
 			[
 				"vi",
@@ -490,30 +514,6 @@
 			[
 				"Week",
 				"weekView"
-			],
-			[
-				"retr",
-				"returnedValue"
-			],
-			[
-				"parse",
-				"parsedValue"
-			],
-			[
-				"rer",
-				"returnedValue"
-			],
-			[
-				"db",
-				"dbPropertiesWithId"
-			],
-			[
-				"time",
-				"timetable"
-			],
-			[
-				"brokerS",
-				"brokerServer"
 			]
 		]
 	},
@@ -1048,6 +1048,22 @@
 	},
 	"file_history":
 	[
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/test-attente.html",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initPublicWebServer.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/redisClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/metricsgraphics.css",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/public/metricsgraphics.min.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initWebClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/attente.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture-weekend.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/photos.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/photos.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/stats.html",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/databaseClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/photos.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/styles.css",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initBrokerServer.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/webServer.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/public/stats.js",
@@ -1056,19 +1072,11 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/head.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/stats.css",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil2.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/styles.css",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/redirect.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initStateServer.js",
 		"/C/_work/GitHub/likeforhello/modules/shooting/index.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/facebookClient.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initPublicWebServer.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/attente.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture-weekend.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/pas-autorisation.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/application/redisClient.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initWebClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/visitors.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/visitors.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/filters/visitors.hbs",
@@ -1076,7 +1084,6 @@
 		"/C/_work/GitHub/likeforhello/modules/shooting/app/ledController.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/shootingServer.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/webClient.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/application/databaseClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/statistics.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/reglement.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/db/models/visitor.js",
@@ -1103,7 +1110,6 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/week.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/nav.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/settings.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/photos.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt-contrib-less/node_modules/less/test/css/variables-in-at-rules.css",
 		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/bootstrap/less/variables.less",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/visitors.hbs",
@@ -1111,7 +1117,6 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/scores.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/settings/week.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/settings/settings.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/photos.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/control/photos.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/control/modules.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/control/button.js",
@@ -1135,7 +1140,6 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/express-hbs/node_modules/readdirp/stream-api.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/express/lib/router/route.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/bower/node_modules/retry/lib/retry_operation.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/photos.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/db/sqlClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/filters/dates.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/load-grunt-tasks/node_modules/findup-sync/.jshintrc",
@@ -1171,11 +1175,7 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/modules.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/.eslintrc",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt-contrib-less/node_modules/less/.idea/modules.xml",
-		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/bower-requirejs/node_modules/file-utils/tests/module.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/moment-duration-format/lib/moment-duration-format.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/bower/node_modules/graceful-fs/test/max-open.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/socket.io-client/Makefile",
-		"/C/_work/GitHub/likeforhello/modules/admin/.bowerrc"
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/bower-requirejs/node_modules/file-utils/tests/module.js"
 	],
 	"find":
 	{
@@ -1186,6 +1186,7 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\public\\views\\public",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\init",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\public\\views\\public",
 			"C:\\_work\\GitHub\\likeforhello\\modules\\admin\\app\\init",
@@ -1310,6 +1311,55 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".btn-ma",
+			"55px",
+			"-5px",
+			"translate(-52px, -115px) rotate(-24deg)",
+			"translate(-90px, 19px) rotate(-24deg)",
+			"-93px",
+			"-130px",
+			"height=\"200\"",
+			"div",
+			"\\",
+			"'",
+			"93px",
+			"33",
+			"-93px",
+			"#4040e8",
+			"#05b378",
+			"#db4437",
+			"'",
+			"-score",
+			"https://hello.fb.byperiscope.com/photos/1555258b-62b5-4823-ae69-bb214201ac43.jpg",
+			"Date(datum.Jour)",
+			"'",
+			"team-",
+			"data",
+			"&nbsp;",
+			"getOperationStats",
+			"setPhotoOfTheDay",
+			"collname",
+			"redis",
+			"collN",
+			"collname",
+			"ofTheDay",
+			"colln",
+			"facebookClient",
+			"photos",
+			" title=\"Photo du jour !\"",
+			"title=\"Islands Forest\" alt=\"Islands Forest\"",
+			"44px",
+			"23deg",
+			"translate(26px, 37px) rotate(-12deg)",
+			"translate(26px, 37px) rotate(-24deg)",
+			"24deg",
+			"polaro",
+			"pola",
+			"https://hello.fb.byperiscope/reglement",
+			"re",
+			"reg",
+			"reglem",
+			"debug",
 			"video",
 			"réglem",
 			"feuille",
@@ -1388,56 +1438,7 @@
 			"17",
 			"width=\"811",
 			"811",
-			"wrapper",
-			"greetingVisitor",
-			"attente",
-			"pas-autorisation",
-			"updateUser",
-			"myModalLabel",
-			"modal",
-			"h1",
-			"asPublishAction",
-			".btn",
-			"class=\"btn\"",
-			"gfx",
-			"gfx/",
-			"../font",
-			"../gfx",
-			"partials",
-			"loginButtonPushed",
-			"redirect_uri",
-			"redir",
-			"redirecr",
-			"redirect",
-			"href=\"#\"",
-			"render",
-			"modules",
-			"_.reduce",
-			"3",
-			"scoresTemplate",
-			"score",
-			"scoresTemplate",
-			"scores",
-			"DashboardModulesView",
-			"dashboardModulesView",
-			"DashboardModulesView",
-			"shoot",
-			"shootid",
-			"ticker",
-			".shoot",
-			"shoot",
-			"ledcontroller",
-			"update",
-			"activestate",
-			"activestate\nactivestate",
-			"activestate",
-			"console",
-			"hh:",
-			";",
-			"new Date(",
-			"this.collecteData",
-			"computeDataPerDay",
-			"'"
+			"wrapper"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1445,6 +1446,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"https://hello.fb.byperiscope.com/reglement",
 			"Règlement",
 			"width=\"810",
 			"hbs!",
