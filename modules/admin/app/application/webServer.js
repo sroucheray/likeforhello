@@ -135,7 +135,12 @@ WebServer.prototype.setupPublicApp = function() {
 
         console.log("params", req.params);
         console.log("body", req.body);
-        console.log("query", req.query);
+        console.log("query", req.query.app_data);
+        var data;
+        if(req.query.app_data){
+            data = JSON.parse(req.query.app_data).id;
+        }
+
         var md = new MobileDetect(req.headers["user-agent"]);
         var isMobile = md.phone();
 
@@ -143,7 +148,7 @@ WebServer.prototype.setupPublicApp = function() {
         if (isMobile) {
             res.redirect("https://hello.fb.byperiscope.com/mobile");
         } else {
-            res.render("public/redirect");
+            res.render("public/redirect", data);
         }
     });
 
