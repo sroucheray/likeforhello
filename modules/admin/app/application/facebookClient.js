@@ -280,6 +280,9 @@ FacebookClient.prototype.postPagePhoto = function(opts) {
 
 FacebookClient.prototype.greetingVisitor = function(visitor, image) {
     debug("Greeting visitor %s (%s) with image %s", visitor.name, visitor.id, image);
+    debug("Link is %s", appUrl + "?app_data=" + JSON.stringify({
+        id: visitor.id
+    }));
     return this.postUserStory({
         message: visitor.message,
         access_token: visitor.expanded_access_token,
