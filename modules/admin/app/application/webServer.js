@@ -156,7 +156,7 @@ WebServer.prototype.setupPublicApp = function() {
         console.log("params", req.params);
         console.log("body", req.body);
         console.log("query", req.query);
-        res.render("public/accueil");
+        res.render("public/accueil-desktop");
     });
 };
 WebServer.prototype.setupBrokerApp = function() {
