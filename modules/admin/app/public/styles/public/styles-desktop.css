@@ -358,7 +358,7 @@ q {
 /*LIENS ET BOUTONS*/
 .btn-defi {
   display: inline-block;
-  width:270;
+  width:270px;
   height:50px;
   font-family: 'futurastd-bold';
   font-size: 21px;
