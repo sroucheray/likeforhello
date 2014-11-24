@@ -31,6 +31,13 @@ module.exports = function(apps) {
         console.log("body", req.body);
         console.log("query", req.query.app_data);
 
+        if(!id && req.body.signed_request){
+            var signed_request = req.body.signed_request.split(".");
+            if(signed_request.length > 1){
+                debug(new Buffer(signed_request[1], "base64").toString());
+            }
+        }
+
         if(id){
             databaseClient.getFullVisitor(req.query.id).then(function(visitor){
                 if(visitor){
