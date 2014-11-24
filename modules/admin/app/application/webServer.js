@@ -112,6 +112,10 @@ WebServer.prototype.setupPublicApp = function() {
     this.publicApp.use(bodyParser.json());
 
     this.publicApp.get("/", function(req, res) {
+        res.render("public/accueil-desktop");
+    });
+
+    this.publicApp.get("/mobile", function(req, res) {
         res.render("public/accueil");
     });
 
@@ -136,7 +140,7 @@ WebServer.prototype.setupPublicApp = function() {
         var isMobile = md.phone();
 
         if (isMobile) {
-            res.redirect("https://hello.fb.byperiscope.com/");
+            res.redirect("https://hello.fb.byperiscope.com/mobile");
         } else {
             res.render("public/redirect");
         }
