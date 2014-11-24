@@ -23,7 +23,7 @@ module.exports = function(apps) {
     }
 
 
-    function renderHome(req, res){
+    function renderHome(req, res) {
         var id = req.query.id;
 
 
@@ -31,29 +31,34 @@ module.exports = function(apps) {
         console.log("body", req.body);
         console.log("query", req.query.app_data);
 
-        if(!id && req.body.signed_request){
+        if (!id && req.body.signed_request) {
             var signed_request = req.body.signed_request.split(".");
-            if(signed_request.length > 1){
-                debug(new Buffer(signed_request[1], "base64").toString());
+            if (signed_request.length > 1) {
+                try {
+                    signed_request = JSON.parse(new Buffer(signed_request[1], "base64").toString());
+                    id = signed_request.app_data;
+                } catch (e) {
+                    debug(e);
+                }
             }
         }
 
-        if(id){
-            databaseClient.getFullVisitor(req.query.id).then(function(visitor){
-                if(visitor){
-                    debug("Showing home with user id : %s", visitor[0].id);
-                    res.render("public/accueil-desktop-photo", visitor[0]);
-                }else{
+        if (id) {
+            databaseClient.getFullVisitor(req.query.id).then(function(visitor) {
+                    if (visitor) {
+                        debug("Showing home with user id : %s", visitor[0].id);
+                        res.render("public/accueil-desktop-photo", visitor[0]);
+                    } else {
+                        debug("Error showing home with user id : %s", id);
+                        res.render("public/accueil-desktop");
+                    }
+                },
+                function(err) {
                     debug("Error showing home with user id : %s", id);
+                    debug(err);
                     res.render("public/accueil-desktop");
-                }
-            },
-            function(err){
-                debug("Error showing home with user id : %s", id);
-                debug(err);
-                res.render("public/accueil-desktop");
-            });
-        }else{
+                });
+        } else {
             res.render("public/accueil-desktop");
         }
     }
