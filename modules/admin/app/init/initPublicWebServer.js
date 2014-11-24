@@ -36,6 +36,7 @@ module.exports = function(apps) {
             if (signed_request.length > 1) {
                 try {
                     signed_request = JSON.parse(new Buffer(signed_request[1], "base64").toString());
+                    debug(signed_request);
                     id = signed_request.app_data;
                 } catch (e) {
                     debug(e);
