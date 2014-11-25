@@ -69,12 +69,12 @@ module.exports = function(apps) {
     publicApp.get("/", renderHome);
 
     publicApp.get("/mobile", function(req, res) {
-        var id = req.query.id;
+        var id = req.query.app_data || req.query.id;
 
 
         console.log("params", req.params);
         console.log("body", req.body);
-        console.log("query", req.query.app_data);
+        console.log("query", req.query);
 
         if (id) {
             databaseClient.getFullVisitor(id).then(function(visitor) {
