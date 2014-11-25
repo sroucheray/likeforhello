@@ -69,8 +69,16 @@ module.exports = function(apps) {
     publicApp.get("/", renderHome);
 
     publicApp.get("/mobile", function(req, res) {
-        var id = req.query.app_data || req.query.id;
+        var id = req.query.app_data;
 
+        if(id){
+            try{
+                var data = JSON.parse(id);
+                id = data.id;
+            }catch(e){
+                debug(e);
+            }
+        }
 
         console.log("params", req.params);
         console.log("body", req.body);
