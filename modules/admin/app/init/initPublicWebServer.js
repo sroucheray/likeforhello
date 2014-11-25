@@ -68,6 +68,29 @@ module.exports = function(apps) {
     publicApp.post("/", renderHome);
     publicApp.get("/", renderHome);
 
+    publicApp.get("/mobile", function(req, res) {
+        var id = req.query.id;
+
+        if (id) {
+            databaseClient.getFullVisitor(id).then(function(visitor) {
+                    if (visitor) {
+                        debug("Showing home with user id : %s", visitor[0].id);
+                        res.render("public/accueil-mobile-photo", visitor[0]);
+                    } else {
+                        debug("Error showing home with user id : %s", id);
+                        res.render("public/accueil-mobile");
+                    }
+                },
+                function(err) {
+                    debug("Error showing home with user id : %s", id);
+                    debug(err);
+                    res.render("public/accueil-mobile");
+                });
+        } else {
+            res.render("public/accueil-mobile");
+        }
+    });
+
 
     publicApp.get("/stats/get", function(req, res) {
         var result = {};

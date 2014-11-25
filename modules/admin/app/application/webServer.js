@@ -111,10 +111,6 @@ WebServer.prototype.setupPublicApp = function() {
     }));
     this.publicApp.use(bodyParser.json());
 
-    this.publicApp.get("/mobile", function(req, res) {
-        res.render("public/accueil");
-    });
-
     this.publicApp.get("/pas-autorisation", function(req, res) {
         res.render("public/pas-autorisation");
     });
@@ -146,10 +142,14 @@ WebServer.prototype.setupPublicApp = function() {
 
         debug("Getting canvas page, is mobile : %s", isMobile);
         if (isMobile) {
-            res.redirect("https://hello.fb.byperiscope.com/mobile");
+            if(data.id){
+                res.redirect("https://hello.fb.byperiscope.com/mobile/?id=" + data.id);
+            }else{
+                res.redirect("https://hello.fb.byperiscope.com/mobile");
+            }
         } else {
             res.render("public/redirect", {
-                id: data.id
+                id: data ? data.id : null
             });
         }
     });
