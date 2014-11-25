@@ -40,6 +40,7 @@ module.exports = function(apps) {
                     id = signed_request.app_data;
                 } catch (e) {
                     debug(e);
+                    res.render("public/accueil-desktop");
                 }
             }
         }
@@ -77,6 +78,7 @@ module.exports = function(apps) {
                 id = data.id;
             }catch(e){
                 debug(e);
+                res.render("public/accueil-mobile");
             }
         }
 
