@@ -47,7 +47,7 @@ module.exports = function(apps) {
 
         if (id) {
             databaseClient.getFullVisitor(id).then(function(visitor) {
-                    if (visitor) {
+                    if (visitor && visitor.length) {
                         debug("Showing home with user id : %s", visitor[0].id);
                         res.render("public/accueil-desktop-photo", visitor[0]);
                     } else {
@@ -88,7 +88,7 @@ module.exports = function(apps) {
 
         if (id) {
             databaseClient.getFullVisitor(id).then(function(visitor) {
-                    if (visitor) {
+                    if (visitor && visitor.length) {
                         debug("Showing home with user id : %s", visitor[0].id);
                         res.render("public/accueil-mobile-photo", visitor[0]);
                     } else {
