@@ -630,9 +630,9 @@ margin-top: 20px;
 .polaroid-images a {
     -webkit-transform: translate(-196px, -37px) rotate(14deg);
     -moz-transform: translate(-196px, -37px) rotate(14deg);
-    -ms-transform: translate(-196px, -37px) rotate(14deg);
     -o-transform: translate(-196px, -37px) rotate(14deg);
     transform: translate(-196px, -37px) rotate(14deg);
+    -ms-transform: translate(0px, -37px) rotate(14deg);
 }
 .polaroid-images a {
     background: none repeat scroll 0 0 white;

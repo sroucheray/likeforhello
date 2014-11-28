@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"col",
+				"col-right"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
 				"Json",
 				"JSON"
 			],
@@ -26,10 +38,6 @@
 			[
 				"w",
 				"width"
-			],
-			[
-				"pad",
-				"padding-bottom"
 			],
 			[
 				"padd",
@@ -506,14 +514,6 @@
 			[
 				"cur",
 				"currentMinute"
-			],
-			[
-				"state",
-				"stateServer"
-			],
-			[
-				"acti",
-				"activate"
 			]
 		]
 	},
@@ -1048,37 +1048,45 @@
 	},
 	"file_history":
 	[
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil-desktop.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/public/script.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil-mobile.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/attente.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture-weekend.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/pas-autorisation.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/styles-desktop.css",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/styles-mobile-photo.css",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/test-mobile.html",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/reglement-block.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil-desktop-photo.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/facebookClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/webServer.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initPublicWebServer.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/head-mobile-photo.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil-mobile-photo.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/application/databaseClient.js",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/redirect.hbs",
+		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil-desktop.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/head-desktop.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/test-attente.html",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initPublicWebServer.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/application/redisClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/metricsgraphics.css",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/public/metricsgraphics.min.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initWebClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/attente.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/fermeture-weekend.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/photos.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/photos.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/stats.html",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/application/databaseClient.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/photos.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/styles.css",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initBrokerServer.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/public/stats.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/footer.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/public/script.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/partials/head.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/styles/public/stats.css",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/accueil2.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/redirect.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/init/initStateServer.js",
 		"/C/_work/GitHub/likeforhello/modules/shooting/index.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/application/facebookClient.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/public/pas-autorisation.hbs",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/visitors.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/views/data/visitors.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/app/public/views/admin/partials/data/filters/visitors.hbs",
@@ -1167,15 +1175,7 @@
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/body-parser/node_modules/on-finished/HISTORY.md",
 		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt-contrib-less/node_modules/less/node_modules/clean-css/lib/properties/shorthand-compactor.js",
 		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/require-handlebars-plugin/demo/template/coolPartial.hbs",
-		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/express-hbs/test/optionsSpecs.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/bower/node_modules/p-throttler/node_modules/q/benchmark/scenarios.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/grunt-contrib-copy/node_modules/chalk/node_modules/.bin/supports-color",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/models/photo.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/application/db/models/photo.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/bower_components/jquery/src/core/parseHTML.js",
-		"/C/_work/GitHub/likeforhello/modules/shooting/scripts/testLed.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/app/public/scripts/admin/app/collections/modules.js",
-		"/C/_work/GitHub/likeforhello/modules/admin/.eslintrc"
+		"/C/_work/GitHub/likeforhello/modules/admin/node_modules/express-hbs/test/optionsSpecs.js"
 	],
 	"find":
 	{
@@ -1312,6 +1312,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"geno",
+			"genor",
+			"geneor",
+			"pola-acc",
+			"0.8",
+			"like",
+			"translate",
+			"accueil-desktop",
+			"accueil-desktop\"",
+			"mobile",
 			"redirect",
 			"appUrl",
 			"../",
@@ -1429,17 +1439,7 @@
 			"minRealertDelay",
 			"data.settings",
 			"getLastAlertDate",
-			"updateRandomDelay",
-			"postUserStory",
-			"a été en",
-			" a été en",
-			"nextrandom",
-			"quelle",
-			"updateRandomDelay",
-			"facebookClient",
-			"h2",
-			"h1",
-			"."
+			"updateRandomDelay"
 		],
 		"highlight": true,
 		"in_selection": false,
