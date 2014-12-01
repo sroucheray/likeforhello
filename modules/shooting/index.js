@@ -195,7 +195,7 @@ socketClient.onSVNup(function(data) {
             debug(err);
             return;
         }
-        pm2.restart("all", function(err, proc) {
+        pm2.restart("shooting", function(err, proc) {
             if (err) {
                 debug("Can't restart process with pm2, you need to restart manually");
 
@@ -204,7 +204,7 @@ socketClient.onSVNup(function(data) {
                 return;
             }
 
-            debug("Restarting all process");
+            debug("Restarting shooting process");
             debug(proc);
 
         });
