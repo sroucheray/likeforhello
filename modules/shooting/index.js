@@ -186,7 +186,32 @@ socketClient.onSVNup(function(data) {
     }
     debug("SVN UP requested for '%s' with 'username'", data.clientId, data.username);
 
-    var Client = require("svn-spawn");
+    var pm2 = require("pm2");
+
+    // Connect or launch PM2
+    pm2.connect(function(err) {
+        if (err) {
+            debug("Can't connect to pm2, you need to restart manually");
+            debug(err);
+            return;
+        }
+        pm2.restart("all", function(err, proc) {
+            if (err) {
+                debug("Can't restart process with pm2, you need to restart manually");
+
+                debug(err);
+
+                return;
+            }
+
+            debug("Restarting all process");
+            debug(proc);
+
+        });
+    });
+
+
+    /*var Client = require("svn-spawn");
     var client = new Client({
         cwd: process.cwd(),
         username: data.username,
@@ -204,29 +229,7 @@ socketClient.onSVNup(function(data) {
         debug("SVN updated fine");
         debug(data);
 
-        var pm2 = require("pm2");
 
-        // Connect or launch PM2
-        pm2.connect(function(err) {
-            if (err) {
-                debug("Can't connect to pm2, you need to restart manually");
-                debug(err);
-                return;
-            }
-            pm2.restart("all", function(err, proc) {
-                if (err) {
-                    debug("Can't restart process with pm2, you need to restart manually");
-
-                    debug(err);
-
-                    return;
-                }
-
-                debug("Restarting all process");
-                debug(proc);
-
-            });
-        });
-    });
+    });*/
 
 });
